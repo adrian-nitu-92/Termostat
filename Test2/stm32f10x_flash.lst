@@ -1,0 +1,1642 @@
+
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o:     file format elf32-littlearm
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+
+Disassembly of section .text.FLASH_SetLatency:
+
+00000000 <FLASH_SetLatency>:
+FLASH_SetLatency():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:262
+  
+  /* Check the parameters */
+  assert_param(IS_FLASH_LATENCY(FLASH_Latency));
+  
+  /* Read the ACR register */
+  tmpreg = FLASH->ACR;  
+   0:	f242 0300 	movw	r3, #8192	; 0x2000
+   4:	f2c4 0302 	movt	r3, #16386	; 0x4002
+   8:	681a      	ldr	r2, [r3, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:265
+  
+  /* Sets the Latency value */
+  tmpreg &= ACR_LATENCY_Mask;
+   a:	f002 0238 	and.w	r2, r2, #56	; 0x38
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:266
+  tmpreg |= FLASH_Latency;
+   e:	ea40 0002 	orr.w	r0, r0, r2
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:269
+  
+  /* Write the ACR register */
+  FLASH->ACR = tmpreg;
+  12:	6018      	str	r0, [r3, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:270
+}
+  14:	4770      	bx	lr
+  16:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_HalfCycleAccessCmd:
+
+00000000 <FLASH_HalfCycleAccessCmd>:
+FLASH_HalfCycleAccessCmd():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:287
+{
+  /* Check the parameters */
+  assert_param(IS_FLASH_HALFCYCLEACCESS_STATE(FLASH_HalfCycleAccess));
+  
+  /* Enable or disable the Half cycle access */
+  FLASH->ACR &= ACR_HLFCYA_Mask;
+   0:	f242 0200 	movw	r2, #8192	; 0x2000
+   4:	f2c4 0202 	movt	r2, #16386	; 0x4002
+   8:	6813      	ldr	r3, [r2, #0]
+   a:	f023 0308 	bic.w	r3, r3, #8	; 0x8
+   e:	6013      	str	r3, [r2, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:288
+  FLASH->ACR |= FLASH_HalfCycleAccess;
+  10:	6813      	ldr	r3, [r2, #0]
+  12:	ea40 0003 	orr.w	r0, r0, r3
+  16:	6010      	str	r0, [r2, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:289
+}
+  18:	4770      	bx	lr
+  1a:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_PrefetchBufferCmd:
+
+00000000 <FLASH_PrefetchBufferCmd>:
+FLASH_PrefetchBufferCmd():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:306
+{
+  /* Check the parameters */
+  assert_param(IS_FLASH_PREFETCHBUFFER_STATE(FLASH_PrefetchBuffer));
+  
+  /* Enable or disable the Prefetch Buffer */
+  FLASH->ACR &= ACR_PRFTBE_Mask;
+   0:	f242 0200 	movw	r2, #8192	; 0x2000
+   4:	f2c4 0202 	movt	r2, #16386	; 0x4002
+   8:	6813      	ldr	r3, [r2, #0]
+   a:	f023 0310 	bic.w	r3, r3, #16	; 0x10
+   e:	6013      	str	r3, [r2, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:307
+  FLASH->ACR |= FLASH_PrefetchBuffer;
+  10:	6813      	ldr	r3, [r2, #0]
+  12:	ea40 0003 	orr.w	r0, r0, r3
+  16:	6010      	str	r0, [r2, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:308
+}
+  18:	4770      	bx	lr
+  1a:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_Unlock:
+
+00000000 <FLASH_Unlock>:
+FLASH_Unlock():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:322
+  * @retval None
+  */
+void FLASH_Unlock(void)
+{
+  /* Authorize the FPEC of Bank1 Access */
+  FLASH->KEYR = FLASH_KEY1;
+   0:	f242 0300 	movw	r3, #8192	; 0x2000
+   4:	f2c4 0302 	movt	r3, #16386	; 0x4002
+   8:	f240 1223 	movw	r2, #291	; 0x123
+   c:	f2c4 5267 	movt	r2, #17767	; 0x4567
+  10:	605a      	str	r2, [r3, #4]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:323
+  FLASH->KEYR = FLASH_KEY2;
+  12:	f648 12ab 	movw	r2, #35243	; 0x89ab
+  16:	f6cc 52ef 	movt	r2, #52719	; 0xcdef
+  1a:	605a      	str	r2, [r3, #4]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:330
+#ifdef STM32F10X_XL
+  /* Authorize the FPEC of Bank2 Access */
+  FLASH->KEYR2 = FLASH_KEY1;
+  FLASH->KEYR2 = FLASH_KEY2;
+#endif /* STM32F10X_XL */
+}
+  1c:	4770      	bx	lr
+  1e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_UnlockBank1:
+
+00000000 <FLASH_UnlockBank1>:
+FLASH_UnlockBank1():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:343
+  * @retval None
+  */
+void FLASH_UnlockBank1(void)
+{
+  /* Authorize the FPEC of Bank1 Access */
+  FLASH->KEYR = FLASH_KEY1;
+   0:	f242 0300 	movw	r3, #8192	; 0x2000
+   4:	f2c4 0302 	movt	r3, #16386	; 0x4002
+   8:	f240 1223 	movw	r2, #291	; 0x123
+   c:	f2c4 5267 	movt	r2, #17767	; 0x4567
+  10:	605a      	str	r2, [r3, #4]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:344
+  FLASH->KEYR = FLASH_KEY2;
+  12:	f648 12ab 	movw	r2, #35243	; 0x89ab
+  16:	f6cc 52ef 	movt	r2, #52719	; 0xcdef
+  1a:	605a      	str	r2, [r3, #4]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:345
+}
+  1c:	4770      	bx	lr
+  1e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_Lock:
+
+00000000 <FLASH_Lock>:
+FLASH_Lock():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:375
+  * @retval None
+  */
+void FLASH_Lock(void)
+{
+  /* Set the Lock Bit to lock the FPEC and the CR of  Bank1 */
+  FLASH->CR |= CR_LOCK_Set;
+   0:	f242 0200 	movw	r2, #8192	; 0x2000
+   4:	f2c4 0202 	movt	r2, #16386	; 0x4002
+   8:	6913      	ldr	r3, [r2, #16]
+   a:	f043 0380 	orr.w	r3, r3, #128	; 0x80
+   e:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:381
+
+#ifdef STM32F10X_XL
+  /* Set the Lock Bit to lock the FPEC and the CR of  Bank2 */
+  FLASH->CR2 |= CR_LOCK_Set;
+#endif /* STM32F10X_XL */
+}
+  10:	4770      	bx	lr
+  12:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_LockBank1:
+
+00000000 <FLASH_LockBank1>:
+FLASH_LockBank1():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:395
+  * @retval None
+  */
+void FLASH_LockBank1(void)
+{
+  /* Set the Lock Bit to lock the FPEC and the CR of  Bank1 */
+  FLASH->CR |= CR_LOCK_Set;
+   0:	f242 0200 	movw	r2, #8192	; 0x2000
+   4:	f2c4 0202 	movt	r2, #16386	; 0x4002
+   8:	6913      	ldr	r3, [r2, #16]
+   a:	f043 0380 	orr.w	r3, r3, #128	; 0x80
+   e:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:396
+}
+  10:	4770      	bx	lr
+  12:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_GetUserOptionByte:
+
+00000000 <FLASH_GetUserOptionByte>:
+FLASH_GetUserOptionByte():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1219
+  *         and RST_STDBY(Bit2).
+  */
+uint32_t FLASH_GetUserOptionByte(void)
+{
+  /* Return the User Option Byte */
+  return (uint32_t)(FLASH->OBR >> 2);
+   0:	f242 0300 	movw	r3, #8192	; 0x2000
+   4:	f2c4 0302 	movt	r3, #16386	; 0x4002
+   8:	69d8      	ldr	r0, [r3, #28]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1220
+}
+   a:	ea4f 0090 	mov.w	r0, r0, lsr #2
+   e:	4770      	bx	lr
+Disassembly of section .text.FLASH_GetWriteProtectionOptionByte:
+
+00000000 <FLASH_GetWriteProtectionOptionByte>:
+FLASH_GetWriteProtectionOptionByte():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1231
+  * @retval The FLASH Write Protection  Option Bytes Register value
+  */
+uint32_t FLASH_GetWriteProtectionOptionByte(void)
+{
+  /* Return the Flash write protection Register value */
+  return (uint32_t)(FLASH->WRPR);
+   0:	f242 0300 	movw	r3, #8192	; 0x2000
+   4:	f2c4 0302 	movt	r3, #16386	; 0x4002
+   8:	6a18      	ldr	r0, [r3, #32]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1232
+}
+   a:	4770      	bx	lr
+Disassembly of section .text.FLASH_GetReadOutProtectionStatus:
+
+00000000 <FLASH_GetReadOutProtectionStatus>:
+FLASH_GetReadOutProtectionStatus():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1243
+  * @retval FLASH ReadOut Protection Status(SET or RESET)
+  */
+FlagStatus FLASH_GetReadOutProtectionStatus(void)
+{
+  FlagStatus readoutstatus = RESET;
+  if ((FLASH->OBR & RDPRT_Mask) != (uint32_t)RESET)
+   0:	f242 0300 	movw	r3, #8192	; 0x2000
+   4:	f2c4 0302 	movt	r3, #16386	; 0x4002
+   8:	69d8      	ldr	r0, [r3, #28]
+   a:	ea4f 0050 	mov.w	r0, r0, lsr #1
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1252
+  else
+  {
+    readoutstatus = RESET;
+  }
+  return readoutstatus;
+}
+   e:	f000 0001 	and.w	r0, r0, #1	; 0x1
+  12:	4770      	bx	lr
+Disassembly of section .text.FLASH_GetPrefetchBufferStatus:
+
+00000000 <FLASH_GetPrefetchBufferStatus>:
+FLASH_GetPrefetchBufferStatus():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1264
+  */
+FlagStatus FLASH_GetPrefetchBufferStatus(void)
+{
+  FlagStatus bitstatus = RESET;
+  
+  if ((FLASH->ACR & ACR_PRFTBS_Mask) != (uint32_t)RESET)
+   0:	f242 0300 	movw	r3, #8192	; 0x2000
+   4:	f2c4 0302 	movt	r3, #16386	; 0x4002
+   8:	6818      	ldr	r0, [r3, #0]
+   a:	ea4f 1050 	mov.w	r0, r0, lsr #5
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1274
+  {
+    bitstatus = RESET;
+  }
+  /* Return the new state of FLASH Prefetch Buffer Status (SET or RESET) */
+  return bitstatus; 
+}
+   e:	f000 0001 	and.w	r0, r0, #1	; 0x1
+  12:	4770      	bx	lr
+Disassembly of section .text.FLASH_ITConfig:
+
+00000000 <FLASH_ITConfig>:
+FLASH_ITConfig():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1328
+#else
+  /* Check the parameters */
+  assert_param(IS_FLASH_IT(FLASH_IT)); 
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+
+  if(NewState != DISABLE)
+   0:	b141      	cbz	r1, 14 <FLASH_ITConfig+0x14>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1331
+  {
+    /* Enable the interrupt sources */
+    FLASH->CR |= FLASH_IT;
+   2:	f242 0200 	movw	r2, #8192	; 0x2000
+   6:	f2c4 0202 	movt	r2, #16386	; 0x4002
+   a:	6913      	ldr	r3, [r2, #16]
+   c:	ea40 0303 	orr.w	r3, r0, r3
+  10:	6113      	str	r3, [r2, #16]
+  12:	e009      	b.n	28 <FLASH_ITConfig+0x28>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1336
+  }
+  else
+  {
+    /* Disable the interrupt sources */
+    FLASH->CR &= ~(uint32_t)FLASH_IT;
+  14:	f242 0300 	movw	r3, #8192	; 0x2000
+  18:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  1c:	6919      	ldr	r1, [r3, #16]
+  1e:	ea6f 0200 	mvn.w	r2, r0
+  22:	ea02 0201 	and.w	r2, r2, r1
+  26:	611a      	str	r2, [r3, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1339
+  }
+#endif /* STM32F10X_XL */
+}
+  28:	4770      	bx	lr
+  2a:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_GetFlagStatus:
+
+00000000 <FLASH_GetFlagStatus>:
+FLASH_GetFlagStatus():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1403
+    }
+  }
+#else
+  /* Check the parameters */
+  assert_param(IS_FLASH_GET_FLAG(FLASH_FLAG)) ;
+  if(FLASH_FLAG == FLASH_FLAG_OPTERR) 
+   0:	2801      	cmp	r0, #1
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1405
+  {
+    if((FLASH->OBR & FLASH_FLAG_OPTERR) != (uint32_t)RESET)
+   2:	bf01      	itttt	eq
+   4:	f242 0300 	movweq	r3, #8192	; 0x2000
+   8:	f2c4 0302 	movteq	r3, #16386	; 0x4002
+   c:	69db      	ldreq	r3, [r3, #28]
+   e:	f003 0001 	andeq.w	r0, r3, #1	; 0x1
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1403
+    }
+  }
+#else
+  /* Check the parameters */
+  assert_param(IS_FLASH_GET_FLAG(FLASH_FLAG)) ;
+  if(FLASH_FLAG == FLASH_FLAG_OPTERR) 
+  12:	d008      	beq.n	26 <FLASH_GetFlagStatus+0x26>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1416
+      bitstatus = RESET;
+    }
+  }
+  else
+  {
+   if((FLASH->SR & FLASH_FLAG) != (uint32_t)RESET)
+  14:	f242 0300 	movw	r3, #8192	; 0x2000
+  18:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  1c:	68db      	ldr	r3, [r3, #12]
+  1e:	4218      	tst	r0, r3
+  20:	bf0c      	ite	eq
+  22:	2000      	moveq	r0, #0
+  24:	2001      	movne	r0, #1
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1429
+  }
+#endif /* STM32F10X_XL */
+
+  /* Return the new state of FLASH_FLAG (SET or RESET) */
+  return bitstatus;
+}
+  26:	4770      	bx	lr
+Disassembly of section .text.FLASH_ClearFlag:
+
+00000000 <FLASH_ClearFlag>:
+FLASH_ClearFlag():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1465
+#else
+  /* Check the parameters */
+  assert_param(IS_FLASH_CLEAR_FLAG(FLASH_FLAG)) ;
+  
+  /* Clear the flags */
+  FLASH->SR = FLASH_FLAG;
+   0:	f242 0300 	movw	r3, #8192	; 0x2000
+   4:	f2c4 0302 	movt	r3, #16386	; 0x4002
+   8:	60d8      	str	r0, [r3, #12]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1467
+#endif /* STM32F10X_XL */
+}
+   a:	4770      	bx	lr
+Disassembly of section .text.FLASH_GetStatus:
+
+00000000 <FLASH_GetStatus>:
+FLASH_GetStatus():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1481
+  */
+FLASH_Status FLASH_GetStatus(void)
+{
+  FLASH_Status flashstatus = FLASH_COMPLETE;
+  
+  if((FLASH->SR & FLASH_FLAG_BSY) == FLASH_FLAG_BSY) 
+   0:	f242 0300 	movw	r3, #8192	; 0x2000
+   4:	f2c4 0302 	movt	r3, #16386	; 0x4002
+   8:	68db      	ldr	r3, [r3, #12]
+   a:	f013 0f01 	tst.w	r3, #1	; 0x1
+   e:	bf18      	it	ne
+  10:	2001      	movne	r0, #1
+  12:	d113      	bne.n	3c <FLASH_GetStatus+0x3c>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1487
+  {
+    flashstatus = FLASH_BUSY;
+  }
+  else 
+  {  
+    if((FLASH->SR & FLASH_FLAG_PGERR) != 0)
+  14:	f242 0300 	movw	r3, #8192	; 0x2000
+  18:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  1c:	68db      	ldr	r3, [r3, #12]
+  1e:	f013 0f04 	tst.w	r3, #4	; 0x4
+  22:	bf18      	it	ne
+  24:	2002      	movne	r0, #2
+  26:	d109      	bne.n	3c <FLASH_GetStatus+0x3c>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1493
+    { 
+      flashstatus = FLASH_ERROR_PG;
+    }
+    else 
+    {
+      if((FLASH->SR & FLASH_FLAG_WRPRTERR) != 0 )
+  28:	f242 0300 	movw	r3, #8192	; 0x2000
+  2c:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  30:	68db      	ldr	r3, [r3, #12]
+  32:	f013 0f10 	tst.w	r3, #16	; 0x10
+  36:	bf14      	ite	ne
+  38:	2003      	movne	r0, #3
+  3a:	2004      	moveq	r0, #4
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1505
+      }
+    }
+  }
+  /* Return the Flash Status */
+  return flashstatus;
+}
+  3c:	4770      	bx	lr
+  3e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_GetBank1Status:
+
+00000000 <FLASH_GetBank1Status>:
+FLASH_GetBank1Status():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1519
+  */
+FLASH_Status FLASH_GetBank1Status(void)
+{
+  FLASH_Status flashstatus = FLASH_COMPLETE;
+  
+  if((FLASH->SR & FLASH_FLAG_BANK1_BSY) == FLASH_FLAG_BSY) 
+   0:	f242 0300 	movw	r3, #8192	; 0x2000
+   4:	f2c4 0302 	movt	r3, #16386	; 0x4002
+   8:	68db      	ldr	r3, [r3, #12]
+   a:	f013 0f01 	tst.w	r3, #1	; 0x1
+   e:	bf18      	it	ne
+  10:	2001      	movne	r0, #1
+  12:	d113      	bne.n	3c <FLASH_GetBank1Status+0x3c>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1525
+  {
+    flashstatus = FLASH_BUSY;
+  }
+  else 
+  {  
+    if((FLASH->SR & FLASH_FLAG_BANK1_PGERR) != 0)
+  14:	f242 0300 	movw	r3, #8192	; 0x2000
+  18:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  1c:	68db      	ldr	r3, [r3, #12]
+  1e:	f013 0f04 	tst.w	r3, #4	; 0x4
+  22:	bf18      	it	ne
+  24:	2002      	movne	r0, #2
+  26:	d109      	bne.n	3c <FLASH_GetBank1Status+0x3c>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1531
+    { 
+      flashstatus = FLASH_ERROR_PG;
+    }
+    else 
+    {
+      if((FLASH->SR & FLASH_FLAG_BANK1_WRPRTERR) != 0 )
+  28:	f242 0300 	movw	r3, #8192	; 0x2000
+  2c:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  30:	68db      	ldr	r3, [r3, #12]
+  32:	f013 0f10 	tst.w	r3, #16	; 0x10
+  36:	bf14      	ite	ne
+  38:	2003      	movne	r0, #3
+  3a:	2004      	moveq	r0, #4
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1543
+      }
+    }
+  }
+  /* Return the Flash Status */
+  return flashstatus;
+}
+  3c:	4770      	bx	lr
+  3e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_WaitForLastOperation:
+
+00000000 <FLASH_WaitForLastOperation>:
+FLASH_WaitForLastOperation():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1596
+  * @param  Timeout: FLASH programming Timeout
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT.
+  */
+FLASH_Status FLASH_WaitForLastOperation(uint32_t Timeout)
+{ 
+   0:	b510      	push	{r4, lr}
+   2:	4604      	mov	r4, r0
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1600
+  FLASH_Status status = FLASH_COMPLETE;
+   
+  /* Check for the Flash Status */
+  status = FLASH_GetBank1Status();
+   4:	f7ff fffe 	bl	0 <FLASH_WaitForLastOperation>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1602
+  /* Wait for a Flash operation to complete or a TIMEOUT to occur */
+  while((status == FLASH_BUSY) && (Timeout != 0x00))
+   8:	1e23      	subs	r3, r4, #0
+   a:	bf18      	it	ne
+   c:	2301      	movne	r3, #1
+   e:	2801      	cmp	r0, #1
+  10:	bf14      	ite	ne
+  12:	2300      	movne	r3, #0
+  14:	f003 0301 	andeq.w	r3, r3, #1	; 0x1
+  18:	b16b      	cbz	r3, 1e <FLASH_WaitForLastOperation+0x1e>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1604
+  {
+    status = FLASH_GetBank1Status();
+  1a:	f7ff fffe 	bl	0 <FLASH_WaitForLastOperation>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1602
+  FLASH_Status status = FLASH_COMPLETE;
+   
+  /* Check for the Flash Status */
+  status = FLASH_GetBank1Status();
+  /* Wait for a Flash operation to complete or a TIMEOUT to occur */
+  while((status == FLASH_BUSY) && (Timeout != 0x00))
+  1e:	f114 34ff 	adds.w	r4, r4, #4294967295	; 0xffffffff
+  22:	bf0c      	ite	eq
+  24:	2300      	moveq	r3, #0
+  26:	2301      	movne	r3, #1
+  28:	2801      	cmp	r0, #1
+  2a:	bf14      	ite	ne
+  2c:	2300      	movne	r3, #0
+  2e:	f003 0301 	andeq.w	r3, r3, #1	; 0x1
+  32:	2b00      	cmp	r3, #0
+  34:	d1f1      	bne.n	1a <FLASH_WaitForLastOperation+0x1a>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1613
+  {
+    status = FLASH_TIMEOUT;
+  }
+  /* Return the operation status */
+  return status;
+}
+  36:	2c00      	cmp	r4, #0
+  38:	bf08      	it	eq
+  3a:	2005      	moveq	r0, #5
+  3c:	bd10      	pop	{r4, pc}
+  3e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_UserOptionByteConfig:
+
+00000000 <FLASH_UserOptionByteConfig>:
+FLASH_UserOptionByteConfig():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1119
+  *     @arg OB_STDBY_RST: Reset generated when entering in STANDBY
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG, 
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT.
+  */
+FLASH_Status FLASH_UserOptionByteConfig(uint16_t OB_IWDG, uint16_t OB_STOP, uint16_t OB_STDBY)
+{
+   0:	b570      	push	{r4, r5, r6, lr}
+   2:	4604      	mov	r4, r0
+   4:	460d      	mov	r5, r1
+   6:	4616      	mov	r6, r2
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1128
+  assert_param(IS_OB_IWDG_SOURCE(OB_IWDG));
+  assert_param(IS_OB_STOP_SOURCE(OB_STOP));
+  assert_param(IS_OB_STDBY_SOURCE(OB_STDBY));
+
+  /* Authorize the small information block programming */
+  FLASH->OPTKEYR = FLASH_KEY1;
+   8:	f242 0300 	movw	r3, #8192	; 0x2000
+   c:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  10:	f240 1223 	movw	r2, #291	; 0x123
+  14:	f2c4 5267 	movt	r2, #17767	; 0x4567
+  18:	609a      	str	r2, [r3, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1129
+  FLASH->OPTKEYR = FLASH_KEY2;
+  1a:	f648 12ab 	movw	r2, #35243	; 0x89ab
+  1e:	f6cc 52ef 	movt	r2, #52719	; 0xcdef
+  22:	609a      	str	r2, [r3, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1132
+  
+  /* Wait for last operation to be completed */
+  status = FLASH_WaitForLastOperation(ProgramTimeout);
+  24:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  28:	f7ff fffe 	bl	0 <FLASH_UserOptionByteConfig>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1134
+  
+  if(status == FLASH_COMPLETE)
+  2c:	2804      	cmp	r0, #4
+  2e:	d125      	bne.n	7c <FLASH_UserOptionByteConfig+0x7c>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1137
+  {  
+    /* Enable the Option Bytes Programming operation */
+    FLASH->CR |= CR_OPTPG_Set; 
+  30:	f242 0200 	movw	r2, #8192	; 0x2000
+  34:	f2c4 0202 	movt	r2, #16386	; 0x4002
+  38:	6913      	ldr	r3, [r2, #16]
+  3a:	f043 0310 	orr.w	r3, r3, #16	; 0x10
+  3e:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1139
+           
+    OB->USER = OB_IWDG | (uint16_t)(OB_STOP | (uint16_t)(OB_STDBY | ((uint16_t)0xF8))); 
+  40:	f044 03f8 	orr.w	r3, r4, #248	; 0xf8
+  44:	ea45 0303 	orr.w	r3, r5, r3
+  48:	ea46 0303 	orr.w	r3, r6, r3
+  4c:	b29b      	uxth	r3, r3
+  4e:	f64f 0200 	movw	r2, #63488	; 0xf800
+  52:	f6c1 72ff 	movt	r2, #8191	; 0x1fff
+  56:	8053      	strh	r3, [r2, #2]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1142
+  
+    /* Wait for last operation to be completed */
+    status = FLASH_WaitForLastOperation(ProgramTimeout);
+  58:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  5c:	f7ff fffe 	bl	0 <FLASH_UserOptionByteConfig>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1143
+    if(status != FLASH_TIMEOUT)
+  60:	2805      	cmp	r0, #5
+  62:	d00b      	beq.n	7c <FLASH_UserOptionByteConfig+0x7c>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1146
+    {
+      /* if the program operation is completed, disable the OPTPG Bit */
+      FLASH->CR &= CR_OPTPG_Reset;
+  64:	f242 0300 	movw	r3, #8192	; 0x2000
+  68:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  6c:	6919      	ldr	r1, [r3, #16]
+  6e:	f641 72ef 	movw	r2, #8175	; 0x1fef
+  72:	f2c0 0200 	movt	r2, #0	; 0x0
+  76:	ea01 0202 	and.w	r2, r1, r2
+  7a:	611a      	str	r2, [r3, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1151
+    }
+  }    
+  /* Return the Option Byte program Status */
+  return status;
+}
+  7c:	bd70      	pop	{r4, r5, r6, pc}
+  7e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_ReadOutProtection:
+
+00000000 <FLASH_ReadOutProtection>:
+FLASH_ReadOutProtection():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1050
+  *   This parameter can be: ENABLE or DISABLE.
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT.
+  */
+FLASH_Status FLASH_ReadOutProtection(FunctionalState NewState)
+{
+   0:	b510      	push	{r4, lr}
+   2:	4604      	mov	r4, r0
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1054
+  FLASH_Status status = FLASH_COMPLETE;
+  /* Check the parameters */
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  status = FLASH_WaitForLastOperation(EraseTimeout);
+   4:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+   8:	f7ff fffe 	bl	0 <FLASH_ReadOutProtection>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1055
+  if(status == FLASH_COMPLETE)
+   c:	2804      	cmp	r0, #4
+   e:	d15c      	bne.n	ca <FLASH_ReadOutProtection+0xca>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1058
+  {
+    /* Authorizes the small information block programming */
+    FLASH->OPTKEYR = FLASH_KEY1;
+  10:	f242 0200 	movw	r2, #8192	; 0x2000
+  14:	f2c4 0202 	movt	r2, #16386	; 0x4002
+  18:	f240 1323 	movw	r3, #291	; 0x123
+  1c:	f2c4 5367 	movt	r3, #17767	; 0x4567
+  20:	6093      	str	r3, [r2, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1059
+    FLASH->OPTKEYR = FLASH_KEY2;
+  22:	f648 13ab 	movw	r3, #35243	; 0x89ab
+  26:	f6cc 53ef 	movt	r3, #52719	; 0xcdef
+  2a:	6093      	str	r3, [r2, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1060
+    FLASH->CR |= CR_OPTER_Set;
+  2c:	6913      	ldr	r3, [r2, #16]
+  2e:	f043 0320 	orr.w	r3, r3, #32	; 0x20
+  32:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1061
+    FLASH->CR |= CR_STRT_Set;
+  34:	6913      	ldr	r3, [r2, #16]
+  36:	f043 0340 	orr.w	r3, r3, #64	; 0x40
+  3a:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1063
+    /* Wait for last operation to be completed */
+    status = FLASH_WaitForLastOperation(EraseTimeout);
+  3c:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+  40:	f7ff fffe 	bl	0 <FLASH_ReadOutProtection>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1064
+    if(status == FLASH_COMPLETE)
+  44:	2804      	cmp	r0, #4
+  46:	d132      	bne.n	ae <FLASH_ReadOutProtection+0xae>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1067
+    {
+      /* if the erase operation is completed, disable the OPTER Bit */
+      FLASH->CR &= CR_OPTER_Reset;
+  48:	f242 0200 	movw	r2, #8192	; 0x2000
+  4c:	f2c4 0202 	movt	r2, #16386	; 0x4002
+  50:	6911      	ldr	r1, [r2, #16]
+  52:	f641 73df 	movw	r3, #8159	; 0x1fdf
+  56:	f2c0 0300 	movt	r3, #0	; 0x0
+  5a:	ea01 0303 	and.w	r3, r1, r3
+  5e:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1069
+      /* Enable the Option Bytes Programming operation */
+      FLASH->CR |= CR_OPTPG_Set; 
+  60:	6913      	ldr	r3, [r2, #16]
+  62:	f043 0310 	orr.w	r3, r3, #16	; 0x10
+  66:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1070
+      if(NewState != DISABLE)
+  68:	b13c      	cbz	r4, 7a <FLASH_ReadOutProtection+0x7a>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1072
+      {
+        OB->RDP = 0x00;
+  6a:	f64f 0300 	movw	r3, #63488	; 0xf800
+  6e:	f6c1 73ff 	movt	r3, #8191	; 0x1fff
+  72:	f04f 0200 	mov.w	r2, #0	; 0x0
+  76:	801a      	strh	r2, [r3, #0]
+  78:	e006      	b.n	88 <FLASH_ReadOutProtection+0x88>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1076
+      }
+      else
+      {
+        OB->RDP = RDP_Key;  
+  7a:	f64f 0300 	movw	r3, #63488	; 0xf800
+  7e:	f6c1 73ff 	movt	r3, #8191	; 0x1fff
+  82:	f04f 02a5 	mov.w	r2, #165	; 0xa5
+  86:	801a      	strh	r2, [r3, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1079
+      }
+      /* Wait for last operation to be completed */
+      status = FLASH_WaitForLastOperation(EraseTimeout); 
+  88:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+  8c:	f7ff fffe 	bl	0 <FLASH_ReadOutProtection>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1081
+    
+      if(status != FLASH_TIMEOUT)
+  90:	2805      	cmp	r0, #5
+  92:	d01a      	beq.n	ca <FLASH_ReadOutProtection+0xca>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1084
+      {
+        /* if the program operation is completed, disable the OPTPG Bit */
+        FLASH->CR &= CR_OPTPG_Reset;
+  94:	f242 0300 	movw	r3, #8192	; 0x2000
+  98:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  9c:	6919      	ldr	r1, [r3, #16]
+  9e:	f641 72ef 	movw	r2, #8175	; 0x1fef
+  a2:	f2c0 0200 	movt	r2, #0	; 0x0
+  a6:	ea01 0202 	and.w	r2, r1, r2
+  aa:	611a      	str	r2, [r3, #16]
+  ac:	e00d      	b.n	ca <FLASH_ReadOutProtection+0xca>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1089
+      }
+    }
+    else 
+    {
+      if(status != FLASH_TIMEOUT)
+  ae:	2805      	cmp	r0, #5
+  b0:	d00b      	beq.n	ca <FLASH_ReadOutProtection+0xca>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1092
+      {
+        /* Disable the OPTER Bit */
+        FLASH->CR &= CR_OPTER_Reset;
+  b2:	f242 0300 	movw	r3, #8192	; 0x2000
+  b6:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  ba:	6919      	ldr	r1, [r3, #16]
+  bc:	f641 72df 	movw	r2, #8159	; 0x1fdf
+  c0:	f2c0 0200 	movt	r2, #0	; 0x0
+  c4:	ea01 0202 	and.w	r2, r1, r2
+  c8:	611a      	str	r2, [r3, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1098
+      }
+    }
+  }
+  /* Return the protection operation Status */
+  return status;       
+}
+  ca:	bd10      	pop	{r4, pc}
+Disassembly of section .text.FLASH_EnableWriteProtection:
+
+00000000 <FLASH_EnableWriteProtection>:
+FLASH_EnableWriteProtection():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:976
+  *     @arg FLASH_WRProt_AllPages
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT.
+  */
+FLASH_Status FLASH_EnableWriteProtection(uint32_t FLASH_Pages)
+{
+   0:	b510      	push	{r4, lr}
+   2:	4604      	mov	r4, r0
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:991
+  WRP1_Data = (uint16_t)((FLASH_Pages & WRP1_Mask) >> 8);
+  WRP2_Data = (uint16_t)((FLASH_Pages & WRP2_Mask) >> 16);
+  WRP3_Data = (uint16_t)((FLASH_Pages & WRP3_Mask) >> 24);
+  
+  /* Wait for last operation to be completed */
+  status = FLASH_WaitForLastOperation(ProgramTimeout);
+   4:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+   8:	f7ff fffe 	bl	0 <FLASH_EnableWriteProtection>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:993
+  
+  if(status == FLASH_COMPLETE)
+   c:	2804      	cmp	r0, #4
+   e:	d170      	bne.n	f2 <FLASH_EnableWriteProtection+0xf2>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:984
+  FLASH_Status status = FLASH_COMPLETE;
+  
+  /* Check the parameters */
+  assert_param(IS_FLASH_WRPROT_PAGE(FLASH_Pages));
+  
+  FLASH_Pages = (uint32_t)(~FLASH_Pages);
+  10:	ea6f 0404 	mvn.w	r4, r4
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:985
+  WRP0_Data = (uint16_t)(FLASH_Pages & WRP0_Mask);
+  14:	b2e1      	uxtb	r1, r4
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:996
+  status = FLASH_WaitForLastOperation(ProgramTimeout);
+  
+  if(status == FLASH_COMPLETE)
+  {
+    /* Authorizes the small information block programming */
+    FLASH->OPTKEYR = FLASH_KEY1;
+  16:	f242 0200 	movw	r2, #8192	; 0x2000
+  1a:	f2c4 0202 	movt	r2, #16386	; 0x4002
+  1e:	f240 1323 	movw	r3, #291	; 0x123
+  22:	f2c4 5367 	movt	r3, #17767	; 0x4567
+  26:	6093      	str	r3, [r2, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:997
+    FLASH->OPTKEYR = FLASH_KEY2;
+  28:	f648 13ab 	movw	r3, #35243	; 0x89ab
+  2c:	f6cc 53ef 	movt	r3, #52719	; 0xcdef
+  30:	6093      	str	r3, [r2, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:998
+    FLASH->CR |= CR_OPTPG_Set;
+  32:	6913      	ldr	r3, [r2, #16]
+  34:	f043 0310 	orr.w	r3, r3, #16	; 0x10
+  38:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:999
+    if(WRP0_Data != 0xFF)
+  3a:	29ff      	cmp	r1, #255
+  3c:	d008      	beq.n	50 <FLASH_EnableWriteProtection+0x50>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1001
+    {
+      OB->WRP0 = WRP0_Data;
+  3e:	f64f 0300 	movw	r3, #63488	; 0xf800
+  42:	f6c1 73ff 	movt	r3, #8191	; 0x1fff
+  46:	8119      	strh	r1, [r3, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1004
+      
+      /* Wait for last operation to be completed */
+      status = FLASH_WaitForLastOperation(ProgramTimeout);
+  48:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  4c:	f7ff fffe 	bl	0 <FLASH_EnableWriteProtection>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:986
+  /* Check the parameters */
+  assert_param(IS_FLASH_WRPROT_PAGE(FLASH_Pages));
+  
+  FLASH_Pages = (uint32_t)(~FLASH_Pages);
+  WRP0_Data = (uint16_t)(FLASH_Pages & WRP0_Mask);
+  WRP1_Data = (uint16_t)((FLASH_Pages & WRP1_Mask) >> 8);
+  50:	f404 437f 	and.w	r3, r4, #65280	; 0xff00
+  54:	ea4f 2213 	mov.w	r2, r3, lsr #8
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1006
+      OB->WRP0 = WRP0_Data;
+      
+      /* Wait for last operation to be completed */
+      status = FLASH_WaitForLastOperation(ProgramTimeout);
+    }
+    if((status == FLASH_COMPLETE) && (WRP1_Data != 0xFF))
+  58:	f1b2 03ff 	subs.w	r3, r2, #255	; 0xff
+  5c:	bf18      	it	ne
+  5e:	2301      	movne	r3, #1
+  60:	2804      	cmp	r0, #4
+  62:	bf14      	ite	ne
+  64:	2300      	movne	r3, #0
+  66:	f003 0301 	andeq.w	r3, r3, #1	; 0x1
+  6a:	b143      	cbz	r3, 7e <FLASH_EnableWriteProtection+0x7e>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1008
+    {
+      OB->WRP1 = WRP1_Data;
+  6c:	f64f 0300 	movw	r3, #63488	; 0xf800
+  70:	f6c1 73ff 	movt	r3, #8191	; 0x1fff
+  74:	815a      	strh	r2, [r3, #10]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1011
+      
+      /* Wait for last operation to be completed */
+      status = FLASH_WaitForLastOperation(ProgramTimeout);
+  76:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  7a:	f7ff fffe 	bl	0 <FLASH_EnableWriteProtection>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:987
+  assert_param(IS_FLASH_WRPROT_PAGE(FLASH_Pages));
+  
+  FLASH_Pages = (uint32_t)(~FLASH_Pages);
+  WRP0_Data = (uint16_t)(FLASH_Pages & WRP0_Mask);
+  WRP1_Data = (uint16_t)((FLASH_Pages & WRP1_Mask) >> 8);
+  WRP2_Data = (uint16_t)((FLASH_Pages & WRP2_Mask) >> 16);
+  7e:	f404 037f 	and.w	r3, r4, #16711680	; 0xff0000
+  82:	ea4f 4213 	mov.w	r2, r3, lsr #16
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1013
+      OB->WRP1 = WRP1_Data;
+      
+      /* Wait for last operation to be completed */
+      status = FLASH_WaitForLastOperation(ProgramTimeout);
+    }
+    if((status == FLASH_COMPLETE) && (WRP2_Data != 0xFF))
+  86:	f1b2 03ff 	subs.w	r3, r2, #255	; 0xff
+  8a:	bf18      	it	ne
+  8c:	2301      	movne	r3, #1
+  8e:	2804      	cmp	r0, #4
+  90:	bf14      	ite	ne
+  92:	2300      	movne	r3, #0
+  94:	f003 0301 	andeq.w	r3, r3, #1	; 0x1
+  98:	b143      	cbz	r3, ac <FLASH_EnableWriteProtection+0xac>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1015
+    {
+      OB->WRP2 = WRP2_Data;
+  9a:	f64f 0300 	movw	r3, #63488	; 0xf800
+  9e:	f6c1 73ff 	movt	r3, #8191	; 0x1fff
+  a2:	819a      	strh	r2, [r3, #12]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1018
+      
+      /* Wait for last operation to be completed */
+      status = FLASH_WaitForLastOperation(ProgramTimeout);
+  a4:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  a8:	f7ff fffe 	bl	0 <FLASH_EnableWriteProtection>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:988
+  
+  FLASH_Pages = (uint32_t)(~FLASH_Pages);
+  WRP0_Data = (uint16_t)(FLASH_Pages & WRP0_Mask);
+  WRP1_Data = (uint16_t)((FLASH_Pages & WRP1_Mask) >> 8);
+  WRP2_Data = (uint16_t)((FLASH_Pages & WRP2_Mask) >> 16);
+  WRP3_Data = (uint16_t)((FLASH_Pages & WRP3_Mask) >> 24);
+  ac:	ea4f 6214 	mov.w	r2, r4, lsr #24
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1021
+      
+      /* Wait for last operation to be completed */
+      status = FLASH_WaitForLastOperation(ProgramTimeout);
+    }
+    
+    if((status == FLASH_COMPLETE)&& (WRP3_Data != 0xFF))
+  b0:	f1b2 03ff 	subs.w	r3, r2, #255	; 0xff
+  b4:	bf18      	it	ne
+  b6:	2301      	movne	r3, #1
+  b8:	2804      	cmp	r0, #4
+  ba:	bf14      	ite	ne
+  bc:	2300      	movne	r3, #0
+  be:	f003 0301 	andeq.w	r3, r3, #1	; 0x1
+  c2:	b143      	cbz	r3, d6 <FLASH_EnableWriteProtection+0xd6>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1023
+    {
+      OB->WRP3 = WRP3_Data;
+  c4:	f64f 0300 	movw	r3, #63488	; 0xf800
+  c8:	f6c1 73ff 	movt	r3, #8191	; 0x1fff
+  cc:	81da      	strh	r2, [r3, #14]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1026
+     
+      /* Wait for last operation to be completed */
+      status = FLASH_WaitForLastOperation(ProgramTimeout);
+  ce:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  d2:	f7ff fffe 	bl	0 <FLASH_EnableWriteProtection>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1029
+    }
+          
+    if(status != FLASH_TIMEOUT)
+  d6:	2805      	cmp	r0, #5
+  d8:	d00b      	beq.n	f2 <FLASH_EnableWriteProtection+0xf2>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1032
+    {
+      /* if the program operation is completed, disable the OPTPG Bit */
+      FLASH->CR &= CR_OPTPG_Reset;
+  da:	f242 0300 	movw	r3, #8192	; 0x2000
+  de:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  e2:	6919      	ldr	r1, [r3, #16]
+  e4:	f641 72ef 	movw	r2, #8175	; 0x1fef
+  e8:	f2c0 0200 	movt	r2, #0	; 0x0
+  ec:	ea01 0202 	and.w	r2, r1, r2
+  f0:	611a      	str	r2, [r3, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1037
+    }
+  } 
+  /* Return the write protection operation Status */
+  return status;       
+}
+  f2:	bd10      	pop	{r4, pc}
+Disassembly of section .text.FLASH_ProgramOptionByteData:
+
+00000000 <FLASH_ProgramOptionByteData>:
+FLASH_ProgramOptionByteData():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:930
+  * @param  Data: specifies the data to be programmed.
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. 
+  */
+FLASH_Status FLASH_ProgramOptionByteData(uint32_t Address, uint8_t Data)
+{
+   0:	b570      	push	{r4, r5, r6, lr}
+   2:	4605      	mov	r5, r0
+   4:	460c      	mov	r4, r1
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:934
+  FLASH_Status status = FLASH_COMPLETE;
+  /* Check the parameters */
+  assert_param(IS_OB_DATA_ADDRESS(Address));
+  status = FLASH_WaitForLastOperation(ProgramTimeout);
+   6:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+   a:	f7ff fffe 	bl	0 <FLASH_ProgramOptionByteData>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:936
+
+  if(status == FLASH_COMPLETE)
+   e:	2804      	cmp	r0, #4
+  10:	d124      	bne.n	5c <FLASH_ProgramOptionByteData+0x5c>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:939
+  {
+    /* Authorize the small information block programming */
+    FLASH->OPTKEYR = FLASH_KEY1;
+  12:	f242 0200 	movw	r2, #8192	; 0x2000
+  16:	f2c4 0202 	movt	r2, #16386	; 0x4002
+  1a:	f240 1323 	movw	r3, #291	; 0x123
+  1e:	f2c4 5367 	movt	r3, #17767	; 0x4567
+  22:	6093      	str	r3, [r2, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:940
+    FLASH->OPTKEYR = FLASH_KEY2;
+  24:	f648 13ab 	movw	r3, #35243	; 0x89ab
+  28:	f6cc 53ef 	movt	r3, #52719	; 0xcdef
+  2c:	6093      	str	r3, [r2, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:942
+    /* Enables the Option Bytes Programming operation */
+    FLASH->CR |= CR_OPTPG_Set; 
+  2e:	6913      	ldr	r3, [r2, #16]
+  30:	f043 0310 	orr.w	r3, r3, #16	; 0x10
+  34:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:943
+    *(__IO uint16_t*)Address = Data;
+  36:	802c      	strh	r4, [r5, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:946
+    
+    /* Wait for last operation to be completed */
+    status = FLASH_WaitForLastOperation(ProgramTimeout);
+  38:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  3c:	f7ff fffe 	bl	0 <FLASH_ProgramOptionByteData>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:947
+    if(status != FLASH_TIMEOUT)
+  40:	2805      	cmp	r0, #5
+  42:	d00b      	beq.n	5c <FLASH_ProgramOptionByteData+0x5c>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:950
+    {
+      /* if the program operation is completed, disable the OPTPG Bit */
+      FLASH->CR &= CR_OPTPG_Reset;
+  44:	f242 0300 	movw	r3, #8192	; 0x2000
+  48:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  4c:	6919      	ldr	r1, [r3, #16]
+  4e:	f641 72ef 	movw	r2, #8175	; 0x1fef
+  52:	f2c0 0200 	movt	r2, #0	; 0x0
+  56:	ea01 0202 	and.w	r2, r1, r2
+  5a:	611a      	str	r2, [r3, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:955
+    }
+  }
+  /* Return the Option Byte Data Program Status */
+  return status;
+}
+  5c:	bd70      	pop	{r4, r5, r6, pc}
+  5e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_ProgramHalfWord:
+
+00000000 <FLASH_ProgramHalfWord>:
+FLASH_ProgramHalfWord():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:859
+  * @param  Data: specifies the data to be programmed.
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. 
+  */
+FLASH_Status FLASH_ProgramHalfWord(uint32_t Address, uint16_t Data)
+{
+   0:	b570      	push	{r4, r5, r6, lr}
+   2:	4606      	mov	r6, r0
+   4:	460d      	mov	r5, r1
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:900
+      FLASH->CR2 &= CR_PG_Reset;
+    }
+  }
+#else
+  /* Wait for last operation to be completed */
+  status = FLASH_WaitForLastOperation(ProgramTimeout);
+   6:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+   a:	f7ff fffe 	bl	0 <FLASH_ProgramHalfWord>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:902
+  
+  if(status == FLASH_COMPLETE)
+   e:	2804      	cmp	r0, #4
+  10:	d114      	bne.n	3c <FLASH_ProgramHalfWord+0x3c>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:905
+  {
+    /* if the previous operation is completed, proceed to program the new data */
+    FLASH->CR |= CR_PG_Set;
+  12:	f242 0400 	movw	r4, #8192	; 0x2000
+  16:	f2c4 0402 	movt	r4, #16386	; 0x4002
+  1a:	6923      	ldr	r3, [r4, #16]
+  1c:	f043 0301 	orr.w	r3, r3, #1	; 0x1
+  20:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:907
+  
+    *(__IO uint16_t*)Address = Data;
+  22:	8035      	strh	r5, [r6, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:909
+    /* Wait for last operation to be completed */
+    status = FLASH_WaitForLastOperation(ProgramTimeout);
+  24:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  28:	f7ff fffe 	bl	0 <FLASH_ProgramHalfWord>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:912
+    
+    /* Disable the PG Bit */
+    FLASH->CR &= CR_PG_Reset;
+  2c:	6922      	ldr	r2, [r4, #16]
+  2e:	f641 73fe 	movw	r3, #8190	; 0x1ffe
+  32:	f2c0 0300 	movt	r3, #0	; 0x0
+  36:	ea02 0303 	and.w	r3, r2, r3
+  3a:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:918
+  } 
+#endif  /* STM32F10X_XL */
+  
+  /* Return the Program Status */
+  return status;
+}
+  3c:	bd70      	pop	{r4, r5, r6, pc}
+  3e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_ProgramWord:
+
+00000000 <FLASH_ProgramWord>:
+FLASH_ProgramWord():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:682
+  * @param  Data: specifies the data to be programmed.
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT. 
+  */
+FLASH_Status FLASH_ProgramWord(uint32_t Address, uint32_t Data)
+{
+   0:	b530      	push	{r4, r5, lr}
+   2:	b083      	sub	sp, #12
+   4:	4604      	mov	r4, r0
+   6:	460d      	mov	r5, r1
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:684
+  FLASH_Status status = FLASH_COMPLETE;
+  __IO uint32_t tmp = 0;
+   8:	f04f 0300 	mov.w	r3, #0	; 0x0
+   c:	9301      	str	r3, [sp, #4]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:812
+      }
+    }
+  }
+#else
+  /* Wait for last operation to be completed */
+  status = FLASH_WaitForLastOperation(ProgramTimeout);
+   e:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  12:	f7ff fffe 	bl	0 <FLASH_ProgramWord>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:814
+  
+  if(status == FLASH_COMPLETE)
+  16:	2804      	cmp	r0, #4
+  18:	d133      	bne.n	82 <FLASH_ProgramWord+0x82>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:818
+  {
+    /* if the previous operation is completed, proceed to program the new first 
+    half word */
+    FLASH->CR |= CR_PG_Set;
+  1a:	f242 0300 	movw	r3, #8192	; 0x2000
+  1e:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  22:	691a      	ldr	r2, [r3, #16]
+  24:	f042 0201 	orr.w	r2, r2, #1	; 0x1
+  28:	611a      	str	r2, [r3, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:820
+  
+    *(__IO uint16_t*)Address = (uint16_t)Data;
+  2a:	b2ab      	uxth	r3, r5
+  2c:	8023      	strh	r3, [r4, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:822
+    /* Wait for last operation to be completed */
+    status = FLASH_WaitForLastOperation(ProgramTimeout);
+  2e:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  32:	f7ff fffe 	bl	0 <FLASH_ProgramWord>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:824
+ 
+    if(status == FLASH_COMPLETE)
+  36:	2804      	cmp	r0, #4
+  38:	d117      	bne.n	6a <FLASH_ProgramWord+0x6a>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:828
+    {
+      /* if the previous operation is completed, proceed to program the new second 
+      half word */
+      tmp = Address + 2;
+  3a:	f104 0302 	add.w	r3, r4, #2	; 0x2
+  3e:	9301      	str	r3, [sp, #4]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:830
+
+      *(__IO uint16_t*) tmp = Data >> 16;
+  40:	9a01      	ldr	r2, [sp, #4]
+  42:	ea4f 4315 	mov.w	r3, r5, lsr #16
+  46:	8013      	strh	r3, [r2, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:833
+    
+      /* Wait for last operation to be completed */
+      status = FLASH_WaitForLastOperation(ProgramTimeout);
+  48:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  4c:	f7ff fffe 	bl	0 <FLASH_ProgramWord>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:836
+        
+      /* Disable the PG Bit */
+      FLASH->CR &= CR_PG_Reset;
+  50:	f242 0200 	movw	r2, #8192	; 0x2000
+  54:	f2c4 0202 	movt	r2, #16386	; 0x4002
+  58:	6911      	ldr	r1, [r2, #16]
+  5a:	f641 73fe 	movw	r3, #8190	; 0x1ffe
+  5e:	f2c0 0300 	movt	r3, #0	; 0x0
+  62:	ea01 0303 	and.w	r3, r1, r3
+  66:	6113      	str	r3, [r2, #16]
+  68:	e00b      	b.n	82 <FLASH_ProgramWord+0x82>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:841
+    }
+    else
+    {
+      /* Disable the PG Bit */
+      FLASH->CR &= CR_PG_Reset;
+  6a:	f242 0300 	movw	r3, #8192	; 0x2000
+  6e:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  72:	6919      	ldr	r1, [r3, #16]
+  74:	f641 72fe 	movw	r2, #8190	; 0x1ffe
+  78:	f2c0 0200 	movt	r2, #0	; 0x0
+  7c:	ea01 0202 	and.w	r2, r1, r2
+  80:	611a      	str	r2, [r3, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:848
+  }         
+#endif /* STM32F10X_XL */
+   
+  /* Return the Program Status */
+  return status;
+}
+  82:	b003      	add	sp, #12
+  84:	bd30      	pop	{r4, r5, pc}
+  86:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_EraseOptionBytes:
+
+00000000 <FLASH_EraseOptionBytes>:
+FLASH_EraseOptionBytes():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:617
+  * @param  None
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT.
+  */
+FLASH_Status FLASH_EraseOptionBytes(void)
+{
+   0:	b510      	push	{r4, lr}
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:623
+  uint16_t rdptmp = RDP_Key;
+
+  FLASH_Status status = FLASH_COMPLETE;
+
+  /* Get the actual read protection Option Byte value */ 
+  if(FLASH_GetReadOutProtectionStatus() != RESET)
+   2:	f7ff fffe 	bl	0 <FLASH_EraseOptionBytes>
+   6:	2800      	cmp	r0, #0
+   8:	bf0c      	ite	eq
+   a:	24a5      	moveq	r4, #165
+   c:	2400      	movne	r4, #0
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:629
+  {
+    rdptmp = 0x00;  
+  }
+
+  /* Wait for last operation to be completed */
+  status = FLASH_WaitForLastOperation(EraseTimeout);
+   e:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+  12:	f7ff fffe 	bl	0 <FLASH_EraseOptionBytes>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:630
+  if(status == FLASH_COMPLETE)
+  16:	2804      	cmp	r0, #4
+  18:	d151      	bne.n	be <FLASH_EraseOptionBytes+0xbe>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:633
+  {
+    /* Authorize the small information block programming */
+    FLASH->OPTKEYR = FLASH_KEY1;
+  1a:	f242 0200 	movw	r2, #8192	; 0x2000
+  1e:	f2c4 0202 	movt	r2, #16386	; 0x4002
+  22:	f240 1323 	movw	r3, #291	; 0x123
+  26:	f2c4 5367 	movt	r3, #17767	; 0x4567
+  2a:	6093      	str	r3, [r2, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:634
+    FLASH->OPTKEYR = FLASH_KEY2;
+  2c:	f648 13ab 	movw	r3, #35243	; 0x89ab
+  30:	f6cc 53ef 	movt	r3, #52719	; 0xcdef
+  34:	6093      	str	r3, [r2, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:637
+    
+    /* if the previous operation is completed, proceed to erase the option bytes */
+    FLASH->CR |= CR_OPTER_Set;
+  36:	6913      	ldr	r3, [r2, #16]
+  38:	f043 0320 	orr.w	r3, r3, #32	; 0x20
+  3c:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:638
+    FLASH->CR |= CR_STRT_Set;
+  3e:	6913      	ldr	r3, [r2, #16]
+  40:	f043 0340 	orr.w	r3, r3, #64	; 0x40
+  44:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:640
+    /* Wait for last operation to be completed */
+    status = FLASH_WaitForLastOperation(EraseTimeout);
+  46:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+  4a:	f7ff fffe 	bl	0 <FLASH_EraseOptionBytes>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:642
+    
+    if(status == FLASH_COMPLETE)
+  4e:	2804      	cmp	r0, #4
+  50:	d127      	bne.n	a2 <FLASH_EraseOptionBytes+0xa2>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:645
+    {
+      /* if the erase operation is completed, disable the OPTER Bit */
+      FLASH->CR &= CR_OPTER_Reset;
+  52:	f242 0200 	movw	r2, #8192	; 0x2000
+  56:	f2c4 0202 	movt	r2, #16386	; 0x4002
+  5a:	6911      	ldr	r1, [r2, #16]
+  5c:	f641 73df 	movw	r3, #8159	; 0x1fdf
+  60:	f2c0 0300 	movt	r3, #0	; 0x0
+  64:	ea01 0303 	and.w	r3, r1, r3
+  68:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:648
+       
+      /* Enable the Option Bytes Programming operation */
+      FLASH->CR |= CR_OPTPG_Set;
+  6a:	6913      	ldr	r3, [r2, #16]
+  6c:	f043 0310 	orr.w	r3, r3, #16	; 0x10
+  70:	6113      	str	r3, [r2, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:650
+      /* Restore the last read protection Option Byte value */
+      OB->RDP = (uint16_t)rdptmp; 
+  72:	f64f 0300 	movw	r3, #63488	; 0xf800
+  76:	f6c1 73ff 	movt	r3, #8191	; 0x1fff
+  7a:	801c      	strh	r4, [r3, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:652
+      /* Wait for last operation to be completed */
+      status = FLASH_WaitForLastOperation(ProgramTimeout);
+  7c:	f44f 5000 	mov.w	r0, #8192	; 0x2000
+  80:	f7ff fffe 	bl	0 <FLASH_EraseOptionBytes>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:654
+ 
+      if(status != FLASH_TIMEOUT)
+  84:	2805      	cmp	r0, #5
+  86:	d01a      	beq.n	be <FLASH_EraseOptionBytes+0xbe>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:657
+      {
+        /* if the program operation is completed, disable the OPTPG Bit */
+        FLASH->CR &= CR_OPTPG_Reset;
+  88:	f242 0300 	movw	r3, #8192	; 0x2000
+  8c:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  90:	6919      	ldr	r1, [r3, #16]
+  92:	f641 72ef 	movw	r2, #8175	; 0x1fef
+  96:	f2c0 0200 	movt	r2, #0	; 0x0
+  9a:	ea01 0202 	and.w	r2, r1, r2
+  9e:	611a      	str	r2, [r3, #16]
+  a0:	e00d      	b.n	be <FLASH_EraseOptionBytes+0xbe>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:662
+      }
+    }
+    else
+    {
+      if (status != FLASH_TIMEOUT)
+  a2:	2805      	cmp	r0, #5
+  a4:	d00b      	beq.n	be <FLASH_EraseOptionBytes+0xbe>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:665
+      {
+        /* Disable the OPTPG Bit */
+        FLASH->CR &= CR_OPTPG_Reset;
+  a6:	f242 0300 	movw	r3, #8192	; 0x2000
+  aa:	f2c4 0302 	movt	r3, #16386	; 0x4002
+  ae:	6919      	ldr	r1, [r3, #16]
+  b0:	f641 72ef 	movw	r2, #8175	; 0x1fef
+  b4:	f2c0 0200 	movt	r2, #0	; 0x0
+  b8:	ea01 0202 	and.w	r2, r1, r2
+  bc:	611a      	str	r2, [r3, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:671
+      }
+    }  
+  }
+  /* Return the erase status */
+  return status;
+}
+  be:	bd10      	pop	{r4, pc}
+Disassembly of section .text.FLASH_EraseAllPages:
+
+00000000 <FLASH_EraseAllPages>:
+FLASH_EraseAllPages():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:493
+  * @param  None
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT.
+  */
+FLASH_Status FLASH_EraseAllPages(void)
+{
+   0:	b510      	push	{r4, lr}
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:526
+    /* Disable the MER Bit */
+    FLASH->CR2 &= CR_MER_Reset;
+  }
+#else
+  /* Wait for last operation to be completed */
+  status = FLASH_WaitForLastOperation(EraseTimeout);
+   2:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+   6:	f7ff fffe 	bl	0 <FLASH_EraseAllPages>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:527
+  if(status == FLASH_COMPLETE)
+   a:	2804      	cmp	r0, #4
+   c:	d117      	bne.n	3e <FLASH_EraseAllPages+0x3e>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:530
+  {
+    /* if the previous operation is completed, proceed to erase all pages */
+     FLASH->CR |= CR_MER_Set;
+   e:	f242 0400 	movw	r4, #8192	; 0x2000
+  12:	f2c4 0402 	movt	r4, #16386	; 0x4002
+  16:	6923      	ldr	r3, [r4, #16]
+  18:	f043 0304 	orr.w	r3, r3, #4	; 0x4
+  1c:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:531
+     FLASH->CR |= CR_STRT_Set;
+  1e:	6923      	ldr	r3, [r4, #16]
+  20:	f043 0340 	orr.w	r3, r3, #64	; 0x40
+  24:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:534
+    
+    /* Wait for last operation to be completed */
+    status = FLASH_WaitForLastOperation(EraseTimeout);
+  26:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+  2a:	f7ff fffe 	bl	0 <FLASH_EraseAllPages>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:537
+
+    /* Disable the MER Bit */
+    FLASH->CR &= CR_MER_Reset;
+  2e:	6922      	ldr	r2, [r4, #16]
+  30:	f641 73fb 	movw	r3, #8187	; 0x1ffb
+  34:	f2c0 0300 	movt	r3, #0	; 0x0
+  38:	ea02 0303 	and.w	r3, r2, r3
+  3c:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:543
+  }
+#endif /* STM32F10X_XL */
+
+  /* Return the Erase Status */
+  return status;
+}
+  3e:	bd10      	pop	{r4, pc}
+Disassembly of section .text.FLASH_ErasePage:
+
+00000000 <FLASH_ErasePage>:
+FLASH_ErasePage():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:420
+  * @param  Page_Address: The page address to be erased.
+  * @retval FLASH Status: The returned value can be: FLASH_BUSY, FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT.
+  */
+FLASH_Status FLASH_ErasePage(uint32_t Page_Address)
+{
+   0:	b570      	push	{r4, r5, r6, lr}
+   2:	4605      	mov	r5, r0
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:464
+      FLASH->CR2 &= CR_PER_Reset;
+    }
+  }
+#else
+  /* Wait for last operation to be completed */
+  status = FLASH_WaitForLastOperation(EraseTimeout);
+   4:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+   8:	f7ff fffe 	bl	0 <FLASH_ErasePage>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:466
+  
+  if(status == FLASH_COMPLETE)
+   c:	2804      	cmp	r0, #4
+   e:	d118      	bne.n	42 <FLASH_ErasePage+0x42>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:469
+  { 
+    /* if the previous operation is completed, proceed to erase the page */
+    FLASH->CR|= CR_PER_Set;
+  10:	f242 0400 	movw	r4, #8192	; 0x2000
+  14:	f2c4 0402 	movt	r4, #16386	; 0x4002
+  18:	6923      	ldr	r3, [r4, #16]
+  1a:	f043 0302 	orr.w	r3, r3, #2	; 0x2
+  1e:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:470
+    FLASH->AR = Page_Address; 
+  20:	6165      	str	r5, [r4, #20]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:471
+    FLASH->CR|= CR_STRT_Set;
+  22:	6923      	ldr	r3, [r4, #16]
+  24:	f043 0340 	orr.w	r3, r3, #64	; 0x40
+  28:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:474
+    
+    /* Wait for last operation to be completed */
+    status = FLASH_WaitForLastOperation(EraseTimeout);
+  2a:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+  2e:	f7ff fffe 	bl	0 <FLASH_ErasePage>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:477
+    
+    /* Disable the PER Bit */
+    FLASH->CR &= CR_PER_Reset;
+  32:	6922      	ldr	r2, [r4, #16]
+  34:	f641 73fd 	movw	r3, #8189	; 0x1ffd
+  38:	f2c0 0300 	movt	r3, #0	; 0x0
+  3c:	ea02 0303 	and.w	r3, r2, r3
+  40:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:483
+  }
+#endif /* STM32F10X_XL */
+
+  /* Return the Erase Status */
+  return status;
+}
+  42:	bd70      	pop	{r4, r5, r6, pc}
+Disassembly of section .text.FLASH_WaitForLastBank1Operation:
+
+00000000 <FLASH_WaitForLastBank1Operation>:
+FLASH_WaitForLastBank1Operation():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1624
+  * @param  Timeout: FLASH programming Timeout
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT.
+  */
+FLASH_Status FLASH_WaitForLastBank1Operation(uint32_t Timeout)
+{ 
+   0:	b510      	push	{r4, lr}
+   2:	4604      	mov	r4, r0
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1628
+  FLASH_Status status = FLASH_COMPLETE;
+   
+  /* Check for the Flash Status */
+  status = FLASH_GetBank1Status();
+   4:	f7ff fffe 	bl	0 <FLASH_WaitForLastBank1Operation>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1630
+  /* Wait for a Flash operation to complete or a TIMEOUT to occur */
+  while((status == FLASH_FLAG_BANK1_BSY) && (Timeout != 0x00))
+   8:	1e23      	subs	r3, r4, #0
+   a:	bf18      	it	ne
+   c:	2301      	movne	r3, #1
+   e:	2801      	cmp	r0, #1
+  10:	bf14      	ite	ne
+  12:	2300      	movne	r3, #0
+  14:	f003 0301 	andeq.w	r3, r3, #1	; 0x1
+  18:	b16b      	cbz	r3, 1e <FLASH_WaitForLastBank1Operation+0x1e>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1632
+  {
+    status = FLASH_GetBank1Status();
+  1a:	f7ff fffe 	bl	0 <FLASH_WaitForLastBank1Operation>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1630
+  FLASH_Status status = FLASH_COMPLETE;
+   
+  /* Check for the Flash Status */
+  status = FLASH_GetBank1Status();
+  /* Wait for a Flash operation to complete or a TIMEOUT to occur */
+  while((status == FLASH_FLAG_BANK1_BSY) && (Timeout != 0x00))
+  1e:	f114 34ff 	adds.w	r4, r4, #4294967295	; 0xffffffff
+  22:	bf0c      	ite	eq
+  24:	2300      	moveq	r3, #0
+  26:	2301      	movne	r3, #1
+  28:	2801      	cmp	r0, #1
+  2a:	bf14      	ite	ne
+  2c:	2300      	movne	r3, #0
+  2e:	f003 0301 	andeq.w	r3, r3, #1	; 0x1
+  32:	2b00      	cmp	r3, #0
+  34:	d1f1      	bne.n	1a <FLASH_WaitForLastBank1Operation+0x1a>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:1641
+  {
+    status = FLASH_TIMEOUT;
+  }
+  /* Return the operation status */
+  return status;
+}
+  36:	2c00      	cmp	r4, #0
+  38:	bf08      	it	eq
+  3a:	2005      	moveq	r0, #5
+  3c:	bd10      	pop	{r4, pc}
+  3e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.FLASH_EraseAllBank1Pages:
+
+00000000 <FLASH_EraseAllBank1Pages>:
+FLASH_EraseAllBank1Pages():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:556
+  * @param  None
+  * @retval FLASH Status: The returned value can be: FLASH_ERROR_PG,
+  *         FLASH_ERROR_WRP, FLASH_COMPLETE or FLASH_TIMEOUT.
+  */
+FLASH_Status FLASH_EraseAllBank1Pages(void)
+{
+   0:	b510      	push	{r4, lr}
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:559
+  FLASH_Status status = FLASH_COMPLETE;
+  /* Wait for last operation to be completed */
+  status = FLASH_WaitForLastBank1Operation(EraseTimeout);
+   2:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+   6:	f7ff fffe 	bl	0 <FLASH_EraseAllBank1Pages>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:561
+  
+  if(status == FLASH_COMPLETE)
+   a:	2804      	cmp	r0, #4
+   c:	d117      	bne.n	3e <FLASH_EraseAllBank1Pages+0x3e>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:564
+  {
+    /* if the previous operation is completed, proceed to erase all pages */
+     FLASH->CR |= CR_MER_Set;
+   e:	f242 0400 	movw	r4, #8192	; 0x2000
+  12:	f2c4 0402 	movt	r4, #16386	; 0x4002
+  16:	6923      	ldr	r3, [r4, #16]
+  18:	f043 0304 	orr.w	r3, r3, #4	; 0x4
+  1c:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:565
+     FLASH->CR |= CR_STRT_Set;
+  1e:	6923      	ldr	r3, [r4, #16]
+  20:	f043 0340 	orr.w	r3, r3, #64	; 0x40
+  24:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:568
+    
+    /* Wait for last operation to be completed */
+    status = FLASH_WaitForLastBank1Operation(EraseTimeout);
+  26:	f44f 2030 	mov.w	r0, #720896	; 0xb0000
+  2a:	f7ff fffe 	bl	0 <FLASH_EraseAllBank1Pages>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:571
+    
+    /* Disable the MER Bit */
+    FLASH->CR &= CR_MER_Reset;
+  2e:	6922      	ldr	r2, [r4, #16]
+  30:	f641 73fb 	movw	r3, #8187	; 0x1ffb
+  34:	f2c0 0300 	movt	r3, #0	; 0x0
+  38:	ea02 0303 	and.w	r3, r2, r3
+  3c:	6123      	str	r3, [r4, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_flash.c:575
+  }    
+  /* Return the Erase Status */
+  return status;
+}
+  3e:	bd10      	pop	{r4, pc}

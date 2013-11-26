@@ -1,0 +1,297 @@
+
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o:     file format elf32-littlearm
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+
+Disassembly of section .text.EXTI_DeInit:
+
+00000000 <EXTI_DeInit>:
+EXTI_DeInit():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:87
+  * @param  None
+  * @retval None
+  */
+void EXTI_DeInit(void)
+{
+  EXTI->IMR = 0x00000000;
+   0:	f240 4300 	movw	r3, #1024	; 0x400
+   4:	f2c4 0301 	movt	r3, #16385	; 0x4001
+   8:	f04f 0200 	mov.w	r2, #0	; 0x0
+   c:	601a      	str	r2, [r3, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:88
+  EXTI->EMR = 0x00000000;
+   e:	605a      	str	r2, [r3, #4]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:89
+  EXTI->RTSR = 0x00000000; 
+  10:	609a      	str	r2, [r3, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:90
+  EXTI->FTSR = 0x00000000; 
+  12:	60da      	str	r2, [r3, #12]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:91
+  EXTI->PR = 0x000FFFFF;
+  14:	f64f 72ff 	movw	r2, #65535	; 0xffff
+  18:	f2c0 020f 	movt	r2, #15	; 0xf
+  1c:	615a      	str	r2, [r3, #20]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:92
+}
+  1e:	4770      	bx	lr
+Disassembly of section .text.EXTI_Init:
+
+00000000 <EXTI_Init>:
+EXTI_Init():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:102
+  * @param  EXTI_InitStruct: pointer to a EXTI_InitTypeDef structure
+  *         that contains the configuration information for the EXTI peripheral.
+  * @retval None
+  */
+void EXTI_Init(EXTI_InitTypeDef* EXTI_InitStruct)
+{
+   0:	b430      	push	{r4, r5}
+   2:	4604      	mov	r4, r0
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:113
+  assert_param(IS_EXTI_LINE(EXTI_InitStruct->EXTI_Line));  
+  assert_param(IS_FUNCTIONAL_STATE(EXTI_InitStruct->EXTI_LineCmd));
+
+  tmp = (uint32_t)EXTI_BASE;
+     
+  if (EXTI_InitStruct->EXTI_LineCmd != DISABLE)
+   4:	7983      	ldrb	r3, [r0, #6]
+   6:	2b00      	cmp	r3, #0
+   8:	d039      	beq.n	7e <EXTI_Init+0x7e>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:116
+  {
+    /* Clear EXTI line configuration */
+    EXTI->IMR &= ~EXTI_InitStruct->EXTI_Line;
+   a:	f240 4100 	movw	r1, #1024	; 0x400
+   e:	f2c4 0101 	movt	r1, #16385	; 0x4001
+  12:	680b      	ldr	r3, [r1, #0]
+  14:	6800      	ldr	r0, [r0, #0]
+  16:	ea6f 0200 	mvn.w	r2, r0
+  1a:	ea02 0303 	and.w	r3, r2, r3
+  1e:	600b      	str	r3, [r1, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:117
+    EXTI->EMR &= ~EXTI_InitStruct->EXTI_Line;
+  20:	684b      	ldr	r3, [r1, #4]
+  22:	ea02 0203 	and.w	r2, r2, r3
+  26:	604a      	str	r2, [r1, #4]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:121
+    
+    tmp += EXTI_InitStruct->EXTI_Mode;
+
+    *(__IO uint32_t *) tmp |= EXTI_InitStruct->EXTI_Line;
+  28:	7922      	ldrb	r2, [r4, #4]
+  2a:	440a      	add	r2, r1
+  2c:	6813      	ldr	r3, [r2, #0]
+  2e:	ea43 0300 	orr.w	r3, r3, r0
+  32:	6013      	str	r3, [r2, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:124
+
+    /* Clear Rising Falling edge configuration */
+    EXTI->RTSR &= ~EXTI_InitStruct->EXTI_Line;
+  34:	688b      	ldr	r3, [r1, #8]
+  36:	6825      	ldr	r5, [r4, #0]
+  38:	ea6f 0205 	mvn.w	r2, r5
+  3c:	ea02 0303 	and.w	r3, r2, r3
+  40:	608b      	str	r3, [r1, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:125
+    EXTI->FTSR &= ~EXTI_InitStruct->EXTI_Line;
+  42:	68cb      	ldr	r3, [r1, #12]
+  44:	ea02 0203 	and.w	r2, r2, r3
+  48:	60ca      	str	r2, [r1, #12]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:128
+    
+    /* Select the trigger for the selected external interrupts */
+    if (EXTI_InitStruct->EXTI_Trigger == EXTI_Trigger_Rising_Falling)
+  4a:	7960      	ldrb	r0, [r4, #5]
+  4c:	2810      	cmp	r0, #16
+  4e:	d10c      	bne.n	6a <EXTI_Init+0x6a>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:131
+    {
+      /* Rising Falling edge */
+      EXTI->RTSR |= EXTI_InitStruct->EXTI_Line;
+  50:	f240 4300 	movw	r3, #1024	; 0x400
+  54:	f2c4 0301 	movt	r3, #16385	; 0x4001
+  58:	689a      	ldr	r2, [r3, #8]
+  5a:	ea42 0205 	orr.w	r2, r2, r5
+  5e:	609a      	str	r2, [r3, #8]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:132
+      EXTI->FTSR |= EXTI_InitStruct->EXTI_Line;
+  60:	68da      	ldr	r2, [r3, #12]
+  62:	ea42 0205 	orr.w	r2, r2, r5
+  66:	60da      	str	r2, [r3, #12]
+  68:	e016      	b.n	98 <EXTI_Init+0x98>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:139
+    else
+    {
+      tmp = (uint32_t)EXTI_BASE;
+      tmp += EXTI_InitStruct->EXTI_Trigger;
+
+      *(__IO uint32_t *) tmp |= EXTI_InitStruct->EXTI_Line;
+  6a:	f240 4200 	movw	r2, #1024	; 0x400
+  6e:	f2c4 0201 	movt	r2, #16385	; 0x4001
+  72:	4402      	add	r2, r0
+  74:	6813      	ldr	r3, [r2, #0]
+  76:	ea43 0305 	orr.w	r3, r3, r5
+  7a:	6013      	str	r3, [r2, #0]
+  7c:	e00c      	b.n	98 <EXTI_Init+0x98>
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:147
+  else
+  {
+    tmp += EXTI_InitStruct->EXTI_Mode;
+
+    /* Disable the selected external lines */
+    *(__IO uint32_t *) tmp &= ~EXTI_InitStruct->EXTI_Line;
+  7e:	7901      	ldrb	r1, [r0, #4]
+  80:	f240 4300 	movw	r3, #1024	; 0x400
+  84:	f2c4 0301 	movt	r3, #16385	; 0x4001
+  88:	4419      	add	r1, r3
+  8a:	680a      	ldr	r2, [r1, #0]
+  8c:	6803      	ldr	r3, [r0, #0]
+  8e:	ea6f 0303 	mvn.w	r3, r3
+  92:	ea02 0203 	and.w	r2, r2, r3
+  96:	600a      	str	r2, [r1, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:149
+  }
+}
+  98:	bc30      	pop	{r4, r5}
+  9a:	4770      	bx	lr
+Disassembly of section .text.EXTI_StructInit:
+
+00000000 <EXTI_StructInit>:
+EXTI_StructInit():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:159
+  *         be initialized.
+  * @retval None
+  */
+void EXTI_StructInit(EXTI_InitTypeDef* EXTI_InitStruct)
+{
+  EXTI_InitStruct->EXTI_Line = EXTI_LINENONE;
+   0:	f04f 0200 	mov.w	r2, #0	; 0x0
+   4:	6002      	str	r2, [r0, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:160
+  EXTI_InitStruct->EXTI_Mode = EXTI_Mode_Interrupt;
+   6:	7102      	strb	r2, [r0, #4]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:161
+  EXTI_InitStruct->EXTI_Trigger = EXTI_Trigger_Falling;
+   8:	f04f 030c 	mov.w	r3, #12	; 0xc
+   c:	7143      	strb	r3, [r0, #5]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:162
+  EXTI_InitStruct->EXTI_LineCmd = DISABLE;
+   e:	7182      	strb	r2, [r0, #6]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:163
+}
+  10:	4770      	bx	lr
+  12:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.EXTI_GenerateSWInterrupt:
+
+00000000 <EXTI_GenerateSWInterrupt>:
+EXTI_GenerateSWInterrupt():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:176
+void EXTI_GenerateSWInterrupt(uint32_t EXTI_Line)
+{
+  /* Check the parameters */
+  assert_param(IS_EXTI_LINE(EXTI_Line));
+  
+  EXTI->SWIER |= EXTI_Line;
+   0:	f240 4300 	movw	r3, #1024	; 0x400
+   4:	f2c4 0301 	movt	r3, #16385	; 0x4001
+   8:	691a      	ldr	r2, [r3, #16]
+   a:	ea40 0002 	orr.w	r0, r0, r2
+   e:	6118      	str	r0, [r3, #16]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:177
+}
+  10:	4770      	bx	lr
+  12:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.EXTI_GetFlagStatus:
+
+00000000 <EXTI_GetFlagStatus>:
+EXTI_GetFlagStatus():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:192
+{
+  FlagStatus bitstatus = RESET;
+  /* Check the parameters */
+  assert_param(IS_GET_EXTI_LINE(EXTI_Line));
+  
+  if ((EXTI->PR & EXTI_Line) != (uint32_t)RESET)
+   0:	f240 4300 	movw	r3, #1024	; 0x400
+   4:	f2c4 0301 	movt	r3, #16385	; 0x4001
+   8:	695b      	ldr	r3, [r3, #20]
+   a:	4218      	tst	r0, r3
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:201
+  else
+  {
+    bitstatus = RESET;
+  }
+  return bitstatus;
+}
+   c:	bf0c      	ite	eq
+   e:	2000      	moveq	r0, #0
+  10:	2001      	movne	r0, #1
+  12:	4770      	bx	lr
+Disassembly of section .text.EXTI_ClearFlag:
+
+00000000 <EXTI_ClearFlag>:
+EXTI_ClearFlag():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:214
+void EXTI_ClearFlag(uint32_t EXTI_Line)
+{
+  /* Check the parameters */
+  assert_param(IS_EXTI_LINE(EXTI_Line));
+  
+  EXTI->PR = EXTI_Line;
+   0:	f240 4300 	movw	r3, #1024	; 0x400
+   4:	f2c4 0301 	movt	r3, #16385	; 0x4001
+   8:	6158      	str	r0, [r3, #20]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:215
+}
+   a:	4770      	bx	lr
+Disassembly of section .text.EXTI_GetITStatus:
+
+00000000 <EXTI_GetITStatus>:
+EXTI_GetITStatus():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:231
+  ITStatus bitstatus = RESET;
+  uint32_t enablestatus = 0;
+  /* Check the parameters */
+  assert_param(IS_GET_EXTI_LINE(EXTI_Line));
+  
+  enablestatus =  EXTI->IMR & EXTI_Line;
+   0:	f240 4300 	movw	r3, #1024	; 0x400
+   4:	f2c4 0301 	movt	r3, #16385	; 0x4001
+   8:	681a      	ldr	r2, [r3, #0]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:232
+  if (((EXTI->PR & EXTI_Line) != (uint32_t)RESET) && (enablestatus != (uint32_t)RESET))
+   a:	695b      	ldr	r3, [r3, #20]
+   c:	4218      	tst	r0, r3
+   e:	bf08      	it	eq
+  10:	2000      	moveq	r0, #0
+  12:	d003      	beq.n	1c <EXTI_GetITStatus+0x1c>
+  14:	4210      	tst	r0, r2
+  16:	bf0c      	ite	eq
+  18:	2000      	moveq	r0, #0
+  1a:	2001      	movne	r0, #1
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:241
+  else
+  {
+    bitstatus = RESET;
+  }
+  return bitstatus;
+}
+  1c:	4770      	bx	lr
+  1e:	46c0      	nop			(mov r8, r8)
+Disassembly of section .text.EXTI_ClearITPendingBit:
+
+00000000 <EXTI_ClearITPendingBit>:
+EXTI_ClearITPendingBit():
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:254
+void EXTI_ClearITPendingBit(uint32_t EXTI_Line)
+{
+  /* Check the parameters */
+  assert_param(IS_EXTI_LINE(EXTI_Line));
+  
+  EXTI->PR = EXTI_Line;
+   0:	f240 4300 	movw	r3, #1024	; 0x400
+   4:	f2c4 0301 	movt	r3, #16385	; 0x4001
+   8:	6158      	str	r0, [r3, #20]
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_exti.c:255
+}
+   a:	4770      	bx	lr

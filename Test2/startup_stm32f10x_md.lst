@@ -1,0 +1,44 @@
+
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o:     file format elf32-littlearm
+D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+
+Disassembly of section .text:
+
+00000000 <.text>:
+	...
+Disassembly of section .text.Reset_Handler:
+
+00000000 <Reset_Handler>:
+Reset_Handler():
+   0:	2100      	movs	r1, #0
+   2:	e003      	b.n	c <LoopCopyDataInit>
+
+00000004 <CopyDataInit>:
+CopyDataInit():
+   4:	585b4b0a 	.word	0x585b4b0a
+   8:	31045043 	.word	0x31045043
+
+0000000c <LoopCopyDataInit>:
+LoopCopyDataInit():
+   c:	4b0a4809 	.word	0x4b0a4809
+  10:	429a1842 	.word	0x429a1842
+  14:	4a09d3f6 	.word	0x4a09d3f6
+  18:	e002      	.short	0xe002
+
+0000001a <FillZerobss>:
+FillZerobss():
+  1a:	2300      	.short	0x2300
+  1c:	3b04f842 	.word	0x3b04f842
+
+00000020 <LoopFillZerobss>:
+LoopFillZerobss():
+  20:	429a4b07 	.word	0x429a4b07
+  24:	f7ffd3f9 	.word	0xf7ffd3f9
+  28:	f7fffffe 	.word	0xf7fffffe
+  2c:	4770fffe 	.word	0x4770fffe
+	...
+Disassembly of section .text.Default_Handler:
+
+00000000 <ADC1_2_IRQHandler>:
+USBWakeUp_IRQHandler():
+   0:	e7fe      	b.n	0 <ADC1_2_IRQHandler>
