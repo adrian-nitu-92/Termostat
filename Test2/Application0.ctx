@@ -1,46 +1,5 @@
 
 <Debug>
-	<Views>
-		<View File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="63" Index="0" focus="1" />
-		<View File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="20" Index="1" />
-		<View File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="406" Index="2" />
-		<View File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="83" Index="3" />
-																																																																																																																																																												
-	</Views>
-	<Grep>
-		<GrepIncludeSub>yes</GrepIncludeSub>
-		<GrepMatchCase>no</GrepMatchCase>
-		<GrepMatchWhole>no</GrepMatchWhole>
-		<GrepRegExp>no</GrepRegExp>
-		<GrepReplaceMode>no</GrepReplaceMode>
-		<GrepFileTypes>
-			<GrepFileTypesValue>*.c;*.h</GrepFileTypesValue>
-			<GrepFileType>*.c;*.h</GrepFileType>
-																																																																																																																																																																																																																																																																				
-		</GrepFileTypes>
-		<GrepFindWhat>
-			<GrepFindWhatValue/>
-																																																																																																																																																																																																																																																																				
-		</GrepFindWhat>
-		<GrepFindWhere>
-			<GrepFindWhereValue/>
-			<GrepPathStr>Application Files</GrepPathStr>
-			<GrepPathStr>Application Path</GrepPathStr>
-																																																																																																																																																																																																																																																																				
-		</GrepFindWhere>
-		<GrepReplaceWhat>
-			<GrepReplaceWhatValue/>
-																																																																																																																																																																																																																																																																				
-		</GrepReplaceWhat>
-																																																																																																																																																												
-	</Grep>
-	<FindStrings>
-		<Find>9</Find>
-		<Find>EXTI9_5</Find>
-		<Find>TIM2</Find>
-																																																																																																																																																												
-	</FindStrings>
-	<ReplaceStrings/>
 	<Application0>
 		<Memory(32-bit)View Focus="134221436" TopRow="134221232" NbPerLine="4" />
 		<SpyWatch>
@@ -50,14 +9,18 @@
 					<Col Type="PT_STRING" Header="Value" sizeCache="DDDDDDDDDDDDDDDDDDDDDDD" AutoSize="1" Edit="0" Sortable="1" />
 					<Col Type="PT_STRING" Header="File" sizeCache="DDDD" AutoSize="1" Edit="0" Visible="0" />
 					<Col Type="PT_STRING" Header="Line" sizeCache="DDDD" AutoSize="1" Edit="0" Visible="0" />
+																		
 				</Def>
 				<Rows>
 					<Row Name=" test" Value="536891392 (0x20005000)" File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="44" />
 					<Row Name="val" Value="0 (0x0)" File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="60" />
 					<Row Name="TempInt" Value="22 (0x16)" File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="85" />
 					<Row Name="Temp " Value="22.586" File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="29" />
+																		
 				</Rows>
+														
 			</Report>
+										
 		</SpyWatch>
 		<CodeView TopRow="134222730" Focus="4294967295" >
 			<CodeReport>
@@ -67,9 +30,12 @@
 				<3>264</3>
 				<4>92</4>
 				<5>128</5>
+														
 			</CodeReport>
+										
 		</CodeView>
 		<MemoryView Focus="536870904" TopRow="536870888" NbPerLine="8" />
+						
 	</Application0>
 	<Flags>
 		<Report>
@@ -85,8 +51,45 @@
 				<Col Type="PT_STRING" Header="Condition" sizeCache="DDDDDDDDDDDDDDDDDDDDDDDD" AutoSize="1" Edit="0" Sortable="0" />
 				<Col Type="PT_STRING" Header="Condexpr" sizeCache="DD" AutoSize="1" Edit="0" Sortable="0" Visible="0" />
 				<Col Type="PT_STRING" Header="Condcount" sizeCache="DD" AutoSize="1" Edit="0" Sortable="0" Visible="0" />
+							
 			</Def>
 			<Rows/>
+					
 		</Report>
+			
 	</Flags>
+	<Views>
+		<View File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="62" Index="0" focus="1" />
+		<View File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="19" Index="1" />
+		<View File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="405" Index="2" />
+		<View File="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="82" Index="3" />
+	</Views>
+	<Grep>
+		<GrepIncludeSub>yes</GrepIncludeSub>
+		<GrepMatchCase>no</GrepMatchCase>
+		<GrepMatchWhole>no</GrepMatchWhole>
+		<GrepRegExp>no</GrepRegExp>
+		<GrepReplaceMode>no</GrepReplaceMode>
+		<GrepFileTypes>
+			<GrepFileTypesValue>*.c;*.h</GrepFileTypesValue>
+			<GrepFileType>*.c;*.h</GrepFileType>
+		</GrepFileTypes>
+		<GrepFindWhat>
+			<GrepFindWhatValue/>
+		</GrepFindWhat>
+		<GrepFindWhere>
+			<GrepFindWhereValue/>
+			<GrepPathStr>Application Files</GrepPathStr>
+			<GrepPathStr>Application Path</GrepPathStr>
+		</GrepFindWhere>
+		<GrepReplaceWhat>
+			<GrepReplaceWhatValue/>
+		</GrepReplaceWhat>
+	</Grep>
+	<FindStrings>
+		<Find>9</Find>
+		<Find>EXTI9_5</Find>
+		<Find>TIM2</Find>
+	</FindStrings>
+	<ReplaceStrings/>
 </Debug>

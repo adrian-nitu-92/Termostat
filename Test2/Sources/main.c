@@ -147,7 +147,7 @@ void RCC_Configuration(void)
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4 | RCC_APB1Periph_TIM3, ENABLE);
 
   /* GPIOA clock enable */
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOA | RCC_APB2Periph_AFIO, ENABLE);
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOA , ENABLE);
 }
 
 /*******************************************************************************
@@ -162,30 +162,37 @@ void GPIO_Configuration(void)
   GPIO_InitTypeDef GPIO_InitStructure;
 
   /* TIM2 channel 2 pin (PA.01) configuration */
+//temperature sensor
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
   GPIO_Init(GPIOB, &GPIO_InitStructure);
+//
 
+//rotary encoder
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
-  GPIO_Init(GPIOB, &GPIO_InitStructure);
+  GPIO_Init(GPIOA, &GPIO_InitStructure);
+//
 
+//led RED
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
   GPIO_Init(GPIOA, &GPIO_InitStructure);
+//
 
+//LCD
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
   GPIO_Init(GPIOA, &GPIO_InitStructure);
-
+//
 }
 
 /*******************************************************************************
@@ -215,12 +222,12 @@ void NVIC_Configuration(void)
   NVIC_Init(&NVIC_InitStructure);
 
   NVIC_InitStructure.NVIC_IRQChannel = EXTI9_5_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
   
-  NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;
+  NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
   NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
@@ -287,7 +294,7 @@ void RCC_TIMConfig(void)
 void EXTI_Config(void)
 {
       EXTI_InitTypeDef  EXTI_InitStructure;
-      GPIO_EXTILineConfig(GPIO_PortSourceGPIOB, GPIO_PinSource8);
+      GPIO_EXTILineConfig(GPIO_PortSourceGPIOA, GPIO_PinSource8);
 
       /* Configure Key Button EXTI Line to generate an interrupt on falling edge */  
       EXTI_InitStructure.EXTI_Line = EXTI_Line8 ;

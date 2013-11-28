@@ -46,12 +46,17 @@
 
 void EXTI9_5_IRQHandler(void){
    if(EXTI_GetITStatus(EXTI_Line8) != RESET)  {
-    //if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_8)==0) {
-        if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_9)==0)
-            val = val -50;
-        else
-           val = val +50;
-        
+  
+    state = GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_9);
+  
+    if(state == 1)
+    {
+        val = val -50;
+    }
+    else
+    {
+       val = val +50;
+    }
         TIM3->CCR1 = val;
    // }
     EXTI_ClearITPendingBit(EXTI_Line8);
@@ -94,13 +99,13 @@ void TIM4_IRQHandler(void)
     }
 }
 
-void TIM3_IRQHandler(void)
+void TIM2_IRQHandler(void)
 {
 
-  if(TIM_GetFlagStatus(TIM3, TIM_IT_Update) == SET)
+  if(TIM_GetFlagStatus(TIM2, TIM_IT_Update) == SET)
    {
     
-  TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
+  TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
    sys_time++;
    }
 }
