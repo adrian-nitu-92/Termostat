@@ -5,10 +5,19 @@
 *.hex
 *.map
 *.ld
+*.rapp
+*.ld
+*.ctx
+*.dbi
+*.elf
+*.xdb
+
 
 # Libraries
 *.lib
 *.a
+
+*.xml
 
 # Shared objects (inc. Windows DLLs)
 *.dll
