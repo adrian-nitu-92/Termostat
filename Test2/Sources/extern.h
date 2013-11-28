@@ -14,4 +14,3 @@ extern s32 alive_time;
 extern s16 hmc_mag[3];
 extern u8 hmc_new_mag;
 extern float hmc_temp;
-extern volatile u16 val;

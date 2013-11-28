@@ -1,12 +1,84 @@
 
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\stm32f10x_it.o:     file format elf32-littlearm
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\stm32f10x_it.o
+C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o:     file format elf32-littlearm
+C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
 
+Disassembly of section .text.update:
+
+00000000 <update>:
+update():
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:70
+    EXTI_ClearITPendingBit(EXTI_Line8);
+  }
+}
+
+void update(float t)
+{
+   0:	e92d 4370 	stmdb	sp!, {r4, r5, r6, r8, r9, lr}
+   4:	4681      	mov	r9, r0
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:71
+    aux_temp = ((counter * aux_temp) + t)/(counter+1);    
+   6:	f240 0400 	movw	r4, #0	; 0x0
+   a:	f2c0 0400 	movt	r4, #0	; 0x0
+   e:	6820      	ldr	r0, [r4, #0]
+  10:	f240 0500 	movw	r5, #0	; 0x0
+  14:	f2c0 0500 	movt	r5, #0	; 0x0
+  18:	682e      	ldr	r6, [r5, #0]
+  1a:	f8d4 8000 	ldr.w	r8, [r4]
+  1e:	f7ff fffe 	bl	0 <__aeabi_i2f>
+  22:	4631      	mov	r1, r6
+  24:	f7ff fffe 	bl	0 <__aeabi_fmul>
+  28:	4649      	mov	r1, r9
+  2a:	f7ff fffe 	bl	0 <__aeabi_fadd>
+  2e:	4606      	mov	r6, r0
+  30:	f108 0001 	add.w	r0, r8, #1	; 0x1
+  34:	f7ff fffe 	bl	0 <__aeabi_i2f>
+  38:	4601      	mov	r1, r0
+  3a:	4630      	mov	r0, r6
+  3c:	f7ff fffe 	bl	0 <__aeabi_fdiv>
+  40:	6028      	str	r0, [r5, #0]
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:72
+    counter = (++counter)%20;
+  42:	6823      	ldr	r3, [r4, #0]
+  44:	f103 0301 	add.w	r3, r3, #1	; 0x1
+  48:	6023      	str	r3, [r4, #0]
+  4a:	6821      	ldr	r1, [r4, #0]
+  4c:	f246 6367 	movw	r3, #26215	; 0x6667
+  50:	f2c6 6366 	movt	r3, #26214	; 0x6666
+  54:	fb83 2301 	smull	r2, r3, r3, r1
+  58:	ea4f 72e1 	mov.w	r2, r1, asr #31
+  5c:	ebc2 02e3 	rsb	r2, r2, r3, asr #3
+  60:	ea4f 0382 	mov.w	r3, r2, lsl #2
+  64:	ea4f 1202 	mov.w	r2, r2, lsl #4
+  68:	4413      	add	r3, r2
+  6a:	ebc3 0201 	rsb	r2, r3, r1
+  6e:	6022      	str	r2, [r4, #0]
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:73
+    if(counter == 0)
+  70:	6823      	ldr	r3, [r4, #0]
+  72:	b963      	cbnz	r3, 8e <update+0x8e>
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:75
+    {
+        Temp = aux_temp;
+  74:	f240 0300 	movw	r3, #0	; 0x0
+  78:	f2c0 0300 	movt	r3, #0	; 0x0
+  7c:	681a      	ldr	r2, [r3, #0]
+  7e:	f240 0300 	movw	r3, #0	; 0x0
+  82:	f2c0 0300 	movt	r3, #0	; 0x0
+  86:	601a      	str	r2, [r3, #0]
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:76
+        READ_flag = 1;
+  88:	f04f 0201 	mov.w	r2, #1	; 0x1
+  8c:	711a      	strb	r2, [r3, #4]
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:78
+    }
+}
+  8e:	e8bd 8370 	ldmia.w	sp!, {r4, r5, r6, r8, r9, pc}
+  92:	46c0      	nop			(mov r8, r8)
 Disassembly of section .text.TIM2_IRQHandler:
 
 00000000 <TIM2_IRQHandler>:
 TIM2_IRQHandler():
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:103
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:117
   }
     }
 }
@@ -14,7 +86,7 @@ D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:103
 void TIM2_IRQHandler(void)
 {
    0:	b510      	push	{r4, lr}
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:105
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:119
 
   if(TIM_GetFlagStatus(TIM2, TIM_IT_Update) == SET)
    2:	f04f 4080 	mov.w	r0, #1073741824	; 0x40000000
@@ -22,21 +94,21 @@ D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:105
    a:	f7ff fffe 	bl	0 <TIM_GetFlagStatus>
    e:	2801      	cmp	r0, #1
   10:	d10d      	bne.n	2e <TIM2_IRQHandler+0x2e>
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:108
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:122
    {
     
-  TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+   TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
   12:	f04f 4080 	mov.w	r0, #1073741824	; 0x40000000
   16:	f04f 0101 	mov.w	r1, #1	; 0x1
   1a:	f7ff fffe 	bl	0 <TIM_ClearITPendingBit>
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:109
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:123
    sys_time++;
   1e:	f240 0200 	movw	r2, #0	; 0x0
   22:	f2c0 0200 	movt	r2, #0	; 0x0
   26:	6813      	ldr	r3, [r2, #0]
   28:	f103 0301 	add.w	r3, r3, #1	; 0x1
   2c:	6013      	str	r3, [r2, #0]
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:111
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:125
    }
 }
   2e:	bd10      	pop	{r4, pc}
@@ -44,7 +116,7 @@ Disassembly of section .text.TIM4_IRQHandler:
 
 00000000 <TIM4_IRQHandler>:
 TIM4_IRQHandler():
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:74
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:88
 * Input          : None
 * Output         : None
 * Return         : None
@@ -52,7 +124,7 @@ D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:74
 void TIM4_IRQHandler(void)
 {
    0:	e92d 4370 	stmdb	sp!, {r4, r5, r6, r8, r9, lr}
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:77
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:91
  /* Clear TIM2 Capture compare interrupt pending bit */
 
   if(TIM_GetFlagStatus(TIM4, TIM_FLAG_CC2) == SET)
@@ -61,8 +133,8 @@ D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:77
    c:	f04f 0104 	mov.w	r1, #4	; 0x4
   10:	f7ff fffe 	bl	0 <TIM_GetFlagStatus>
   14:	2801      	cmp	r0, #1
-  16:	d167      	bne.n	e8 <TIM4_IRQHandler+0xe8>
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:80
+  16:	d164      	bne.n	e2 <TIM4_IRQHandler+0xe2>
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:94
    {
     
   TIM_ClearITPendingBit(TIM4, TIM_IT_CC2);
@@ -71,7 +143,7 @@ D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:80
   20:	4620      	mov	r0, r4
   22:	f04f 0104 	mov.w	r1, #4	; 0x4
   26:	f7ff fffe 	bl	0 <TIM_ClearITPendingBit>
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:83
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:97
 
   /* Get the Input Capture value */
   IC2Value = TIM_GetCapture2(TIM4);
@@ -79,15 +151,15 @@ D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:83
   2c:	f7ff fffe 	bl	0 <TIM_GetCapture2>
   30:	f240 0300 	movw	r3, #0	; 0x0
   34:	f2c0 0300 	movt	r3, #0	; 0x0
-  38:	8018      	strh	r0, [r3, #0]
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:85
+  38:	80d8      	strh	r0, [r3, #6]
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:99
 
   if (IC2Value != 0)
-  3a:	881b      	ldrh	r3, [r3, #0]
+  3a:	88db      	ldrh	r3, [r3, #6]
   3c:	b29b      	uxth	r3, r3
   3e:	2b00      	cmp	r3, #0
-  40:	d048      	beq.n	d4 <TIM4_IRQHandler+0xd4>
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:88
+  40:	d045      	beq.n	ce <TIM4_IRQHandler+0xce>
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:102
   {
     /* Duty cycle computation */
     DutyCycle = 100 - (TIM_GetCapture1(TIM4) * 100.0)/ IC2Value;
@@ -96,7 +168,7 @@ D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:88
   4a:	f7ff fffe 	bl	0 <TIM_GetCapture1>
   4e:	f240 0500 	movw	r5, #0	; 0x0
   52:	f2c0 0500 	movt	r5, #0	; 0x0
-  56:	882c      	ldrh	r4, [r5, #0]
+  56:	88ec      	ldrh	r4, [r5, #6]
   58:	b2a4      	uxth	r4, r4
   5a:	f7ff fffe 	bl	0 <__aeabi_i2d>
   5e:	f04f 0200 	mov.w	r2, #0	; 0x0
@@ -117,60 +189,55 @@ D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:88
   8c:	f2c4 0359 	movt	r3, #16473	; 0x4059
   90:	f7ff fffe 	bl	0 <__aeabi_dadd>
   94:	f7ff fffe 	bl	0 <__aeabi_d2f>
-  98:	6068      	str	r0, [r5, #4]
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:89
-    Temp = (DutyCycle - 32) / 0.47;
-  9a:	6868      	ldr	r0, [r5, #4]
+  98:	60a8      	str	r0, [r5, #8]
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:103
+    update((DutyCycle - 32) / 0.47);
+  9a:	68a8      	ldr	r0, [r5, #8]
   9c:	f04f 4184 	mov.w	r1, #1107296256	; 0x42000000
   a0:	f7ff fffe 	bl	0 <__aeabi_fsub>
   a4:	f7ff fffe 	bl	0 <__aeabi_f2d>
-  a8:	a311      	add	r3, pc, #68	(adr r3, f0 <TIM4_IRQHandler+0xf0>)
+  a8:	a30f      	add	r3, pc, #60	(adr r3, e8 <TIM4_IRQHandler+0xe8>)
   aa:	e9d3 2300 	ldrd	r2, r3, [r3]
   ae:	f7ff fffe 	bl	0 <__aeabi_ddiv>
   b2:	f7ff fffe 	bl	0 <__aeabi_d2f>
-  b6:	60a8      	str	r0, [r5, #8]
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:90
-    TempInt = Temp;
-  b8:	68a8      	ldr	r0, [r5, #8]
-  ba:	f7ff fffe 	bl	0 <__aeabi_f2iz>
-  be:	60e8      	str	r0, [r5, #12]
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:92
+  b6:	f7ff fffe 	bl	0 <TIM4_IRQHandler>
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:106
+    
     /* Frequency computation */
     Frequency = 72000000 / IC2Value;
-  c0:	882a      	ldrh	r2, [r5, #0]
-  c2:	b292      	uxth	r2, r2
-  c4:	f24a 2300 	movw	r3, #41472	; 0xa200
-  c8:	f2c0 434a 	movt	r3, #1098	; 0x44a
-  cc:	fb93 f3f2 	sdiv	r3, r3, r2
-  d0:	612b      	str	r3, [r5, #16]
-  d2:	e009      	b.n	e8 <TIM4_IRQHandler+0xe8>
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:96
+  ba:	88ea      	ldrh	r2, [r5, #6]
+  bc:	b292      	uxth	r2, r2
+  be:	f24a 2300 	movw	r3, #41472	; 0xa200
+  c2:	f2c0 434a 	movt	r3, #1098	; 0x44a
+  c6:	fb93 f3f2 	sdiv	r3, r3, r2
+  ca:	60eb      	str	r3, [r5, #12]
+  cc:	e009      	b.n	e2 <TIM4_IRQHandler+0xe2>
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:110
   }
   else
   {
     DutyCycle = 0;
-  d4:	f240 0300 	movw	r3, #0	; 0x0
-  d8:	f2c0 0300 	movt	r3, #0	; 0x0
-  dc:	f04f 0200 	mov.w	r2, #0	; 0x0
-  e0:	605a      	str	r2, [r3, #4]
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:97
+  ce:	f240 0300 	movw	r3, #0	; 0x0
+  d2:	f2c0 0300 	movt	r3, #0	; 0x0
+  d6:	f04f 0200 	mov.w	r2, #0	; 0x0
+  da:	609a      	str	r2, [r3, #8]
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:111
     Frequency = 0;
-  e2:	f04f 0200 	mov.w	r2, #0	; 0x0
-  e6:	611a      	str	r2, [r3, #16]
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:100
+  dc:	f04f 0200 	mov.w	r2, #0	; 0x0
+  e0:	60da      	str	r2, [r3, #12]
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:114
   }
     }
 }
-  e8:	e8bd 8370 	ldmia.w	sp!, {r4, r5, r6, r8, r9, pc}
-  ec:	46c0      	nop			(mov r8, r8)
-  ee:	46c0      	nop			(mov r8, r8)
-  f0:	e147ae14 	.word	0xe147ae14
-  f4:	3fde147a 	.word	0x3fde147a
+  e2:	e8bd 8370 	ldmia.w	sp!, {r4, r5, r6, r8, r9, pc}
+  e6:	46c0      	nop			(mov r8, r8)
+  e8:	e147ae14 	.word	0xe147ae14
+  ec:	3fde147a 	.word	0x3fde147a
 Disassembly of section .text.EXTI9_5_IRQHandler:
 
 00000000 <EXTI9_5_IRQHandler>:
 EXTI9_5_IRQHandler():
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:47
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:51
 * Input          : None
 * Output         : None
 * Return         : None
@@ -178,12 +245,12 @@ D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:47
 
 void EXTI9_5_IRQHandler(void){
    0:	b510      	push	{r4, lr}
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:48
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:52
    if(EXTI_GetITStatus(EXTI_Line8) != RESET)  {
    2:	f44f 7080 	mov.w	r0, #256	; 0x100
    6:	f7ff fffe 	bl	0 <EXTI_GetITStatus>
-   a:	b388      	cbz	r0, 70 <EXTI9_5_IRQHandler+0x70>
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:50
+   a:	b360      	cbz	r0, 66 <EXTI9_5_IRQHandler+0x66>
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:54
   
     state = GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_9);
    c:	f640 0000 	movw	r0, #2048	; 0x800
@@ -193,50 +260,43 @@ D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:50
   1c:	f240 0300 	movw	r3, #0	; 0x0
   20:	f2c0 0300 	movt	r3, #0	; 0x0
   24:	7018      	strb	r0, [r3, #0]
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:52
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:56
   
     if(state == 1)
   26:	781b      	ldrb	r3, [r3, #0]
   28:	2b01      	cmp	r3, #1
-  2a:	d109      	bne.n	40 <EXTI9_5_IRQHandler+0x40>
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:54
+  2a:	d10a      	bne.n	42 <EXTI9_5_IRQHandler+0x42>
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:58
     {
-        val = val -50;
-  2c:	f240 0200 	movw	r2, #0	; 0x0
-  30:	f2c0 0200 	movt	r2, #0	; 0x0
-  34:	8813      	ldrh	r3, [r2, #0]
-  36:	f1a3 0332 	sub.w	r3, r3, #50	; 0x32
-  3a:	b29b      	uxth	r3, r3
-  3c:	8013      	strh	r3, [r2, #0]
-  3e:	e008      	b.n	52 <EXTI9_5_IRQHandler+0x52>
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:58
+        val = val - 0.5;
+  2c:	f240 0400 	movw	r4, #0	; 0x0
+  30:	f2c0 0400 	movt	r4, #0	; 0x0
+  34:	6820      	ldr	r0, [r4, #0]
+  36:	f04f 517c 	mov.w	r1, #1056964608	; 0x3f000000
+  3a:	f7ff fffe 	bl	0 <__aeabi_fsub>
+  3e:	6020      	str	r0, [r4, #0]
+  40:	e009      	b.n	56 <EXTI9_5_IRQHandler+0x56>
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:62
     }
     else
     {
-       val = val +50;
-  40:	f240 0200 	movw	r2, #0	; 0x0
-  44:	f2c0 0200 	movt	r2, #0	; 0x0
-  48:	8813      	ldrh	r3, [r2, #0]
-  4a:	f103 0332 	add.w	r3, r3, #50	; 0x32
-  4e:	b29b      	uxth	r3, r3
-  50:	8013      	strh	r3, [r2, #0]
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:60
+       val = val + 0.5;
+  42:	f240 0400 	movw	r4, #0	; 0x0
+  46:	f2c0 0400 	movt	r4, #0	; 0x0
+  4a:	6820      	ldr	r0, [r4, #0]
+  4c:	f04f 517c 	mov.w	r1, #1056964608	; 0x3f000000
+  50:	f7ff fffe 	bl	0 <__aeabi_fadd>
+  54:	6020      	str	r0, [r4, #0]
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:64
     }
-        TIM3->CCR1 = val;
-  52:	f240 0300 	movw	r3, #0	; 0x0
-  56:	f2c0 0300 	movt	r3, #0	; 0x0
-  5a:	881a      	ldrh	r2, [r3, #0]
-  5c:	b292      	uxth	r2, r2
-  5e:	f240 4300 	movw	r3, #1024	; 0x400
-  62:	f2c4 0300 	movt	r3, #16384	; 0x4000
-  66:	869a      	strh	r2, [r3, #52]
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:62
-   // }
+    TimeoutSet2(1000);
+  56:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+  5a:	f7ff fffe 	bl	0 <TimeoutSet2>
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:65
     EXTI_ClearITPendingBit(EXTI_Line8);
-  68:	f44f 7080 	mov.w	r0, #256	; 0x100
-  6c:	f7ff fffe 	bl	0 <EXTI_ClearITPendingBit>
-D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Sources/stm32f10x_it.c:64
+  5e:	f44f 7080 	mov.w	r0, #256	; 0x100
+  62:	f7ff fffe 	bl	0 <EXTI_ClearITPendingBit>
+C:\Users\Adrian\Desktop\Termostat\Test2\Sources/stm32f10x_it.c:67
   }
 }
-  70:	bd10      	pop	{r4, pc}
-  72:	46c0      	nop			(mov r8, r8)
+  66:	bd10      	pop	{r4, pc}

@@ -54,7 +54,7 @@ void TimeoutSet(s32 timeout){
 }
 
 void TimeoutSet2(s32 timeout2){
-    sys_timeout2 = sys_time2+timeout2;
+    sys_timeout2 = sys_time+timeout2;
 }
 
 
@@ -65,7 +65,7 @@ u8 TimeoutExp(void){
 }
 
 u8 TimeoutExp2(void){
-    if (sys_time2 >= sys_timeout2)
+    if (sys_time >= sys_timeout2)
         return 1;
     return 0;
 }

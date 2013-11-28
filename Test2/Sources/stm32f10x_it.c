@@ -27,7 +27,11 @@
  volatile float DutyCycle = 0;
  vu32 Frequency = 0;
  volatile float Temp = 0;
+ volatile float val = 25.0;
  volatile int TempInt = 0;
+ volatile u8 READ_flag = 0;
+ volatile int counter;
+ volatile float aux_temp;
  
  vu8 state;
  //vu16 val = 0; 
@@ -51,16 +55,26 @@ void EXTI9_5_IRQHandler(void){
   
     if(state == 1)
     {
-        val = val -50;
+        val = val - 0.5;
     }
     else
     {
-       val = val +50;
+       val = val + 0.5;
     }
-        TIM3->CCR1 = val;
-   // }
+    TimeoutSet2(1000);
     EXTI_ClearITPendingBit(EXTI_Line8);
   }
+}
+
+void update(float t)
+{
+    aux_temp = ((counter * aux_temp) + t)/(counter+1);    
+    counter = (++counter)%20;
+    if(counter == 0)
+    {
+        Temp = aux_temp;
+        READ_flag = 1;
+    }
 }
 
 /*******************************************************************************
@@ -86,8 +100,8 @@ void TIM4_IRQHandler(void)
   {
     /* Duty cycle computation */
     DutyCycle = 100 - (TIM_GetCapture1(TIM4) * 100.0)/ IC2Value;
-    Temp = (DutyCycle - 32) / 0.47;
-    TempInt = Temp;
+    update((DutyCycle - 32) / 0.47);
+    
     /* Frequency computation */
     Frequency = 72000000 / IC2Value;
   }
@@ -105,7 +119,7 @@ void TIM2_IRQHandler(void)
   if(TIM_GetFlagStatus(TIM2, TIM_IT_Update) == SET)
    {
     
-  TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+   TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
    sys_time++;
    }
 }

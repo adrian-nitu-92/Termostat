@@ -43,8 +43,9 @@ extern vu32 Frequency ;
 extern int TempInt;
 extern float Temp;
 
-volatile u16 val=0;
-volatile int test = 2;
+extern volatile u8 READ_flag;
+
+extern float val;
 
 /* Private function prototypes -----------------------------------------------*/
 void RCC_Configuration(void);
@@ -54,6 +55,7 @@ void WriteLCD(float);
 void RCC_TIMConfig(void);
 void EXTI_Config(void);
 void LCDInit(void);
+u16 PID_val();
 
 /* Private functions ---------------------------------------------------------*/
 
@@ -83,12 +85,28 @@ int main(void)
   InitSysTick();
   //LCDInit();
  
+  float printMe;
   while (1)
   { 
-    //wasteTime(500);
-    WriteLCD(Temp);  
+    if(TimeoutExp2() == 0)
+       printMe = val;
+    else
+        printMe = Temp;
+    WriteLCD(printMe);
+    if(READ_flag)
+        TIM3->CCR1 = PID_val(); 
+    wasteTime(300);
   }
 }
+
+u16 PID_val()
+{
+    u16 ret;
+    ret = 80*(val - Temp)/100;
+    ret = 80 - ret;
+    return ret;
+}
+
 
 /*******************************************************************************
 * Function Name  : RCC_Configuration
@@ -269,10 +287,14 @@ void RCC_TIMConfig(void)
 
 
       /* Time base configuration */
-  TIM_TimeBaseStructure.TIM_Period = 999;
-  TIM_TimeBaseStructure.TIM_Prescaler = 0;
+  TIM_TimeBaseStructure.TIM_Period = 79; //se face +1
+  TIM_TimeBaseStructure.TIM_Prescaler = 35;//se face +1
   TIM_TimeBaseStructure.TIM_ClockDivision = 0;
   TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+  // t = 0.5 micro ( 72MHz/36 = 2MHz )
+  // frecv PWM vrem sa fie 25 khz ( 2MHz / 25 KHz ) =>
+  // T = 80 pasi
+  
 
   TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);
 
@@ -538,7 +560,6 @@ void WriteLCD(float t)
         // }
 
     
-    wasteTime(500);
     GPIO_WriteBit(GPIOA, GPIO_Pin_4, Bit_SET);
 }
 
