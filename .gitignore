@@ -1,6 +1,10 @@
 # Object files
 *.o
 *.ko
+*.lst
+*.hex
+*.map
+*.ld
 
 # Libraries
 *.lib

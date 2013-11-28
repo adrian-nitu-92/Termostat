@@ -1,12 +1,12 @@
 
-C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o:     file format elf32-littlearm
-C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\system_stm32f10x.o:     file format elf32-littlearm
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\system_stm32f10x.o
 
 Disassembly of section .text.SystemCoreClockUpdate:
 
 00000000 <SystemCoreClockUpdate>:
 SystemCoreClockUpdate():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:326
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:326
 #if defined (STM32F10X_LD_VL) || defined (STM32F10X_MD_VL) || defined (STM32F10X_HD_VL)
   uint32_t prediv1factor = 0;
 #endif /* STM32F10X_LD_VL or STM32F10X_MD_VL or STM32F10X_HD_VL */
@@ -16,12 +16,12 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
    0:	f241 0300 	movw	r3, #4096	; 0x1000
    4:	f2c4 0302 	movt	r3, #16386	; 0x4002
    8:	685b      	ldr	r3, [r3, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:328
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:328
   
   switch (tmp)
    a:	f003 030c 	and.w	r3, r3, #12	; 0xc
    e:	2b04      	cmp	r3, #4
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:334
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:334
   {
     case 0x00:  /* HSI used as system clock */
       SystemCoreClock = HSI_VALUE;
@@ -35,7 +35,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   1e:	f2c0 027a 	movteq	r2, #122	; 0x7a
   22:	bf08      	it	eq
   24:	601a      	streq	r2, [r3, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:328
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:328
 #endif /* STM32F10X_LD_VL or STM32F10X_MD_VL or STM32F10X_HD_VL */
     
   /* Get SYSCLK source -------------------------------------------------------*/
@@ -47,7 +47,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   2a:	d00b      	beq.n	44 <SystemCoreClockUpdate+0x44>
   2c:	2b00      	cmp	r3, #0
   2e:	d143      	bne.n	b8 <SystemCoreClockUpdate+0xb8>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:331
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:331
   {
     case 0x00:  /* HSI used as system clock */
       SystemCoreClock = HSI_VALUE;
@@ -57,7 +57,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   3c:	f2c0 027a 	movt	r2, #122	; 0x7a
   40:	601a      	str	r2, [r3, #0]
   42:	e042      	b.n	ca <SystemCoreClockUpdate+0xca>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:339
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:339
       SystemCoreClock = HSE_VALUE;
       break;
     case 0x08:  /* PLL used as system clock */
@@ -67,21 +67,21 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   44:	f241 0300 	movw	r3, #4096	; 0x1000
   48:	f2c4 0302 	movt	r3, #16386	; 0x4002
   4c:	685a      	ldr	r2, [r3, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:340
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:340
       pllsource = RCC->CFGR & RCC_CFGR_PLLSRC;
   4e:	685b      	ldr	r3, [r3, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:343
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:343
       
 #ifndef STM32F10X_CL      
       pllmull = ( pllmull >> 18) + 2;
   50:	f402 1270 	and.w	r2, r2, #3932160	; 0x3c0000
   54:	ea4f 4292 	mov.w	r2, r2, lsr #18
   58:	f102 0102 	add.w	r1, r2, #2	; 0x2
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:345
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:345
       
       if (pllsource == 0x00)
   5c:	f413 3f80 	tst.w	r3, #65536	; 0x10000
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:348
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:348
       {
         /* HSI oscillator clock divided by 2 selected as PLL clock entry */
         SystemCoreClock = (HSI_VALUE >> 1) * pllmull;
@@ -93,7 +93,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   72:	bf04      	itt	eq
   74:	434b      	muleq	r3, r1
   76:	6013      	streq	r3, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:345
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:345
       pllsource = RCC->CFGR & RCC_CFGR_PLLSRC;
       
 #ifndef STM32F10X_CL      
@@ -101,7 +101,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
       
       if (pllsource == 0x00)
   78:	d027      	beq.n	ca <SystemCoreClockUpdate+0xca>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:358
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:358
        prediv1factor = (RCC->CFGR2 & RCC_CFGR2_PREDIV1) + 1;
        /* HSE oscillator clock selected as PREDIV1 clock entry */
        SystemCoreClock = (HSE_VALUE / prediv1factor) * pllmull; 
@@ -112,7 +112,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   7e:	f2c4 0302 	movt	r3, #16386	; 0x4002
   82:	685b      	ldr	r3, [r3, #4]
   84:	f413 3f00 	tst.w	r3, #131072	; 0x20000
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:360
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:360
         {/* HSE oscillator clock divided by 2 */
           SystemCoreClock = (HSE_VALUE >> 1) * pllmull;
   88:	bf1f      	itttt	ne
@@ -123,7 +123,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   9a:	bf19      	ittee	ne
   9c:	434b      	mulne	r3, r1
   9e:	6013      	strne	r3, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:364
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:364
         }
         else
         {
@@ -136,7 +136,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   b2:	434b      	muleq	r3, r1
   b4:	6013      	streq	r3, [r2, #0]
   b6:	e008      	b.n	ca <SystemCoreClockUpdate+0xca>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:410
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:410
       }
 #endif /* STM32F10X_CL */ 
       break;
@@ -148,7 +148,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   c0:	f241 2200 	movw	r2, #4608	; 0x1200
   c4:	f2c0 027a 	movt	r2, #122	; 0x7a
   c8:	601a      	str	r2, [r3, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:416
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:416
       break;
   }
   
@@ -163,20 +163,20 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   dc:	f2c0 0200 	movt	r2, #0	; 0x0
   e0:	eb02 1313 	add.w	r3, r2, r3, lsr #4
   e4:	7919      	ldrb	r1, [r3, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:418
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:418
   /* HCLK clock frequency */
   SystemCoreClock >>= tmp;  
   e6:	6813      	ldr	r3, [r2, #0]
   e8:	fa23 f301 	lsr.w	r3, r3, r1
   ec:	6013      	str	r3, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:419
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:419
 }
   ee:	4770      	bx	lr
 Disassembly of section .text.SystemInit:
 
 00000000 <SystemInit>:
 SystemInit():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:219
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:219
   * @note   This function should be used only after reset.
   * @param  None
   * @retval None
@@ -184,7 +184,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
 void SystemInit (void)
 {
    0:	b082      	sub	sp, #8
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:222
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:222
   /* Reset the RCC clock configuration to the default reset state(for debug purpose) */
   /* Set HSION bit */
   RCC->CR |= (uint32_t)0x00000001;
@@ -193,7 +193,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
    a:	6813      	ldr	r3, [r2, #0]
    c:	f043 0301 	orr.w	r3, r3, #1	; 0x1
   10:	6013      	str	r3, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:226
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:226
 
   /* Reset SW, HPRE, PPRE1, PPRE2, ADCPRE and MCO bits */
 #ifndef STM32F10X_CL
@@ -203,7 +203,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   18:	f6cf 03ff 	movt	r3, #63743	; 0xf8ff
   1c:	ea01 0103 	and.w	r1, r1, r3
   20:	6051      	str	r1, [r2, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:232
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:232
 #else
   RCC->CFGR &= (uint32_t)0xF0FF0000;
 #endif /* STM32F10X_CL */   
@@ -215,21 +215,21 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   28:	f6cf 63f6 	movt	r3, #65270	; 0xfef6
   2c:	ea01 0103 	and.w	r1, r1, r3
   30:	6011      	str	r1, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:235
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:235
 
   /* Reset HSEBYP bit */
   RCC->CR &= (uint32_t)0xFFFBFFFF;
   32:	6813      	ldr	r3, [r2, #0]
   34:	f423 2380 	bic.w	r3, r3, #262144	; 0x40000
   38:	6013      	str	r3, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:238
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:238
 
   /* Reset PLLSRC, PLLXTPRE, PLLMUL and USBPRE/OTGFSPRE bits */
   RCC->CFGR &= (uint32_t)0xFF80FFFF;
   3a:	6853      	ldr	r3, [r2, #4]
   3c:	f423 03fe 	bic.w	r3, r3, #8323072	; 0x7f0000
   40:	6053      	str	r3, [r2, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:257
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:257
 
   /* Reset CFGR2 register */
   RCC->CFGR2 = 0x00000000;      
@@ -239,7 +239,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   42:	f44f 031f 	mov.w	r3, #10420224	; 0x9f0000
   46:	6093      	str	r3, [r2, #8]
 SetSysClockTo72():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:996
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:996
   * @param  None
   * @retval None
   */
@@ -249,7 +249,7 @@ static void SetSysClockTo72(void)
   48:	f5a3 031f 	sub.w	r3, r3, #10420224	; 0x9f0000
   4c:	9301      	str	r3, [sp, #4]
   4e:	9300      	str	r3, [sp, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1001
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1001
   
  // /* SYSCLK, HCLK, PCLK2 and PCLK1 configuration ---------------------------*/    
  // /* Enable HSE */  
@@ -258,7 +258,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   50:	6813      	ldr	r3, [r2, #0]
   52:	f443 3380 	orr.w	r3, r3, #65536	; 0x10000
   56:	6013      	str	r3, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1006
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1006
  
   /* Wait till HSE is ready and if Time out is reached exit */
   do
@@ -270,46 +270,46 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   62:	6813      	ldr	r3, [r2, #0]
   64:	f403 3300 	and.w	r3, r3, #131072	; 0x20000
   68:	9300      	str	r3, [sp, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1007
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1007
     StartUpCounter++;  
   6a:	9b01      	ldr	r3, [sp, #4]
   6c:	f103 0301 	add.w	r3, r3, #1	; 0x1
   70:	9301      	str	r3, [sp, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1008
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1008
   } while((HSEStatus == 0) && (StartUpCounter != HSE_STARTUP_TIMEOUT));
   72:	9b00      	ldr	r3, [sp, #0]
   74:	b91b      	cbnz	r3, 7e <SystemInit+0x7e>
   76:	9b01      	ldr	r3, [sp, #4]
   78:	f5b3 6fa0 	cmp.w	r3, #1280	; 0x500
   7c:	d1f1      	bne.n	62 <SystemInit+0x62>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1010
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1010
 
   if ((RCC->CR & RCC_CR_HSERDY) != RESET)
   7e:	f241 0300 	movw	r3, #4096	; 0x1000
   82:	f2c4 0302 	movt	r3, #16386	; 0x4002
   86:	681b      	ldr	r3, [r3, #0]
   88:	f413 3f00 	tst.w	r3, #131072	; 0x20000
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1012
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1012
   {
     HSEStatus = (uint32_t)0x01;
   8c:	bf19      	ittee	ne
   8e:	2301      	movne	r3, #1
   90:	9300      	strne	r3, [sp, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1016
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1016
   }
   else
   {
     HSEStatus = (uint32_t)0x00;
   92:	2300      	moveq	r3, #0
   94:	9300      	streq	r3, [sp, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1019
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1019
   }  
 
   if (HSEStatus == (uint32_t)0x01)
   96:	9b00      	ldr	r3, [sp, #0]
   98:	2b01      	cmp	r3, #1
   9a:	d146      	bne.n	12a <SystemInit+0x12a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1022
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1022
   {
     /* Enable Prefetch Buffer */
     FLASH->ACR |= FLASH_ACR_PRFTBE;
@@ -318,19 +318,19 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   a4:	6813      	ldr	r3, [r2, #0]
   a6:	f043 0310 	orr.w	r3, r3, #16	; 0x10
   aa:	6013      	str	r3, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1025
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1025
 
     /* Flash 2 wait state */
     FLASH->ACR &= (uint32_t)((uint32_t)~FLASH_ACR_LATENCY);
   ac:	6813      	ldr	r3, [r2, #0]
   ae:	f023 0303 	bic.w	r3, r3, #3	; 0x3
   b2:	6013      	str	r3, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1026
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1026
     FLASH->ACR |= (uint32_t)FLASH_ACR_LATENCY_2;    
   b4:	6813      	ldr	r3, [r2, #0]
   b6:	f043 0302 	orr.w	r3, r3, #2	; 0x2
   ba:	6013      	str	r3, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1030
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1030
 
  
     /* HCLK = SYSCLK */
@@ -339,20 +339,20 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   c0:	f2c4 0202 	movt	r2, #16386	; 0x4002
   c4:	6853      	ldr	r3, [r2, #4]
   c6:	6053      	str	r3, [r2, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1033
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1033
       
     /* PCLK2 = HCLK */
     RCC->CFGR |= (uint32_t)RCC_CFGR_PPRE2_DIV1;
   c8:	6853      	ldr	r3, [r2, #4]
   ca:	6053      	str	r3, [r2, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1036
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1036
     
     /* PCLK1 = HCLK */
     RCC->CFGR |= (uint32_t)RCC_CFGR_PPRE1_DIV2;
   cc:	6853      	ldr	r3, [r2, #4]
   ce:	f443 6380 	orr.w	r3, r3, #1024	; 0x400
   d2:	6053      	str	r3, [r2, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1062
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1062
     RCC->CFGR &= (uint32_t)~(RCC_CFGR_PLLXTPRE | RCC_CFGR_PLLSRC | RCC_CFGR_PLLMULL);
     RCC->CFGR |= (uint32_t)(RCC_CFGR_PLLXTPRE_PREDIV1 | RCC_CFGR_PLLSRC_PREDIV1 | 
                             RCC_CFGR_PLLMULL9); 
@@ -362,13 +362,13 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   d4:	6853      	ldr	r3, [r2, #4]
   d6:	f423 137c 	bic.w	r3, r3, #4128768	; 0x3f0000
   da:	6053      	str	r3, [r2, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1064
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1064
                                         RCC_CFGR_PLLMULL));
     RCC->CFGR |= (uint32_t)(RCC_CFGR_PLLSRC_HSE | RCC_CFGR_PLLMULL9);
   dc:	6853      	ldr	r3, [r2, #4]
   de:	f443 13e8 	orr.w	r3, r3, #1900544	; 0x1d0000
   e2:	6053      	str	r3, [r2, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1068
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1068
 #endif /* STM32F10X_CL */
 
     /* Enable PLL */
@@ -376,7 +376,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   e4:	6813      	ldr	r3, [r2, #0]
   e6:	f043 7380 	orr.w	r3, r3, #16777216	; 0x1000000
   ea:	6013      	str	r3, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1071
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1071
 
     /* Wait till PLL is ready */
     while((RCC->CR & RCC_CR_PLLRDY) == 0)
@@ -386,7 +386,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
   f6:	6813      	ldr	r3, [r2, #0]
   f8:	f013 7f00 	tst.w	r3, #33554432	; 0x2000000
   fc:	d0fb      	beq.n	f6 <SystemInit+0xf6>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1076
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1076
     {
     }
     
@@ -397,12 +397,12 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
  106:	6853      	ldr	r3, [r2, #4]
  108:	f023 0303 	bic.w	r3, r3, #3	; 0x3
  10c:	6053      	str	r3, [r2, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1077
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1077
     RCC->CFGR |= (uint32_t)RCC_CFGR_SW_PLL;    
  10e:	6853      	ldr	r3, [r2, #4]
  110:	f043 0302 	orr.w	r3, r3, #2	; 0x2
  114:	6053      	str	r3, [r2, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1080
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:1080
 
     /* Wait till PLL is used as system clock source */
     while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS) != (uint32_t)0x08)
@@ -414,7 +414,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
  126:	2b08      	cmp	r3, #8
  128:	d1fa      	bne.n	120 <SystemInit+0x120>
 SystemInit():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:273
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:273
   SetSysClock();
 
 #ifdef VECT_TAB_SRAM
@@ -425,7 +425,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM
  12e:	f2ce 0300 	movt	r3, #57344	; 0xe000
  132:	f04f 6200 	mov.w	r2, #134217728	; 0x8000000
  136:	609a      	str	r2, [r3, #8]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:276
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x/system_stm32f10x.c:276
 #endif 
 
 }

@@ -1,12 +1,12 @@
 
-C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o:     file format elf32-littlearm
-C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\stm32f10x_gpio.o:     file format elf32-littlearm
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\stm32f10x_gpio.o
 
 Disassembly of section .text.GPIO_Init:
 
 00000000 <GPIO_Init>:
 GPIO_Init():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:174
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:174
   * @param  GPIO_InitStruct: pointer to a GPIO_InitTypeDef structure that
   *         contains the configuration information for the specified GPIO peripheral.
   * @retval None
@@ -16,7 +16,7 @@ void GPIO_Init(GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct)
    0:	e92d 03f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9}
    4:	4606      	mov	r6, r0
    6:	4608      	mov	r0, r1
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:183
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:183
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
   assert_param(IS_GPIO_MODE(GPIO_InitStruct->GPIO_Mode));
   assert_param(IS_GPIO_PIN(GPIO_InitStruct->GPIO_Pin));  
@@ -25,10 +25,10 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   currentmode = ((uint32_t)GPIO_InitStruct->GPIO_Mode) & ((uint32_t)0x0F);
    8:	78cb      	ldrb	r3, [r1, #3]
    a:	f003 070f 	and.w	r7, r3, #15	; 0xf
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:184
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:184
   if ((((uint32_t)GPIO_InitStruct->GPIO_Mode) & ((uint32_t)0x10)) != 0x00)
    e:	f013 0f10 	tst.w	r3, #16	; 0x10
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:189
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:189
   { 
     /* Check the parameters */
     assert_param(IS_GPIO_SPEED(GPIO_InitStruct->GPIO_Speed));
@@ -37,24 +37,24 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   12:	bf1c      	itt	ne
   14:	788b      	ldrbne	r3, [r1, #2]
   16:	431f      	orrne	r7, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:193
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:193
   }
 /*---------------------------- GPIO CRL Configuration ------------------------*/
   /* Configure the eight low port pins */
   if (((uint32_t)GPIO_InitStruct->GPIO_Pin & ((uint32_t)0x00FF)) != 0x00)
   18:	780b      	ldrb	r3, [r1, #0]
   1a:	b33b      	cbz	r3, 6c <GPIO_Init+0x6c>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:195
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:195
   {
     tmpreg = GPIOx->CRL;
   1c:	6834      	ldr	r4, [r6, #0]
   1e:	f04f 0c00 	mov.w	ip, #0	; 0x0
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:198
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:198
     for (pinpos = 0x00; pinpos < 0x08; pinpos++)
     {
       pos = ((uint32_t)0x01) << pinpos;
   22:	f04f 0501 	mov.w	r5, #1	; 0x1
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:206
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:206
       if (currentpin == pos)
       {
         pos = pinpos << 2;
@@ -62,7 +62,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
         pinmask = ((uint32_t)0x0F) << pos;
         tmpreg &= ~pinmask;
   26:	f04f 080f 	mov.w	r8, #15	; 0xf
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:198
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:198
   if (((uint32_t)GPIO_InitStruct->GPIO_Pin & ((uint32_t)0x00FF)) != 0x00)
   {
     tmpreg = GPIOx->CRL;
@@ -70,42 +70,42 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
     {
       pos = ((uint32_t)0x01) << pinpos;
   2a:	fa05 f20c 	lsl.w	r2, r5, ip
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:200
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:200
       /* Get the port pins position */
       currentpin = (GPIO_InitStruct->GPIO_Pin) & pos;
   2e:	8803      	ldrh	r3, [r0, #0]
   30:	ea02 0103 	and.w	r1, r2, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:201
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:201
       if (currentpin == pos)
   34:	4291      	cmp	r1, r2
   36:	d113      	bne.n	60 <GPIO_Init+0x60>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:205
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:205
       {
         pos = pinpos << 2;
         /* Clear the corresponding low control register bits */
         pinmask = ((uint32_t)0x0F) << pos;
   38:	ea4f 028c 	mov.w	r2, ip, lsl #2
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:206
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:206
         tmpreg &= ~pinmask;
   3c:	fa08 f302 	lsl.w	r3, r8, r2
   40:	ea6f 0303 	mvn.w	r3, r3
   44:	ea03 0304 	and.w	r3, r3, r4
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:208
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:208
         /* Write the mode configuration in the corresponding bits */
         tmpreg |= (currentmode << pos);
   48:	fa07 f202 	lsl.w	r2, r7, r2
   4c:	ea43 0402 	orr.w	r4, r3, r2
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:210
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:210
         /* Reset the corresponding ODR bit */
         if (GPIO_InitStruct->GPIO_Mode == GPIO_Mode_IPD)
   50:	78c3      	ldrb	r3, [r0, #3]
   52:	2b28      	cmp	r3, #40
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:212
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:212
         {
           GPIOx->BRR = (((uint32_t)0x01) << pinpos);
   54:	bf08      	it	eq
   56:	6171      	streq	r1, [r6, #20]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:210
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:210
         pinmask = ((uint32_t)0x0F) << pos;
         tmpreg &= ~pinmask;
         /* Write the mode configuration in the corresponding bits */
@@ -113,7 +113,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
         /* Reset the corresponding ODR bit */
         if (GPIO_InitStruct->GPIO_Mode == GPIO_Mode_IPD)
   58:	d002      	beq.n	60 <GPIO_Init+0x60>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:217
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:217
           GPIOx->BRR = (((uint32_t)0x01) << pinpos);
         }
         else
@@ -121,12 +121,12 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
           /* Set the corresponding ODR bit */
           if (GPIO_InitStruct->GPIO_Mode == GPIO_Mode_IPU)
   5a:	2b48      	cmp	r3, #72
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:219
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:219
           {
             GPIOx->BSRR = (((uint32_t)0x01) << pinpos);
   5c:	bf08      	it	eq
   5e:	6131      	streq	r1, [r6, #16]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:196
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:196
 /*---------------------------- GPIO CRL Configuration ------------------------*/
   /* Configure the eight low port pins */
   if (((uint32_t)GPIO_InitStruct->GPIO_Pin & ((uint32_t)0x00FF)) != 0x00)
@@ -136,7 +136,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   60:	f10c 0c01 	add.w	ip, ip, #1	; 0x1
   64:	f1bc 0f08 	cmp.w	ip, #8	; 0x8
   68:	d1df      	bne.n	2a <GPIO_Init+0x2a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:224
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:224
             GPIOx->BSRR = (((uint32_t)0x01) << pinpos);
           }
         }
@@ -144,7 +144,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
     }
     GPIOx->CRL = tmpreg;
   6a:	6034      	str	r4, [r6, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:228
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:228
   }
 /*---------------------------- GPIO CRH Configuration ------------------------*/
   /* Configure the eight high port pins */
@@ -152,17 +152,17 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   6c:	8803      	ldrh	r3, [r0, #0]
   6e:	2bff      	cmp	r3, #255
   70:	d929      	bls.n	c6 <GPIO_Init+0xc6>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:230
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:230
   {
     tmpreg = GPIOx->CRH;
   72:	6875      	ldr	r5, [r6, #4]
   74:	f04f 0c00 	mov.w	ip, #0	; 0x0
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:233
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:233
     for (pinpos = 0x00; pinpos < 0x08; pinpos++)
     {
       pos = (((uint32_t)0x01) << (pinpos + 0x08));
   78:	f04f 0801 	mov.w	r8, #1	; 0x1
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:241
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:241
       if (currentpin == pos)
       {
         pos = pinpos << 2;
@@ -170,7 +170,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
         pinmask = ((uint32_t)0x0F) << pos;
         tmpreg &= ~pinmask;
   7c:	f04f 090f 	mov.w	r9, #15	; 0xf
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:233
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:233
   if (GPIO_InitStruct->GPIO_Pin > 0x00FF)
   {
     tmpreg = GPIOx->CRH;
@@ -179,53 +179,53 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
       pos = (((uint32_t)0x01) << (pinpos + 0x08));
   80:	f10c 0308 	add.w	r3, ip, #8	; 0x8
   84:	fa08 f103 	lsl.w	r1, r8, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:235
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:235
       /* Get the port pins position */
       currentpin = ((GPIO_InitStruct->GPIO_Pin) & pos);
   88:	8803      	ldrh	r3, [r0, #0]
   8a:	ea01 0403 	and.w	r4, r1, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:236
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:236
       if (currentpin == pos)
   8e:	428c      	cmp	r4, r1
   90:	d113      	bne.n	ba <GPIO_Init+0xba>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:240
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:240
       {
         pos = pinpos << 2;
         /* Clear the corresponding high control register bits */
         pinmask = ((uint32_t)0x0F) << pos;
   92:	ea4f 038c 	mov.w	r3, ip, lsl #2
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:241
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:241
         tmpreg &= ~pinmask;
   96:	fa09 f203 	lsl.w	r2, r9, r3
   9a:	ea6f 0202 	mvn.w	r2, r2
   9e:	ea02 0205 	and.w	r2, r2, r5
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:243
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:243
         /* Write the mode configuration in the corresponding bits */
         tmpreg |= (currentmode << pos);
   a2:	fa07 f303 	lsl.w	r3, r7, r3
   a6:	ea42 0503 	orr.w	r5, r2, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:245
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:245
         /* Reset the corresponding ODR bit */
         if (GPIO_InitStruct->GPIO_Mode == GPIO_Mode_IPD)
   aa:	78c3      	ldrb	r3, [r0, #3]
   ac:	2b28      	cmp	r3, #40
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:247
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:247
         {
           GPIOx->BRR = (((uint32_t)0x01) << (pinpos + 0x08));
   ae:	bf08      	it	eq
   b0:	6174      	streq	r4, [r6, #20]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:250
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:250
         }
         /* Set the corresponding ODR bit */
         if (GPIO_InitStruct->GPIO_Mode == GPIO_Mode_IPU)
   b2:	78c3      	ldrb	r3, [r0, #3]
   b4:	2b48      	cmp	r3, #72
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:252
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:252
         {
           GPIOx->BSRR = (((uint32_t)0x01) << (pinpos + 0x08));
   b6:	bf08      	it	eq
   b8:	6131      	streq	r1, [r6, #16]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:231
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:231
 /*---------------------------- GPIO CRH Configuration ------------------------*/
   /* Configure the eight high port pins */
   if (GPIO_InitStruct->GPIO_Pin > 0x00FF)
@@ -235,7 +235,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   ba:	f10c 0c01 	add.w	ip, ip, #1	; 0x1
   be:	f1bc 0f08 	cmp.w	ip, #8	; 0x8
   c2:	d1dd      	bne.n	80 <GPIO_Init+0x80>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:256
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:256
         {
           GPIOx->BSRR = (((uint32_t)0x01) << (pinpos + 0x08));
         }
@@ -243,7 +243,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
     }
     GPIOx->CRH = tmpreg;
   c4:	6075      	str	r5, [r6, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:258
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:258
   }
 }
   c6:	e8bd 03f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9}
@@ -252,7 +252,7 @@ Disassembly of section .text.GPIO_StructInit:
 
 00000000 <GPIO_StructInit>:
 GPIO_StructInit():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:269
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:269
   * @retval None
   */
 void GPIO_StructInit(GPIO_InitTypeDef* GPIO_InitStruct)
@@ -261,22 +261,22 @@ void GPIO_StructInit(GPIO_InitTypeDef* GPIO_InitStruct)
   GPIO_InitStruct->GPIO_Pin  = GPIO_Pin_All;
    0:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
    4:	8003      	strh	r3, [r0, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:270
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:270
   GPIO_InitStruct->GPIO_Speed = GPIO_Speed_2MHz;
    6:	f04f 0302 	mov.w	r3, #2	; 0x2
    a:	7083      	strb	r3, [r0, #2]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:271
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:271
   GPIO_InitStruct->GPIO_Mode = GPIO_Mode_IN_FLOATING;
    c:	f103 0302 	add.w	r3, r3, #2	; 0x2
   10:	70c3      	strb	r3, [r0, #3]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:272
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:272
 }
   12:	4770      	bx	lr
 Disassembly of section .text.GPIO_ReadInputDataBit:
 
 00000000 <GPIO_ReadInputDataBit>:
 GPIO_ReadInputDataBit():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:289
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:289
   
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -285,7 +285,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   if ((GPIOx->IDR & GPIO_Pin) != (uint32_t)Bit_RESET)
    0:	6883      	ldr	r3, [r0, #8]
    2:	4219      	tst	r1, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:298
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:298
   else
   {
     bitstatus = (uint8_t)Bit_RESET;
@@ -300,7 +300,7 @@ Disassembly of section .text.GPIO_ReadInputData:
 
 00000000 <GPIO_ReadInputData>:
 GPIO_ReadInputData():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:310
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:310
 uint16_t GPIO_ReadInputData(GPIO_TypeDef* GPIOx)
 {
   /* Check the parameters */
@@ -308,7 +308,7 @@ uint16_t GPIO_ReadInputData(GPIO_TypeDef* GPIOx)
   
   return ((uint16_t)GPIOx->IDR);
    0:	6880      	ldr	r0, [r0, #8]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:311
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:311
 }
    2:	b280      	uxth	r0, r0
    4:	4770      	bx	lr
@@ -317,7 +317,7 @@ Disassembly of section .text.GPIO_ReadOutputDataBit:
 
 00000000 <GPIO_ReadOutputDataBit>:
 GPIO_ReadOutputDataBit():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:327
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:327
   uint8_t bitstatus = 0x00;
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -326,7 +326,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   if ((GPIOx->ODR & GPIO_Pin) != (uint32_t)Bit_RESET)
    0:	68c3      	ldr	r3, [r0, #12]
    2:	4219      	tst	r1, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:336
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:336
   else
   {
     bitstatus = (uint8_t)Bit_RESET;
@@ -341,7 +341,7 @@ Disassembly of section .text.GPIO_ReadOutputData:
 
 00000000 <GPIO_ReadOutputData>:
 GPIO_ReadOutputData():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:348
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:348
 uint16_t GPIO_ReadOutputData(GPIO_TypeDef* GPIOx)
 {
   /* Check the parameters */
@@ -349,7 +349,7 @@ uint16_t GPIO_ReadOutputData(GPIO_TypeDef* GPIOx)
     
   return ((uint16_t)GPIOx->ODR);
    0:	68c0      	ldr	r0, [r0, #12]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:349
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:349
 }
    2:	b280      	uxth	r0, r0
    4:	4770      	bx	lr
@@ -358,7 +358,7 @@ Disassembly of section .text.GPIO_SetBits:
 
 00000000 <GPIO_SetBits>:
 GPIO_SetBits():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:364
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:364
 {
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -366,14 +366,14 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   
   GPIOx->BSRR = GPIO_Pin;
    0:	6101      	str	r1, [r0, #16]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:365
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:365
 }
    2:	4770      	bx	lr
 Disassembly of section .text.GPIO_ResetBits:
 
 00000000 <GPIO_ResetBits>:
 GPIO_ResetBits():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:380
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:380
 {
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -381,14 +381,14 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   
   GPIOx->BRR = GPIO_Pin;
    0:	6141      	str	r1, [r0, #20]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:381
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:381
 }
    2:	4770      	bx	lr
 Disassembly of section .text.GPIO_WriteBit:
 
 00000000 <GPIO_WriteBit>:
 GPIO_WriteBit():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:401
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:401
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
   assert_param(IS_GET_GPIO_PIN(GPIO_Pin));
@@ -396,18 +396,18 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   
   if (BitVal != Bit_RESET)
    0:	b10a      	cbz	r2, 6 <GPIO_WriteBit+0x6>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:403
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:403
   {
     GPIOx->BSRR = GPIO_Pin;
    2:	6101      	str	r1, [r0, #16]
    4:	e000      	b.n	8 <GPIO_WriteBit+0x8>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:407
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:407
   }
   else
   {
     GPIOx->BRR = GPIO_Pin;
    6:	6141      	str	r1, [r0, #20]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:409
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:409
   }
 }
    8:	4770      	bx	lr
@@ -416,7 +416,7 @@ Disassembly of section .text.GPIO_Write:
 
 00000000 <GPIO_Write>:
 GPIO_Write():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:422
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:422
 void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal)
 {
   /* Check the parameters */
@@ -424,14 +424,14 @@ void GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal)
   
   GPIOx->ODR = PortVal;
    0:	60c1      	str	r1, [r0, #12]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:423
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:423
 }
    2:	4770      	bx	lr
 Disassembly of section .text.GPIO_PinLockConfig:
 
 00000000 <GPIO_PinLockConfig>:
 GPIO_PinLockConfig():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:440
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:440
   
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
@@ -439,34 +439,34 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   
   tmp |= GPIO_Pin;
    0:	f441 3380 	orr.w	r3, r1, #65536	; 0x10000
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:442
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:442
   /* Set LCKK bit */
   GPIOx->LCKR = tmp;
    4:	6183      	str	r3, [r0, #24]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:444
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:444
   /* Reset LCKK bit */
   GPIOx->LCKR =  GPIO_Pin;
    6:	6181      	str	r1, [r0, #24]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:446
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:446
   /* Set LCKK bit */
   GPIOx->LCKR = tmp;
    8:	6183      	str	r3, [r0, #24]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:448
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:448
   /* Read LCKK bit*/
   tmp = GPIOx->LCKR;
    a:	6983      	ldr	r3, [r0, #24]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:450
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:450
   /* Read LCKK bit*/
   tmp = GPIOx->LCKR;
    c:	6983      	ldr	r3, [r0, #24]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:451
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:451
 }
    e:	4770      	bx	lr
 Disassembly of section .text.GPIO_EventOutputConfig:
 
 00000000 <GPIO_EventOutputConfig>:
 GPIO_EventOutputConfig():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:463
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:463
   * @param  GPIO_PinSource: specifies the pin for the Event output.
   *   This parameter can be GPIO_PinSourcex where x can be (0..15).
   * @retval None
@@ -474,7 +474,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
 void GPIO_EventOutputConfig(uint8_t GPIO_PortSource, uint8_t GPIO_PinSource)
 {
    0:	b410      	push	{r4}
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:469
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:469
   uint32_t tmpreg = 0x00;
   /* Check the parameters */
   assert_param(IS_GPIO_EVENTOUT_PORT_SOURCE(GPIO_PortSource));
@@ -484,22 +484,22 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
    2:	f240 0200 	movw	r2, #0	; 0x0
    6:	f2c4 0201 	movt	r2, #16385	; 0x4001
    a:	6814      	ldr	r4, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:471
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:471
   /* Clear the PORT[6:4] and PIN[3:0] bits */
   tmpreg &= EVCR_PORTPINCONFIG_MASK;
    c:	f64f 7380 	movw	r3, #65408	; 0xff80
   10:	f2c0 0300 	movt	r3, #0	; 0x0
   14:	ea04 0303 	and.w	r3, r4, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:472
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:472
   tmpreg |= (uint32_t)GPIO_PortSource << 0x04;
   18:	ea41 1100 	orr.w	r1, r1, r0, lsl #4
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:473
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:473
   tmpreg |= GPIO_PinSource;
   1c:	ea41 0103 	orr.w	r1, r1, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:474
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:474
   AFIO->EVCR = tmpreg;
   20:	6011      	str	r1, [r2, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:475
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:475
 }
   22:	bc10      	pop	{r4}
   24:	4770      	bx	lr
@@ -508,7 +508,7 @@ Disassembly of section .text.GPIO_EventOutputCmd:
 
 00000000 <GPIO_EventOutputCmd>:
 GPIO_EventOutputCmd():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:488
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:488
 void GPIO_EventOutputCmd(FunctionalState NewState)
 {
   /* Check the parameters */
@@ -518,14 +518,14 @@ void GPIO_EventOutputCmd(FunctionalState NewState)
    0:	f240 031c 	movw	r3, #28	; 0x1c
    4:	f2c4 2320 	movt	r3, #16928	; 0x4220
    8:	6018      	str	r0, [r3, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:489
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:489
 }
    a:	4770      	bx	lr
 Disassembly of section .text.GPIO_PinRemapConfig:
 
 00000000 <GPIO_PinRemapConfig>:
 GPIO_PinRemapConfig():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:550
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:550
   * @param  NewState: new state of the port pin remapping.
   *   This parameter can be: ENABLE or DISABLE.
   * @retval None
@@ -534,7 +534,7 @@ void GPIO_PinRemapConfig(uint32_t GPIO_Remap, FunctionalState NewState)
 {
    0:	b430      	push	{r4, r5}
    2:	460c      	mov	r4, r1
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:557
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:557
 
   /* Check the parameters */
   assert_param(IS_GPIO_REMAP(GPIO_Remap));
@@ -543,14 +543,14 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   if((GPIO_Remap & 0x80000000) == 0x80000000)
    4:	4605      	mov	r5, r0
    6:	2800      	cmp	r0, #0
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:559
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:559
   {
     tmpreg = AFIO->MAPR2;
    8:	bfbd      	ittte	lt
    a:	f240 0300 	movwlt	r3, #0	; 0x0
    e:	f2c4 0301 	movtlt	r3, #16385	; 0x4001
   12:	69d9      	ldrlt	r1, [r3, #28]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:563
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:563
   }
   else
   {
@@ -559,23 +559,23 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   18:	bfa4      	itt	ge
   1a:	f2c4 0301 	movtge	r3, #16385	; 0x4001
   1e:	6859      	ldrge	r1, [r3, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:567
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:567
   }
 
   tmpmask = (GPIO_Remap & DBGAFR_POSITION_MASK) >> 0x10;
   tmp = GPIO_Remap & LSB_MASK;
   20:	fa1f fc80 	uxth.w	ip, r0
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:569
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:569
 
   if ((GPIO_Remap & (DBGAFR_LOCATION_MASK | DBGAFR_NUMBITS_MASK)) == (DBGAFR_LOCATION_MASK | DBGAFR_NUMBITS_MASK))
   24:	f400 1340 	and.w	r3, r0, #3145728	; 0x300000
   28:	f5b3 1f40 	cmp.w	r3, #3145728	; 0x300000
   2c:	d10a      	bne.n	44 <GPIO_PinRemapConfig+0x44>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:571
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:571
   {
     tmpreg &= DBGAFR_SWJCFG_MASK;
   2e:	f021 6170 	bic.w	r1, r1, #251658240	; 0xf000000
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:572
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:572
     AFIO->MAPR &= DBGAFR_SWJCFG_MASK;
   32:	f240 0200 	movw	r2, #0	; 0x0
   36:	f2c4 0201 	movt	r2, #16385	; 0x4001
@@ -583,11 +583,11 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   3c:	f023 6370 	bic.w	r3, r3, #251658240	; 0xf000000
   40:	6053      	str	r3, [r2, #4]
   42:	e019      	b.n	78 <GPIO_PinRemapConfig+0x78>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:574
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:574
   }
   else if ((GPIO_Remap & DBGAFR_NUMBITS_MASK) == DBGAFR_NUMBITS_MASK)
   44:	f410 1f80 	tst.w	r0, #1048576	; 0x100000
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:577
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:577
   {
     tmp1 = ((uint32_t)0x03) << tmpmask;
     tmpreg &= ~tmp1;
@@ -599,10 +599,10 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   54:	bf1e      	ittt	ne
   56:	43db      	mvnne	r3, r3
   58:	400b      	andne	r3, r1
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:578
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:578
     tmpreg |= ~DBGAFR_SWJCFG_MASK;
   5a:	f043 6170 	orrne.w	r1, r3, #251658240	; 0xf000000
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:574
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:574
   if ((GPIO_Remap & (DBGAFR_LOCATION_MASK | DBGAFR_NUMBITS_MASK)) == (DBGAFR_LOCATION_MASK | DBGAFR_NUMBITS_MASK))
   {
     tmpreg &= DBGAFR_SWJCFG_MASK;
@@ -610,7 +610,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   }
   else if ((GPIO_Remap & DBGAFR_NUMBITS_MASK) == DBGAFR_NUMBITS_MASK)
   5e:	d10b      	bne.n	78 <GPIO_PinRemapConfig+0x78>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:582
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:582
     tmpreg &= ~tmp1;
     tmpreg |= ~DBGAFR_SWJCFG_MASK;
   }
@@ -622,34 +622,34 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   68:	fa0c f303 	lsl.w	r3, ip, r3
   6c:	ea6f 0303 	mvn.w	r3, r3
   70:	ea01 0303 	and.w	r3, r1, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:583
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:583
     tmpreg |= ~DBGAFR_SWJCFG_MASK;
   74:	f043 6170 	orr.w	r1, r3, #251658240	; 0xf000000
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:586
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:586
   }
 
   if (NewState != DISABLE)
   78:	b13c      	cbz	r4, 8a <GPIO_PinRemapConfig+0x8a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:588
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:588
   {
     tmpreg |= (tmp << ((GPIO_Remap >> 0x15)*0x10));
   7a:	ea4f 5350 	mov.w	r3, r0, lsr #21
   7e:	ea4f 1303 	mov.w	r3, r3, lsl #4
   82:	fa0c f303 	lsl.w	r3, ip, r3
   86:	ea41 0103 	orr.w	r1, r1, r3
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:591
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:591
   }
 
   if((GPIO_Remap & 0x80000000) == 0x80000000)
   8a:	2d00      	cmp	r5, #0
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:593
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:593
   {
     AFIO->MAPR2 = tmpreg;
   8c:	bfbd      	ittte	lt
   8e:	f240 0300 	movwlt	r3, #0	; 0x0
   92:	f2c4 0301 	movtlt	r3, #16385	; 0x4001
   96:	61d9      	strlt	r1, [r3, #28]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:597
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:597
   }
   else
   {
@@ -658,7 +658,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   9c:	bfa4      	itt	ge
   9e:	f2c4 0301 	movtge	r3, #16385	; 0x4001
   a2:	6059      	strge	r1, [r3, #4]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:599
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:599
   }  
 }
   a4:	bc30      	pop	{r4, r5}
@@ -667,7 +667,7 @@ Disassembly of section .text.GPIO_EXTILineConfig:
 
 00000000 <GPIO_EXTILineConfig>:
 GPIO_EXTILineConfig():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:610
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:610
   * @param  GPIO_PinSource: specifies the EXTI line to be configured.
   *   This parameter can be GPIO_PinSourcex where x can be (0..15).
   * @retval None
@@ -675,7 +675,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
 void GPIO_EXTILineConfig(uint8_t GPIO_PortSource, uint8_t GPIO_PinSource)
 {
    0:	b430      	push	{r4, r5}
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:616
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:616
   uint32_t tmp = 0x00;
   /* Check the parameters */
   assert_param(IS_GPIO_EXTI_PORT_SOURCE(GPIO_PortSource));
@@ -684,7 +684,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   tmp = ((uint32_t)0x0F) << (0x04 * (GPIO_PinSource & (uint8_t)0x03));
    2:	f001 0403 	and.w	r4, r1, #3	; 0x3
    6:	ea4f 0484 	mov.w	r4, r4, lsl #2
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:617
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:617
   AFIO->EXTICR[GPIO_PinSource >> 0x02] &= ~tmp;
    a:	ea4f 0191 	mov.w	r1, r1, lsr #2
    e:	f240 0200 	movw	r2, #0	; 0x0
@@ -696,13 +696,13 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   26:	ea6f 0303 	mvn.w	r3, r3
   2a:	ea03 0305 	and.w	r3, r3, r5
   2e:	f842 3021 	str.w	r3, [r2, r1, lsl #2]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:618
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:618
   AFIO->EXTICR[GPIO_PinSource >> 0x02] |= (((uint32_t)GPIO_PortSource) << (0x04 * (GPIO_PinSource & (uint8_t)0x03)));
   32:	f852 3021 	ldr.w	r3, [r2, r1, lsl #2]
   36:	fa00 f004 	lsl.w	r0, r0, r4
   3a:	ea40 0003 	orr.w	r0, r0, r3
   3e:	f842 0021 	str.w	r0, [r2, r1, lsl #2]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:619
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:619
 }
   42:	bc30      	pop	{r4, r5}
   44:	4770      	bx	lr
@@ -711,7 +711,7 @@ Disassembly of section .text.GPIO_ETH_MediaInterfaceConfig:
 
 00000000 <GPIO_ETH_MediaInterfaceConfig>:
 GPIO_ETH_MediaInterfaceConfig():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:635
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:635
 void GPIO_ETH_MediaInterfaceConfig(uint32_t GPIO_ETH_MediaInterface) 
 { 
   assert_param(IS_GPIO_ETH_MEDIA_INTERFACE(GPIO_ETH_MediaInterface)); 
@@ -721,14 +721,14 @@ void GPIO_ETH_MediaInterfaceConfig(uint32_t GPIO_ETH_MediaInterface)
    0:	f240 03dc 	movw	r3, #220	; 0xdc
    4:	f2c4 2320 	movt	r3, #16928	; 0x4220
    8:	6018      	str	r0, [r3, #0]
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:636
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:636
 }
    a:	4770      	bx	lr
 Disassembly of section .text.GPIO_AFIODeInit:
 
 00000000 <GPIO_AFIODeInit>:
 GPIO_AFIODeInit():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:160
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:160
   *   and EXTI configuration) registers to their default reset values.
   * @param  None
   * @retval None
@@ -736,17 +736,17 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
 void GPIO_AFIODeInit(void)
 {
    0:	b510      	push	{r4, lr}
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:161
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:161
   RCC_APB2PeriphResetCmd(RCC_APB2Periph_AFIO, ENABLE);
    2:	f04f 0001 	mov.w	r0, #1	; 0x1
    6:	4601      	mov	r1, r0
    8:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:162
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:162
   RCC_APB2PeriphResetCmd(RCC_APB2Periph_AFIO, DISABLE);
    c:	f04f 0001 	mov.w	r0, #1	; 0x1
   10:	f04f 0100 	mov.w	r1, #0	; 0x0
   14:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:163
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:163
 }
   18:	bd10      	pop	{r4, pc}
   1a:	46c0      	nop			(mov r8, r8)
@@ -754,7 +754,7 @@ Disassembly of section .text.GPIO_DeInit:
 
 00000000 <GPIO_DeInit>:
 GPIO_DeInit():
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:109
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:109
   * @brief  Deinitializes the GPIOx peripheral registers to their default reset values.
   * @param  GPIOx: where x can be (A..G) to select the GPIO peripheral.
   * @retval None
@@ -762,7 +762,7 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
 void GPIO_DeInit(GPIO_TypeDef* GPIOx)
 {
    0:	b510      	push	{r4, lr}
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:113
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:113
   /* Check the parameters */
   assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
   
@@ -771,114 +771,114 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
    6:	f2c4 0301 	movt	r3, #16385	; 0x4001
    a:	4298      	cmp	r0, r3
    c:	d10c      	bne.n	28 <GPIO_DeInit+0x28>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:115
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:115
   {
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOA, ENABLE);
    e:	f04f 0004 	mov.w	r0, #4	; 0x4
   12:	f04f 0101 	mov.w	r1, #1	; 0x1
   16:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:116
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:116
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOA, DISABLE);
   1a:	f04f 0004 	mov.w	r0, #4	; 0x4
   1e:	f04f 0100 	mov.w	r1, #0	; 0x0
   22:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
   26:	e070      	b.n	10a <GPIO_DeInit+0x10a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:118
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:118
   }
   else if (GPIOx == GPIOB)
   28:	f640 4300 	movw	r3, #3072	; 0xc00
   2c:	f2c4 0301 	movt	r3, #16385	; 0x4001
   30:	4298      	cmp	r0, r3
   32:	d10c      	bne.n	4e <GPIO_DeInit+0x4e>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:120
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:120
   {
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOB, ENABLE);
   34:	f04f 0008 	mov.w	r0, #8	; 0x8
   38:	f04f 0101 	mov.w	r1, #1	; 0x1
   3c:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:121
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:121
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOB, DISABLE);
   40:	f04f 0008 	mov.w	r0, #8	; 0x8
   44:	f04f 0100 	mov.w	r1, #0	; 0x0
   48:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
   4c:	e05d      	b.n	10a <GPIO_DeInit+0x10a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:123
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:123
   }
   else if (GPIOx == GPIOC)
   4e:	f241 0300 	movw	r3, #4096	; 0x1000
   52:	f2c4 0301 	movt	r3, #16385	; 0x4001
   56:	4298      	cmp	r0, r3
   58:	d10c      	bne.n	74 <GPIO_DeInit+0x74>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:125
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:125
   {
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOC, ENABLE);
   5a:	f04f 0010 	mov.w	r0, #16	; 0x10
   5e:	f04f 0101 	mov.w	r1, #1	; 0x1
   62:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:126
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:126
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOC, DISABLE);
   66:	f04f 0010 	mov.w	r0, #16	; 0x10
   6a:	f04f 0100 	mov.w	r1, #0	; 0x0
   6e:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
   72:	e04a      	b.n	10a <GPIO_DeInit+0x10a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:128
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:128
   }
   else if (GPIOx == GPIOD)
   74:	f241 4300 	movw	r3, #5120	; 0x1400
   78:	f2c4 0301 	movt	r3, #16385	; 0x4001
   7c:	4298      	cmp	r0, r3
   7e:	d10c      	bne.n	9a <GPIO_DeInit+0x9a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:130
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:130
   {
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOD, ENABLE);
   80:	f04f 0020 	mov.w	r0, #32	; 0x20
   84:	f04f 0101 	mov.w	r1, #1	; 0x1
   88:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:131
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:131
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOD, DISABLE);
   8c:	f04f 0020 	mov.w	r0, #32	; 0x20
   90:	f04f 0100 	mov.w	r1, #0	; 0x0
   94:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
   98:	e037      	b.n	10a <GPIO_DeInit+0x10a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:133
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:133
   }    
   else if (GPIOx == GPIOE)
   9a:	f641 0300 	movw	r3, #6144	; 0x1800
   9e:	f2c4 0301 	movt	r3, #16385	; 0x4001
   a2:	4298      	cmp	r0, r3
   a4:	d10c      	bne.n	c0 <GPIO_DeInit+0xc0>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:135
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:135
   {
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOE, ENABLE);
   a6:	f04f 0040 	mov.w	r0, #64	; 0x40
   aa:	f04f 0101 	mov.w	r1, #1	; 0x1
   ae:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:136
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:136
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOE, DISABLE);
   b2:	f04f 0040 	mov.w	r0, #64	; 0x40
   b6:	f04f 0100 	mov.w	r1, #0	; 0x0
   ba:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
   be:	e024      	b.n	10a <GPIO_DeInit+0x10a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:138
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:138
   } 
   else if (GPIOx == GPIOF)
   c0:	f641 4300 	movw	r3, #7168	; 0x1c00
   c4:	f2c4 0301 	movt	r3, #16385	; 0x4001
   c8:	4298      	cmp	r0, r3
   ca:	d10c      	bne.n	e6 <GPIO_DeInit+0xe6>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:140
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:140
   {
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOF, ENABLE);
   cc:	f04f 0080 	mov.w	r0, #128	; 0x80
   d0:	f04f 0101 	mov.w	r1, #1	; 0x1
   d4:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:141
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:141
     RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOF, DISABLE);
   d8:	f04f 0080 	mov.w	r0, #128	; 0x80
   dc:	f04f 0100 	mov.w	r1, #0	; 0x0
   e0:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
   e4:	e011      	b.n	10a <GPIO_DeInit+0x10a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:145
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:145
   }
   else
   {
@@ -887,18 +887,18 @@ C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src
   ea:	f2c4 0301 	movt	r3, #16385	; 0x4001
   ee:	4298      	cmp	r0, r3
   f0:	d10b      	bne.n	10a <GPIO_DeInit+0x10a>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:147
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:147
     {
       RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOG, ENABLE);
   f2:	f44f 7080 	mov.w	r0, #256	; 0x100
   f6:	f04f 0101 	mov.w	r1, #1	; 0x1
   fa:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:148
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:148
       RCC_APB2PeriphResetCmd(RCC_APB2Periph_GPIOG, DISABLE);
   fe:	f44f 7080 	mov.w	r0, #256	; 0x100
  102:	f04f 0100 	mov.w	r1, #0	; 0x0
  106:	f7ff fffe 	bl	0 <RCC_APB2PeriphResetCmd>
-C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:151
+D:\Embedded\intership AFT\TeamNet\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src/stm32f10x_gpio.c:151
     }
   }
 }
