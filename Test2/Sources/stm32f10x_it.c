@@ -17,7 +17,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
-
+#include "sys_time.h"
+#include "extern.h"
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -29,7 +30,7 @@
  volatile int TempInt = 0;
  
  vu8 state;
- vu16 val = 0; 
+ //vu16 val = 0; 
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -43,23 +44,16 @@
 * Return         : None
 *******************************************************************************/
 
-void EXTI9_5_IRQHandler(void)
-{
-   if(EXTI_GetITStatus(EXTI_Line8) != RESET)
-  {
-    
-    state = GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_9);
-  
-    if(state == 1)
-    {
-        val = val -50;
-    }
-    else
-    {
-       val = val +50;
-    }
-    TIM3->CCR1 = val;
-    /* Clear the Key Button EXTI line pending bit */
+void EXTI9_5_IRQHandler(void){
+   if(EXTI_GetITStatus(EXTI_Line8) != RESET)  {
+    //if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_8)==0) {
+        if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_9)==0)
+            val = val -50;
+        else
+           val = val +50;
+        
+        TIM3->CCR1 = val;
+   // }
     EXTI_ClearITPendingBit(EXTI_Line8);
   }
 }
@@ -98,6 +92,17 @@ void TIM4_IRQHandler(void)
     Frequency = 0;
   }
     }
+}
+
+void TIM3_IRQHandler(void)
+{
+
+  if(TIM_GetFlagStatus(TIM3, TIM_IT_Update) == SET)
+   {
+    
+  TIM_ClearITPendingBit(TIM3, TIM_IT_Update);
+   sys_time++;
+   }
 }
 
 /******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/

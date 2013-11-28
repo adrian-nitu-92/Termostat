@@ -16,6 +16,18 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x.h"
 #include "misc.h"
+#include "extern.h"
+
+#define cifra_0 0b01110111 //0b01110111
+#define cifra_1 0b01000001
+#define cifra_2 0b00111011
+#define cifra_3 0b01101011
+#define cifra_4 0b01001101
+#define cifra_5 0b01101110
+#define cifra_6 0b01111110
+#define cifra_7 0b01000011
+#define cifra_8 0b01111111
+#define cifra_9 0b01101111
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -28,13 +40,20 @@ TIM_OCInitTypeDef  TIM_OCInitStructure;
 extern vu16 IC2Value ;
 extern vu16 DutyCycle ;
 extern vu32 Frequency ;
-u16 val;
-u16 test = 3;
+extern int TempInt;
+extern float Temp;
+
+volatile u16 val=0;
+volatile int test = 2;
 
 /* Private function prototypes -----------------------------------------------*/
 void RCC_Configuration(void);
 void GPIO_Configuration(void);
 void NVIC_Configuration(void);
+void WriteLCD(float);
+void RCC_TIMConfig(void);
+void EXTI_Config(void);
+void LCDInit(void);
 
 /* Private functions ---------------------------------------------------------*/
 
@@ -61,9 +80,14 @@ int main(void)
   GPIO_Configuration();
   RCC_TIMConfig();
   EXTI_Config();
+  InitSysTick();
+  //LCDInit();
  
   while (1)
-  {}
+  { 
+    //wasteTime(500);
+    WriteLCD(Temp);  
+  }
 }
 
 /*******************************************************************************
@@ -123,7 +147,7 @@ void RCC_Configuration(void)
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4 | RCC_APB1Periph_TIM3, ENABLE);
 
   /* GPIOA clock enable */
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOA , ENABLE);
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOA | RCC_APB2Periph_AFIO, ENABLE);
 }
 
 /*******************************************************************************
@@ -148,10 +172,16 @@ void GPIO_Configuration(void)
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
-  GPIO_Init(GPIOA, &GPIO_InitStructure);
+  GPIO_Init(GPIOB, &GPIO_InitStructure);
 
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+
+  GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
   GPIO_Init(GPIOA, &GPIO_InitStructure);
@@ -187,6 +217,12 @@ void NVIC_Configuration(void)
   NVIC_InitStructure.NVIC_IRQChannel = EXTI9_5_IRQn;
   NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+  NVIC_Init(&NVIC_InitStructure);
+  
+  NVIC_InitStructure.NVIC_IRQChannel = TIM3_IRQn;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 2;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure);
 }
@@ -250,8 +286,8 @@ void RCC_TIMConfig(void)
 
 void EXTI_Config(void)
 {
-EXTI_InitTypeDef  EXTI_InitStructure;
-    GPIO_EXTILineConfig(GPIO_PortSourceGPIOB, GPIO_PinSource8);
+      EXTI_InitTypeDef  EXTI_InitStructure;
+      GPIO_EXTILineConfig(GPIO_PortSourceGPIOB, GPIO_PinSource8);
 
       /* Configure Key Button EXTI Line to generate an interrupt on falling edge */  
       EXTI_InitStructure.EXTI_Line = EXTI_Line8 ;
@@ -260,6 +296,243 @@ EXTI_InitTypeDef  EXTI_InitStructure;
       EXTI_InitStructure.EXTI_LineCmd = ENABLE;
       EXTI_Init(&EXTI_InitStructure);
 
+}
+
+void LCDInit(void)
+{
+//     WriteLCD(".");
+}
+
+void WriteLCD(float t)
+{
+    
+    volatile int i, a, b, c, d;
+    u8 cifra_a,cifra_b,cifra_c,cifra_d;
+    u32 numar=0;
+
+    t*=100;
+    t=(int)t;
+    
+    a=t/1000;
+    b=t/100;
+    b=(int)b%10;
+    c=t/10;
+    c%=10;
+    d=(int)t%10;
+    
+    switch(a)
+    {
+        case 0: 
+             cifra_a=cifra_0;
+             break;
+        case 1: 
+             cifra_a=cifra_1;
+             break;
+        case 2:
+             cifra_a=cifra_2;
+             break;
+        case 3:
+             cifra_a=cifra_3;
+             break;
+        case 4:
+             cifra_a=cifra_4;
+             break;
+        case 5:
+             cifra_a=cifra_5;
+             break;
+        case 6:
+             cifra_a=cifra_6;
+             break;
+        case 7:
+             cifra_a=cifra_7;
+             break;
+        case 8:
+             cifra_a=cifra_8;
+             break;
+        case 9:
+             cifra_a=cifra_9;
+             break;
+        default:
+             cifra_a=0b10000000;
+             break;
+    }
+    
+    switch(b)
+    {
+        case 0: 
+             cifra_b=cifra_0;
+             break;
+        case 1: 
+            cifra_b=cifra_1;
+             break;
+        case 2:
+             cifra_b=cifra_2;
+             break;
+        case 3:
+             cifra_b=cifra_3;
+             break;
+        case 4:
+             cifra_b=cifra_4;
+             break;
+        case 5:
+             cifra_b=cifra_5;
+             break;
+        case 6:
+             cifra_b=cifra_6;
+             break;
+        case 7:
+             cifra_b=cifra_7;
+             break;
+        case 8:
+             cifra_b=cifra_8;
+             break;
+        case 9:
+             cifra_b=cifra_9;
+             break;
+        default:
+             cifra_b=0b10000000;
+             break;
+    }
+
+    switch(c)
+    {
+        case 0: 
+             cifra_c=cifra_0;
+             break;
+        case 1: 
+             cifra_c=cifra_1;
+             break;
+        case 2:
+             cifra_c=cifra_2;
+             break;
+        case 3:
+             cifra_c=cifra_3;
+             break;
+        case 4:
+             cifra_c=cifra_4;
+             break;
+        case 5:
+             cifra_c=cifra_5;
+             break;
+        case 6:
+             cifra_c=cifra_6;
+             break;
+        case 7:
+             cifra_c=cifra_7;
+             break;
+        case 8:
+             cifra_c=cifra_8;
+             break;
+        case 9:
+             cifra_c=cifra_9;
+             break;
+        default:
+             cifra_c=0b10000000;
+             break;
+    }
+
+    switch(d)
+    {
+        case 0: 
+             cifra_d=cifra_0;
+             break;
+        case 1: 
+             cifra_d=cifra_1;
+             break;
+        case 2:
+             cifra_d=cifra_2;
+             break;
+        case 3:
+             cifra_d=cifra_3;
+             break;
+        case 4:
+             cifra_d=cifra_4;
+             break;
+        case 5:
+             cifra_d=cifra_5;
+             break;
+        case 6:
+             cifra_d=cifra_6;
+             break;
+        case 7:
+             cifra_d=cifra_7;
+             break;
+        case 8:
+             cifra_d=cifra_8;
+             break;
+        case 9:
+             cifra_d=cifra_9;
+             break;
+        default:
+             cifra_d=0b10000000;
+             break;
+    }
+
+    cifra_b|=0b10000000;
+
+    numar=(numar|cifra_d)<<8;
+    numar=(numar|cifra_c)<<8;
+    numar=(numar|cifra_b)<<8;
+    numar=(numar|cifra_a);
+
+    GPIO_WriteBit(GPIOA, GPIO_Pin_4, Bit_SET);
+    
+    for(i=0;i<32;i++)
+        {
+        
+        GPIO_WriteBit(GPIOA, GPIO_Pin_5, Bit_RESET);
+        
+        
+        if(numar & 1)
+            {
+                GPIO_WriteBit(GPIOA, GPIO_Pin_3, Bit_SET);
+            }
+        else 
+            {
+                GPIO_WriteBit(GPIOA, GPIO_Pin_3, Bit_RESET);
+            }
+        GPIO_WriteBit(GPIOA, GPIO_Pin_5, Bit_SET);
+        numar>>=1;
+        }
+
+    // for(i=0;i<8;i++)
+        // {
+        
+        // GPIO_WriteBit(GPIOA, GPIO_Pin_5, Bit_RESET);
+        
+        
+        // if(cifra_a & 0b00000001)
+            // {
+                // GPIO_WriteBit(GPIOA, GPIO_Pin_3, Bit_SET);
+            // }
+        // else 
+            // {
+                // GPIO_WriteBit(GPIOA, GPIO_Pin_3, Bit_RESET);
+            // }
+        // GPIO_WriteBit(GPIOA, GPIO_Pin_5, Bit_SET);
+        // cifra_a>>=1;
+        // }
+    
+    // for(i=0;i<8;i++)
+        // {
+        // GPIO_WriteBit(GPIOA, GPIO_Pin_5, Bit_RESET);
+        
+        
+        // if(cifra_b & 0b00000001)
+            // {
+                // GPIO_WriteBit(GPIOA, GPIO_Pin_3, Bit_SET);
+            // }
+        // else 
+            // {
+                // GPIO_WriteBit(GPIOA, GPIO_Pin_3, Bit_RESET);
+            // }
+        // GPIO_WriteBit(GPIOA, GPIO_Pin_5, Bit_SET);
+        // cifra_b>>=1;
+        // }
+
+    
+    wasteTime(500);
+    GPIO_WriteBit(GPIOA, GPIO_Pin_4, Bit_SET);
 }
 
 
