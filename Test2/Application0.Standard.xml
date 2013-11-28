@@ -1,7 +1,7 @@
 <!-- DWF2XML 2.00.01 - Raisonance Dwarf information extractor -->
 <aoffile Filename="Application0" dwarf="1">
  <modulelist>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" >
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" >
    <type Family="Base" Name="signed char" ID="458"/>
    <type Family="Base" Name="unsigned char" ID="476"/>
    <type Family="typedef" Name="uint8_t" Line="46" ID="465" toTI="476"/>
@@ -122,43 +122,43 @@
     <Component Name="NVIC_IRQChannelCmd" TI="2121" Line="65" Offs="3"/>
    </type>
    <type Family="typedef" Name="NVIC_InitTypeDef" Line="68" ID="2136" toTI="2071"/>
-   <function Name="WriteLCD" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="307">
+   <function Name="WriteLCD" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="307">
    <type Family="Base" Name="float" ID="2356"/>
-    <parameter Name="t" TI="2356" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="307" Addr="0x0" Param="Yes"/>
-    <variable Name="i" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="309" Addr="0x3400004C" TI="2363"/>
-    <variable Name="a" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="309" Addr="0x0" TI="2363"/>
-    <variable Name="b" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="309" Addr="0x0" TI="2363"/>
-    <variable Name="c" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="309" Addr="0x0" TI="2363"/>
-    <variable Name="d" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="309" Addr="0x2" TI="2363"/>
-    <variable Name="cifra_a" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="310" Addr="0x7" TI="598"/>
-    <variable Name="cifra_b" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="310" Addr="0x6" TI="598"/>
-    <variable Name="cifra_c" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="310" Addr="0x5" TI="598"/>
-    <variable Name="cifra_d" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="310" Addr="0x4" TI="598"/>
-    <variable Name="numar" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="311" Addr="0x4" TI="574"/>
+    <parameter Name="t" TI="2356" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="307" Addr="0x0" Param="Yes"/>
+    <variable Name="i" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="309" Addr="0x3400004C" TI="2363"/>
+    <variable Name="a" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="309" Addr="0x0" TI="2363"/>
+    <variable Name="b" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="309" Addr="0x0" TI="2363"/>
+    <variable Name="c" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="309" Addr="0x0" TI="2363"/>
+    <variable Name="d" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="309" Addr="0x2" TI="2363"/>
+    <variable Name="cifra_a" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="310" Addr="0x7" TI="598"/>
+    <variable Name="cifra_b" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="310" Addr="0x6" TI="598"/>
+    <variable Name="cifra_c" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="310" Addr="0x5" TI="598"/>
+    <variable Name="cifra_d" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="310" Addr="0x4" TI="598"/>
+    <variable Name="numar" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="311" Addr="0x4" TI="574"/>
    </function >
-   <function Name="EXTI_Config" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="288">
-    <variable Name="EXTI_InitStructure" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="289" Addr="0x34000000" TI="1558"/>
+   <function Name="EXTI_Config" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="288">
+    <variable Name="EXTI_InitStructure" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="289" Addr="0x34000000" TI="1558"/>
    </function >
-   <function Name="RCC_TIMConfig" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="231">
+   <function Name="RCC_TIMConfig" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="231">
    </function >
-   <function Name="NVIC_Configuration" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="199">
-    <variable Name="NVIC_InitStructure" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="200" Addr="0x34000004" TI="2136"/>
+   <function Name="NVIC_Configuration" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="199">
+    <variable Name="NVIC_InitStructure" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="200" Addr="0x34000004" TI="2136"/>
    </function >
-   <function Name="GPIO_Configuration" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="161">
-    <variable Name="GPIO_InitStructure" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="162" Addr="0x34000004" TI="1727"/>
+   <function Name="GPIO_Configuration" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="161">
+    <variable Name="GPIO_InitStructure" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="162" Addr="0x34000004" TI="1727"/>
    </function >
-   <function Name="RCC_Configuration" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="101">
+   <function Name="RCC_Configuration" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="101">
    </function >
-   <function Name="main" TI="547" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="68">
+   <function Name="main" TI="547" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="68">
    </function >
-   <variable Name="val" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="46" Addr="0x20000000" TI="2589"/>
-   <variable Name="TIM_ICInitStructure" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="36" Addr="0x2000003C" TI="2060"/>
-   <variable Name="HSEStartUpStatus" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="37" Addr="0x20000020" TI="687"/>
-   <variable Name="TIM_TimeBaseStructure" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="38" Addr="0x20000022" TI="1838"/>
-   <variable Name="TIM_OCInitStructure" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="39" Addr="0x2000002C" TI="1970"/>
-   <variable Name="test" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\main.c" Line="47" Addr="0x0" TI="2363"/>
+   <variable Name="val" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="46" Addr="0x20000000" TI="2589"/>
+   <variable Name="TIM_ICInitStructure" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="36" Addr="0x2000003C" TI="2060"/>
+   <variable Name="HSEStartUpStatus" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="37" Addr="0x20000020" TI="687"/>
+   <variable Name="TIM_TimeBaseStructure" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="38" Addr="0x20000022" TI="1838"/>
+   <variable Name="TIM_OCInitStructure" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="39" Addr="0x2000002C" TI="1970"/>
+   <variable Name="test" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="47" Addr="0x0" TI="2363"/>
   </module>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" >
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" >
    <type Family="Base" Name="signed char" ID="2735"/>
    <type Family="Base" Name="unsigned char" ID="2742"/>
    <type Family="Base" Name="short int" ID="2749"/>
@@ -225,21 +225,21 @@
     <Component Name="DMAR" TI="3590" Line="1226" Offs="76"/>
     <Component Name="RESERVED19" TI="3605" Line="1227" Offs="78"/>
    </type>
-   <function Name="TIM3_IRQHandler" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="98">
+   <function Name="TIM3_IRQHandler" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" Line="98">
    </function >
-   <function Name="TIM4_IRQHandler" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="69">
+   <function Name="TIM4_IRQHandler" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" Line="69">
    </function >
-   <function Name="EXTI9_5_IRQHandler" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="47">
+   <function Name="EXTI9_5_IRQHandler" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" Line="47">
    </function >
-   <variable Name="IC2Value" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="26" Addr="0x20000004" TI="3752"/>
+   <variable Name="IC2Value" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" Line="26" Addr="0x20000004" TI="3752"/>
    <type Family="Base" Name="float" ID="3780"/>
-   <variable Name="DutyCycle" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="27" Addr="0x20000008" TI="3775"/>
-   <variable Name="Frequency" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="28" Addr="0x20000014" TI="3805"/>
-   <variable Name="Temp" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="29" Addr="0x2000000C" TI="3775"/>
-   <variable Name="TempInt" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="30" Addr="0x20000010" TI="3698"/>
-   <variable Name="state" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Sources\stm32f10x_it.c" Line="32" Addr="0x0" TI="3864"/>
+   <variable Name="DutyCycle" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" Line="27" Addr="0x20000008" TI="3775"/>
+   <variable Name="Frequency" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" Line="28" Addr="0x20000014" TI="3805"/>
+   <variable Name="Temp" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" Line="29" Addr="0x2000000C" TI="3775"/>
+   <variable Name="TempInt" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" Line="30" Addr="0x20000010" TI="3698"/>
+   <variable Name="state" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" Line="32" Addr="0x0" TI="3864"/>
   </module>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" >
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" >
    <type Family="Base" Name="signed char" ID="3907"/>
    <type Family="Base" Name="unsigned char" ID="3925"/>
    <type Family="typedef" Name="uint8_t" Line="46" ID="3914" toTI="3925"/>
@@ -335,648 +335,647 @@
     <Component Name="TIM_ICFilter" TI="5101" Line="130" Offs="8"/>
    </type>
    <type Family="typedef" Name="TIM_ICInitTypeDef" Line="132" ID="5116" toTI="5037"/>
-   <function Name="TimeoutSet" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="53">
-    <parameter Name="timeout" TI="4034" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="53" Addr="0x0" Param="Yes"/>
+   <function Name="TimeoutSet" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="51">
+    <parameter Name="timeout" TI="4034" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="51" Addr="0x0" Param="Yes"/>
    </function >
-   <function Name="TimeoutExp" TI="4058" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="62">
+   <function Name="TimeoutExp" TI="4058" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="60">
    </function >
-   <function Name="wasteTime" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="80">
-    <parameter Name="in" TI="4007" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="80" Addr="0x0" Param="Yes"/>
+   <function Name="wasteTime" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="78">
+    <parameter Name="in" TI="4007" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="78" Addr="0x0" Param="Yes"/>
    </function >
-   <function Name="InitSysTick" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="38">
+   <function Name="InitSysTick" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="36">
    </function >
-   <variable Name="sys_time" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="8" Addr="0x20000018" TI="4034"/>
-   <variable Name="sys_time2" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="9" Addr="0x2000001C" TI="4034"/>
-   <variable Name="timeout" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="17" Addr="0x20000058" TI="4034"/>
-   <variable Name="alive_time" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="18" Addr="0x20000048" TI="4034"/>
-   <variable Name="sys_timeout" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="6" Addr="0x2000004C" TI="4034"/>
-   <variable Name="sys_timeout2" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="7" Addr="0x2000005C" TI="4034"/>
-   <variable Name="TIM_TimeBaseStructure" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="11" Addr="0x20000022" TI="4894"/>
-   <variable Name="TIM_OCInitStructure" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="12" Addr="0x2000002C" TI="5026"/>
-   <variable Name="TIM_ICInitStructure" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="13" Addr="0x2000003C" TI="5116"/>
-   <variable Name="a" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="15" Addr="0x0" TI="4007"/>
-   <variable Name="icnt" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="16" Addr="0x20000054" TI="4034"/>
-   <variable Name="tcnt" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Test\Sources\sys_time.c" Line="16" Addr="0x20000050" TI="4034"/>
+   <variable Name="sys_time" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="7" Addr="0x20000018" TI="4034"/>
+   <variable Name="sys_time2" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="8" Addr="0x2000001C" TI="4034"/>
+   <variable Name="timeout" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="15" Addr="0x20000058" TI="4034"/>
+   <variable Name="alive_time" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="16" Addr="0x20000048" TI="4034"/>
+   <variable Name="sys_timeout" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="5" Addr="0x2000004C" TI="4034"/>
+   <variable Name="sys_timeout2" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="6" Addr="0x2000005C" TI="4034"/>
+   <variable Name="TIM_TimeBaseStructure" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="10" Addr="0x20000022" TI="4894"/>
+   <variable Name="TIM_OCInitStructure" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="11" Addr="0x2000002C" TI="5026"/>
+   <variable Name="TIM_ICInitStructure" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="12" Addr="0x2000003C" TI="5116"/>
+   <variable Name="icnt" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="14" Addr="0x20000054" TI="4034"/>
+   <variable Name="tcnt" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="14" Addr="0x20000050" TI="4034"/>
   </module>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" >
-   <type Family="Base" Name="signed char" ID="5721"/>
-   <type Family="Base" Name="unsigned char" ID="5739"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="5728" toTI="5739"/>
-   <type Family="Base" Name="short int" ID="5746"/>
-   <type Family="Base" Name="short unsigned int" ID="5764"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="5753" toTI="5764"/>
-   <type Family="Base" Name="long int" ID="5771"/>
-   <type Family="Base" Name="long unsigned int" ID="5789"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="5778" toTI="5789"/>
-   <type Family="Base" Name="long long int" ID="5796"/>
-   <type Family="Base" Name="long long unsigned int" ID="5803"/>
-   <type Family="Base" Name="int" ID="5810"/>
-   <type Family="Base" Name="unsigned int" ID="5817"/>
-   <type Family="typedef" Name="FlagStatus" Line="519" ID="5859" toTI="5837"/>
-   <type Family="typedef" Name="FunctionalState" Line="521" ID="5893" toTI="5871"/>
-   <type Family="ComponentList" Line="902" ID="5905">
-    <Component Name="ACR" TI="5914" Line="903" Offs="0"/>
-    <Component Name="KEYR" TI="5929" Line="904" Offs="4"/>
-    <Component Name="OPTKEYR" TI="5944" Line="905" Offs="8"/>
-    <Component Name="SR" TI="5959" Line="906" Offs="12"/>
-    <Component Name="CR" TI="5973" Line="907" Offs="16"/>
-    <Component Name="AR" TI="5987" Line="908" Offs="20"/>
-    <Component Name="RESERVED" TI="6001" Line="909" Offs="24"/>
-    <Component Name="OBR" TI="6016" Line="910" Offs="28"/>
-    <Component Name="WRPR" TI="6031" Line="911" Offs="32"/>
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" >
+   <type Family="Base" Name="signed char" ID="5705"/>
+   <type Family="Base" Name="unsigned char" ID="5723"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="5712" toTI="5723"/>
+   <type Family="Base" Name="short int" ID="5730"/>
+   <type Family="Base" Name="short unsigned int" ID="5748"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="5737" toTI="5748"/>
+   <type Family="Base" Name="long int" ID="5755"/>
+   <type Family="Base" Name="long unsigned int" ID="5773"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="5762" toTI="5773"/>
+   <type Family="Base" Name="long long int" ID="5780"/>
+   <type Family="Base" Name="long long unsigned int" ID="5787"/>
+   <type Family="Base" Name="int" ID="5794"/>
+   <type Family="Base" Name="unsigned int" ID="5801"/>
+   <type Family="typedef" Name="FlagStatus" Line="519" ID="5843" toTI="5821"/>
+   <type Family="typedef" Name="FunctionalState" Line="521" ID="5877" toTI="5855"/>
+   <type Family="ComponentList" Line="902" ID="5889">
+    <Component Name="ACR" TI="5898" Line="903" Offs="0"/>
+    <Component Name="KEYR" TI="5913" Line="904" Offs="4"/>
+    <Component Name="OPTKEYR" TI="5928" Line="905" Offs="8"/>
+    <Component Name="SR" TI="5943" Line="906" Offs="12"/>
+    <Component Name="CR" TI="5957" Line="907" Offs="16"/>
+    <Component Name="AR" TI="5971" Line="908" Offs="20"/>
+    <Component Name="RESERVED" TI="5985" Line="909" Offs="24"/>
+    <Component Name="OBR" TI="6000" Line="910" Offs="28"/>
+    <Component Name="WRPR" TI="6015" Line="911" Offs="32"/>
    </type>
-   <type Family="ComponentList" Line="927" ID="6047">
-    <Component Name="RDP" TI="6056" Line="928" Offs="0"/>
-    <Component Name="USER" TI="6071" Line="929" Offs="2"/>
-    <Component Name="Data0" TI="6086" Line="930" Offs="4"/>
-    <Component Name="Data1" TI="6101" Line="931" Offs="6"/>
-    <Component Name="WRP0" TI="6116" Line="932" Offs="8"/>
-    <Component Name="WRP1" TI="6131" Line="933" Offs="10"/>
-    <Component Name="WRP2" TI="6146" Line="934" Offs="12"/>
-    <Component Name="WRP3" TI="6161" Line="935" Offs="14"/>
+   <type Family="ComponentList" Line="927" ID="6031">
+    <Component Name="RDP" TI="6040" Line="928" Offs="0"/>
+    <Component Name="USER" TI="6055" Line="929" Offs="2"/>
+    <Component Name="Data0" TI="6070" Line="930" Offs="4"/>
+    <Component Name="Data1" TI="6085" Line="931" Offs="6"/>
+    <Component Name="WRP0" TI="6100" Line="932" Offs="8"/>
+    <Component Name="WRP1" TI="6115" Line="933" Offs="10"/>
+    <Component Name="WRP2" TI="6130" Line="934" Offs="12"/>
+    <Component Name="WRP3" TI="6145" Line="935" Offs="14"/>
    </type>
-   <type Family="typedef" Name="FLASH_Status" Line="57" ID="6216" toTI="6177"/>
-   <function Name="FLASH_SetLatency" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="255">
-    <parameter Name="FLASH_Latency" TI="5778" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="255" Addr="0x0" Param="Yes"/>
-    <variable Name="tmpreg" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="256" Addr="0x2" TI="5778"/>
+   <type Family="typedef" Name="FLASH_Status" Line="57" ID="6200" toTI="6161"/>
+   <function Name="FLASH_SetLatency" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="255">
+    <parameter Name="FLASH_Latency" TI="5762" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="255" Addr="0x0" Param="Yes"/>
+    <variable Name="tmpreg" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="256" Addr="0x2" TI="5762"/>
    </function >
-   <function Name="FLASH_PrefetchBufferCmd" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="301">
-    <parameter Name="FLASH_PrefetchBuffer" TI="5778" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="301" Addr="0x0" Param="Yes"/>
-   </function >
-  </module>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" >
-   <type Family="Base" Name="signed char" ID="7758"/>
-   <type Family="Base" Name="unsigned char" ID="7776"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="7765" toTI="7776"/>
-   <type Family="Base" Name="short int" ID="7783"/>
-   <type Family="Base" Name="short unsigned int" ID="7801"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="7790" toTI="7801"/>
-   <type Family="Base" Name="long int" ID="7808"/>
-   <type Family="Base" Name="long unsigned int" ID="7826"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="7815" toTI="7826"/>
-   <type Family="Base" Name="long long int" ID="7833"/>
-   <type Family="Base" Name="long long unsigned int" ID="7840"/>
-   <type Family="Base" Name="int" ID="7847"/>
-   <type Family="Base" Name="unsigned int" ID="7854"/>
-   <type Family="array" ID="7869" toTI="7815"/>
-   <type Family="typedef" Name="FunctionalState" Line="521" ID="7907" toTI="7885"/>
-   <type Family="ComponentList" Line="1002" ID="7919">
-    <Component Name="CRL" TI="7928" Line="1003" Offs="0"/>
-    <Component Name="CRH" TI="7943" Line="1004" Offs="4"/>
-    <Component Name="IDR" TI="7958" Line="1005" Offs="8"/>
-    <Component Name="ODR" TI="7973" Line="1006" Offs="12"/>
-    <Component Name="BSRR" TI="7988" Line="1007" Offs="16"/>
-    <Component Name="BRR" TI="8003" Line="1008" Offs="20"/>
-    <Component Name="LCKR" TI="8018" Line="1009" Offs="24"/>
-   </type>
-   <type Family="typedef" Name="GPIO_TypeDef" Line="1010" ID="8034" toTI="7919"/>
-   <type Family="ComponentList" Line="1017" ID="8046">
-    <Component Name="EVCR" TI="8055" Line="1018" Offs="0"/>
-    <Component Name="MAPR" TI="8070" Line="1019" Offs="4"/>
-    <Component Name="EXTICR" TI="8085" Line="1020" Offs="8"/>
-    <Component Name="RESERVED0" TI="8100" Line="1021" Offs="24"/>
-    <Component Name="MAPR2" TI="8115" Line="1022" Offs="28"/>
-   </type>
-   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="8163" toTI="8136"/>
-   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="8232" toTI="8174"/>
-   <type Family="ComponentList" Line="92" ID="8243">
-    <Component Name="GPIO_Pin" TI="8251" Line="93" Offs="0"/>
-    <Component Name="GPIO_Speed" TI="8265" Line="96" Offs="2"/>
-    <Component Name="GPIO_Mode" TI="8279" Line="99" Offs="3"/>
-   </type>
-   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="8294" toTI="8243"/>
-   <type Family="typedef" Name="BitAction" Line="111" ID="8326" toTI="8305"/>
-   <function Name="GPIO_Init" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174">
-   <type Family="Pointer" TI="8475" toTI="8034"/>
-    <parameter Name="GPIOx" TI="8475" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174" Addr="0x0" Param="Yes"/>
-   <type Family="Pointer" TI="8481" toTI="8294"/>
-    <parameter Name="GPIO_InitStruct" TI="8481" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174" Addr="0x1" Param="Yes"/>
-    <variable Name="currentmode" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x7" TI="7815"/>
-    <variable Name="currentpin" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x1" TI="7815"/>
-    <variable Name="pinpos" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0xC" TI="7815"/>
-    <variable Name="pos" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x2" TI="7815"/>
-    <variable Name="tmpreg" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="176" Addr="0x4" TI="7815"/>
-   </function >
-   <function Name="GPIO_ReadInputDataBit" TI="7765" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="282">
-    <parameter Name="GPIOx" TI="8475" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="282" Addr="0x0" Param="Yes"/>
-    <parameter Name="GPIO_Pin" TI="7790" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="282" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="GPIO_WriteBit" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395">
-    <parameter Name="GPIOx" TI="8475" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x0" Param="Yes"/>
-    <parameter Name="GPIO_Pin" TI="7790" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x1" Param="Yes"/>
-    <parameter Name="BitVal" TI="8326" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x2" Param="Yes"/>
-   </function >
-   <function Name="GPIO_EXTILineConfig" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="610">
-    <parameter Name="GPIO_PortSource" TI="7765" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="610" Addr="0x0" Param="Yes"/>
-    <parameter Name="GPIO_PinSource" TI="7765" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="610" Addr="0x1" Param="Yes"/>
+   <function Name="FLASH_PrefetchBufferCmd" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="301">
+    <parameter Name="FLASH_PrefetchBuffer" TI="5762" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="301" Addr="0x0" Param="Yes"/>
    </function >
   </module>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" >
-   <type Family="Base" Name="signed char" ID="9503"/>
-   <type Family="Base" Name="unsigned char" ID="9521"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="9510" toTI="9521"/>
-   <type Family="Base" Name="short int" ID="9528"/>
-   <type Family="Base" Name="short unsigned int" ID="9535"/>
-   <type Family="Base" Name="long int" ID="9542"/>
-   <type Family="Base" Name="long unsigned int" ID="9560"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="9549" toTI="9560"/>
-   <type Family="Base" Name="long long int" ID="9567"/>
-   <type Family="Base" Name="long long unsigned int" ID="9574"/>
-   <type Family="Base" Name="int" ID="9581"/>
-   <type Family="Base" Name="unsigned int" ID="9588"/>
-   <type Family="typedef" Name="FlagStatus" Line="519" ID="9625" toTI="9603"/>
-   <type Family="typedef" Name="ITStatus" Line="519" ID="9637" toTI="9603"/>
-   <type Family="typedef" Name="FunctionalState" Line="521" ID="9671" toTI="9649"/>
-   <type Family="typedef" Name="ErrorStatus" Line="524" ID="9705" toTI="9683"/>
-   <type Family="ComponentList" Line="1077" ID="9717">
-    <Component Name="CR" TI="9726" Line="1078" Offs="0"/>
-    <Component Name="CFGR" TI="9740" Line="1079" Offs="4"/>
-    <Component Name="CIR" TI="9755" Line="1080" Offs="8"/>
-    <Component Name="APB2RSTR" TI="9770" Line="1081" Offs="12"/>
-    <Component Name="APB1RSTR" TI="9785" Line="1082" Offs="16"/>
-    <Component Name="AHBENR" TI="9800" Line="1083" Offs="20"/>
-    <Component Name="APB2ENR" TI="9815" Line="1084" Offs="24"/>
-    <Component Name="APB1ENR" TI="9830" Line="1085" Offs="28"/>
-    <Component Name="BDCR" TI="9845" Line="1086" Offs="32"/>
-    <Component Name="CSR" TI="9860" Line="1087" Offs="36"/>
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" >
+   <type Family="Base" Name="signed char" ID="7742"/>
+   <type Family="Base" Name="unsigned char" ID="7760"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="7749" toTI="7760"/>
+   <type Family="Base" Name="short int" ID="7767"/>
+   <type Family="Base" Name="short unsigned int" ID="7785"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="7774" toTI="7785"/>
+   <type Family="Base" Name="long int" ID="7792"/>
+   <type Family="Base" Name="long unsigned int" ID="7810"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="7799" toTI="7810"/>
+   <type Family="Base" Name="long long int" ID="7817"/>
+   <type Family="Base" Name="long long unsigned int" ID="7824"/>
+   <type Family="Base" Name="int" ID="7831"/>
+   <type Family="Base" Name="unsigned int" ID="7838"/>
+   <type Family="array" ID="7853" toTI="7799"/>
+   <type Family="typedef" Name="FunctionalState" Line="521" ID="7891" toTI="7869"/>
+   <type Family="ComponentList" Line="1002" ID="7903">
+    <Component Name="CRL" TI="7912" Line="1003" Offs="0"/>
+    <Component Name="CRH" TI="7927" Line="1004" Offs="4"/>
+    <Component Name="IDR" TI="7942" Line="1005" Offs="8"/>
+    <Component Name="ODR" TI="7957" Line="1006" Offs="12"/>
+    <Component Name="BSRR" TI="7972" Line="1007" Offs="16"/>
+    <Component Name="BRR" TI="7987" Line="1008" Offs="20"/>
+    <Component Name="LCKR" TI="8002" Line="1009" Offs="24"/>
    </type>
-   <type Family="ComponentList" Line="47" ID="9876">
-    <Component Name="SYSCLK_Frequency" TI="9884" Line="48" Offs="0"/>
-    <Component Name="HCLK_Frequency" TI="9898" Line="49" Offs="4"/>
-    <Component Name="PCLK1_Frequency" TI="9912" Line="50" Offs="8"/>
-    <Component Name="PCLK2_Frequency" TI="9926" Line="51" Offs="12"/>
-    <Component Name="ADCCLK_Frequency" TI="9940" Line="52" Offs="16"/>
+   <type Family="typedef" Name="GPIO_TypeDef" Line="1010" ID="8018" toTI="7903"/>
+   <type Family="ComponentList" Line="1017" ID="8030">
+    <Component Name="EVCR" TI="8039" Line="1018" Offs="0"/>
+    <Component Name="MAPR" TI="8054" Line="1019" Offs="4"/>
+    <Component Name="EXTICR" TI="8069" Line="1020" Offs="8"/>
+    <Component Name="RESERVED0" TI="8084" Line="1021" Offs="24"/>
+    <Component Name="MAPR2" TI="8099" Line="1022" Offs="28"/>
    </type>
-   <type Family="typedef" Name="RCC_ClocksTypeDef" Line="53" ID="9955" toTI="9876"/>
-   <function Name="RCC_DeInit" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="218">
-   </function >
-   <function Name="RCC_HSEConfig" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="271">
-    <parameter Name="RCC_HSE" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="271" Addr="0x0" Param="Yes"/>
-   </function >
-   <function Name="RCC_PLLConfig" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="379">
-    <parameter Name="RCC_PLLSource" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="379" Addr="0x0" Param="Yes"/>
-    <parameter Name="RCC_PLLMul" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="379" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpreg" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="380" Addr="0x2" TI="9549"/>
-   </function >
-   <function Name="RCC_PLLCmd" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="402">
-    <parameter Name="NewState" TI="9671" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="402" Addr="0x0" Param="Yes"/>
-   </function >
-   <function Name="RCC_SYSCLKConfig" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="565">
-    <parameter Name="RCC_SYSCLKSource" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="565" Addr="0x0" Param="Yes"/>
-    <variable Name="tmpreg" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="566" Addr="0x2" TI="9549"/>
-   </function >
-   <function Name="RCC_GetSYSCLKSource" TI="9510" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="588">
-   </function >
-   <function Name="RCC_HCLKConfig" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="609">
-    <parameter Name="RCC_SYSCLK" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="609" Addr="0x0" Param="Yes"/>
-    <variable Name="tmpreg" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="610" Addr="0x2" TI="9549"/>
-   </function >
-   <function Name="RCC_PCLK1Config" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="635">
-    <parameter Name="RCC_HCLK" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="635" Addr="0x0" Param="Yes"/>
-    <variable Name="tmpreg" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="636" Addr="0x2" TI="9549"/>
-   </function >
-   <function Name="RCC_PCLK2Config" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="661">
-    <parameter Name="RCC_HCLK" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="661" Addr="0x0" Param="Yes"/>
-    <variable Name="tmpreg" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="662" Addr="0x3" TI="9549"/>
-   </function >
-   <type Family="Pointer" TI="10882" toTI="9955"/>
-   <function Name="RCC_APB2PeriphClockCmd" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096">
-    <parameter Name="RCC_APB2Periph" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="9671" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="RCC_APB1PeriphClockCmd" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127">
-    <parameter Name="RCC_APB1Periph" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="9671" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="RCC_APB2PeriphResetCmd" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1186">
-    <parameter Name="RCC_APB2Periph" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1186" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="9671" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1186" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="RCC_APB1PeriphResetCmd" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1217">
-    <parameter Name="RCC_APB1Periph" TI="9549" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1217" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="9671" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1217" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="RCC_GetFlagStatus" TI="9625" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1327">
-    <parameter Name="RCC_FLAG" TI="9510" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1327" Addr="0x0" Param="Yes"/>
-    <variable Name="tmp" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1328" Addr="0x3" TI="9549"/>
-    <variable Name="statusreg" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1329" Addr="0x3" TI="9549"/>
-   </function >
-   <function Name="RCC_WaitForHSEStartUp" TI="9705" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="305">
-    <variable Name="StartUpCounter" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="306" Addr="0x34000014" TI="9598"/>
-    <variable Name="HSEStatus" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="308" Addr="0x0" TI="9625"/>
-   </function >
-   <type Family="array" ID="11560" toTI="9510"/>
-   <variable Name="APBAHBPrescTable" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="193" Addr="0x0" TI="11593"/>
-   <type Family="array" ID="11603" toTI="9510"/>
-   <variable Name="ADCPrescTable" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="194" Addr="0x0" TI="11636"/>
-  </module>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" >
-   <type Family="Base" Name="signed char" ID="11703"/>
-   <type Family="Base" Name="unsigned char" ID="11721"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="11710" toTI="11721"/>
-   <type Family="Base" Name="short int" ID="11728"/>
-   <type Family="Base" Name="short unsigned int" ID="11746"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="11735" toTI="11746"/>
-   <type Family="Base" Name="long int" ID="11753"/>
-   <type Family="Base" Name="long unsigned int" ID="11771"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="11760" toTI="11771"/>
-   <type Family="Base" Name="long long int" ID="11778"/>
-   <type Family="Base" Name="long long unsigned int" ID="11785"/>
-   <type Family="Base" Name="int" ID="11792"/>
-   <type Family="Base" Name="unsigned int" ID="11799"/>
-   <type Family="typedef" Name="FlagStatus" Line="519" ID="11836" toTI="11814"/>
-   <type Family="typedef" Name="ITStatus" Line="519" ID="11848" toTI="11814"/>
-   <type Family="typedef" Name="FunctionalState" Line="521" ID="11882" toTI="11860"/>
-   <type Family="ComponentList" Line="1187" ID="11894">
-    <Component Name="CR1" TI="11903" Line="1188" Offs="0"/>
-    <Component Name="RESERVED0" TI="11918" Line="1189" Offs="2"/>
-    <Component Name="CR2" TI="11933" Line="1190" Offs="4"/>
-    <Component Name="RESERVED1" TI="11948" Line="1191" Offs="6"/>
-    <Component Name="SMCR" TI="11963" Line="1192" Offs="8"/>
-    <Component Name="RESERVED2" TI="11978" Line="1193" Offs="10"/>
-    <Component Name="DIER" TI="11993" Line="1194" Offs="12"/>
-    <Component Name="RESERVED3" TI="12008" Line="1195" Offs="14"/>
-    <Component Name="SR" TI="12023" Line="1196" Offs="16"/>
-    <Component Name="RESERVED4" TI="12037" Line="1197" Offs="18"/>
-    <Component Name="EGR" TI="12052" Line="1198" Offs="20"/>
-    <Component Name="RESERVED5" TI="12067" Line="1199" Offs="22"/>
-    <Component Name="CCMR1" TI="12082" Line="1200" Offs="24"/>
-    <Component Name="RESERVED6" TI="12097" Line="1201" Offs="26"/>
-    <Component Name="CCMR2" TI="12112" Line="1202" Offs="28"/>
-    <Component Name="RESERVED7" TI="12127" Line="1203" Offs="30"/>
-    <Component Name="CCER" TI="12142" Line="1204" Offs="32"/>
-    <Component Name="RESERVED8" TI="12157" Line="1205" Offs="34"/>
-    <Component Name="CNT" TI="12172" Line="1206" Offs="36"/>
-    <Component Name="RESERVED9" TI="12187" Line="1207" Offs="38"/>
-    <Component Name="PSC" TI="12202" Line="1208" Offs="40"/>
-    <Component Name="RESERVED10" TI="12217" Line="1209" Offs="42"/>
-    <Component Name="ARR" TI="12232" Line="1210" Offs="44"/>
-    <Component Name="RESERVED11" TI="12247" Line="1211" Offs="46"/>
-    <Component Name="RCR" TI="12262" Line="1212" Offs="48"/>
-    <Component Name="RESERVED12" TI="12277" Line="1213" Offs="50"/>
-    <Component Name="CCR1" TI="12292" Line="1214" Offs="52"/>
-    <Component Name="RESERVED13" TI="12307" Line="1215" Offs="54"/>
-    <Component Name="CCR2" TI="12322" Line="1216" Offs="56"/>
-    <Component Name="RESERVED14" TI="12337" Line="1217" Offs="58"/>
-    <Component Name="CCR3" TI="12352" Line="1218" Offs="60"/>
-    <Component Name="RESERVED15" TI="12367" Line="1219" Offs="62"/>
-    <Component Name="CCR4" TI="12382" Line="1220" Offs="64"/>
-    <Component Name="RESERVED16" TI="12397" Line="1221" Offs="66"/>
-    <Component Name="BDTR" TI="12412" Line="1222" Offs="68"/>
-    <Component Name="RESERVED17" TI="12427" Line="1223" Offs="70"/>
-    <Component Name="DCR" TI="12442" Line="1224" Offs="72"/>
-    <Component Name="RESERVED18" TI="12457" Line="1225" Offs="74"/>
-    <Component Name="DMAR" TI="12472" Line="1226" Offs="76"/>
-    <Component Name="RESERVED19" TI="12487" Line="1227" Offs="78"/>
+   <type Family="typedef" Name="GPIOSpeed_TypeDef" Line="63" ID="8147" toTI="8120"/>
+   <type Family="typedef" Name="GPIOMode_TypeDef" Line="80" ID="8216" toTI="8158"/>
+   <type Family="ComponentList" Line="92" ID="8227">
+    <Component Name="GPIO_Pin" TI="8235" Line="93" Offs="0"/>
+    <Component Name="GPIO_Speed" TI="8249" Line="96" Offs="2"/>
+    <Component Name="GPIO_Mode" TI="8263" Line="99" Offs="3"/>
    </type>
-   <type Family="typedef" Name="TIM_TypeDef" Line="1228" ID="12503" toTI="11894"/>
-   <type Family="ComponentList" Line="52" ID="12515">
-    <Component Name="TIM_Prescaler" TI="12523" Line="53" Offs="0"/>
-    <Component Name="TIM_CounterMode" TI="12537" Line="56" Offs="2"/>
-    <Component Name="TIM_Period" TI="12551" Line="59" Offs="4"/>
-    <Component Name="TIM_ClockDivision" TI="12565" Line="63" Offs="6"/>
-    <Component Name="TIM_RepetitionCounter" TI="12579" Line="66" Offs="8"/>
-   </type>
-   <type Family="typedef" Name="TIM_TimeBaseInitTypeDef" Line="74" ID="12594" toTI="12515"/>
-   <type Family="ComponentList" Line="81" ID="12605">
-    <Component Name="TIM_OCMode" TI="12613" Line="82" Offs="0"/>
-    <Component Name="TIM_OutputState" TI="12627" Line="85" Offs="2"/>
-    <Component Name="TIM_OutputNState" TI="12641" Line="88" Offs="4"/>
-    <Component Name="TIM_Pulse" TI="12655" Line="92" Offs="6"/>
-    <Component Name="TIM_OCPolarity" TI="12669" Line="95" Offs="8"/>
-    <Component Name="TIM_OCNPolarity" TI="12683" Line="98" Offs="10"/>
-    <Component Name="TIM_OCIdleState" TI="12697" Line="102" Offs="12"/>
-    <Component Name="TIM_OCNIdleState" TI="12711" Line="106" Offs="14"/>
-   </type>
-   <type Family="typedef" Name="TIM_OCInitTypeDef" Line="109" ID="12726" toTI="12605"/>
-   <type Family="ComponentList" Line="116" ID="12737">
-    <Component Name="TIM_Channel" TI="12745" Line="118" Offs="0"/>
-    <Component Name="TIM_ICPolarity" TI="12759" Line="121" Offs="2"/>
-    <Component Name="TIM_ICSelection" TI="12773" Line="124" Offs="4"/>
-    <Component Name="TIM_ICPrescaler" TI="12787" Line="127" Offs="6"/>
-    <Component Name="TIM_ICFilter" TI="12801" Line="130" Offs="8"/>
-   </type>
-   <type Family="typedef" Name="TIM_ICInitTypeDef" Line="132" ID="12816" toTI="12737"/>
-   <type Family="ComponentList" Line="140" ID="12827">
-    <Component Name="TIM_OSSRState" TI="12835" Line="142" Offs="0"/>
-    <Component Name="TIM_OSSIState" TI="12849" Line="145" Offs="2"/>
-    <Component Name="TIM_LOCKLevel" TI="12863" Line="148" Offs="4"/>
-    <Component Name="TIM_DeadTime" TI="12877" Line="151" Offs="6"/>
-    <Component Name="TIM_Break" TI="12891" Line="155" Offs="8"/>
-    <Component Name="TIM_BreakPolarity" TI="12905" Line="158" Offs="10"/>
-    <Component Name="TIM_AutomaticOutput" TI="12919" Line="161" Offs="12"/>
-   </type>
-   <type Family="typedef" Name="TIM_BDTRInitTypeDef" Line="163" ID="12934" toTI="12827"/>
-   <function Name="TIM_TimeBaseInit" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227">
-   <type Family="Pointer" TI="13012" toTI="12503"/>
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227" Addr="0x0" Param="Yes"/>
-   <type Family="Pointer" TI="13018" toTI="12594"/>
-    <parameter Name="TIM_TimeBaseInitStruct" TI="13018" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpcr1" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="228" Addr="0xC" TI="11735"/>
+   <type Family="typedef" Name="GPIO_InitTypeDef" Line="101" ID="8278" toTI="8227"/>
+   <type Family="typedef" Name="BitAction" Line="111" ID="8310" toTI="8289"/>
+   <function Name="GPIO_Init" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174">
+   <type Family="Pointer" TI="8459" toTI="8018"/>
+    <parameter Name="GPIOx" TI="8459" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174" Addr="0x0" Param="Yes"/>
+   <type Family="Pointer" TI="8465" toTI="8278"/>
+    <parameter Name="GPIO_InitStruct" TI="8465" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="174" Addr="0x1" Param="Yes"/>
+    <variable Name="currentmode" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x7" TI="7799"/>
+    <variable Name="currentpin" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x1" TI="7799"/>
+    <variable Name="pinpos" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0xC" TI="7799"/>
+    <variable Name="pos" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="175" Addr="0x2" TI="7799"/>
+    <variable Name="tmpreg" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="176" Addr="0x4" TI="7799"/>
    </function >
-   <function Name="TIM_OC1Init" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280" Addr="0x0" Param="Yes"/>
-   <type Family="Pointer" TI="13129" toTI="12726"/>
-    <parameter Name="TIM_OCInitStruct" TI="13129" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpccmrx" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x6" TI="11735"/>
-    <variable Name="tmpccer" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x1" TI="11735"/>
-    <variable Name="tmpcr2" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x5" TI="11735"/>
+   <function Name="GPIO_ReadInputDataBit" TI="7749" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="282">
+    <parameter Name="GPIOx" TI="8459" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="282" Addr="0x0" Param="Yes"/>
+    <parameter Name="GPIO_Pin" TI="7774" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="282" Addr="0x1" Param="Yes"/>
    </function >
-   <type Family="Pointer" TI="13497" toTI="12934"/>
-   <type Family="Pointer" TI="13620" toTI="12816"/>
-   <function Name="TIM_Cmd" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="11882" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807" Addr="0x1" Param="Yes"/>
+   <function Name="GPIO_WriteBit" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395">
+    <parameter Name="GPIOx" TI="8459" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x0" Param="Yes"/>
+    <parameter Name="GPIO_Pin" TI="7774" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x1" Param="Yes"/>
+    <parameter Name="BitVal" TI="8310" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="395" Addr="0x2" Param="Yes"/>
    </function >
-   <function Name="TIM_ITConfig" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_IT" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873" Addr="0x1" Param="Yes"/>
-    <parameter Name="NewState" TI="11882" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873" Addr="0x2" Param="Yes"/>
-   </function >
-   <function Name="TIM_SelectInputTrigger" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1230">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1230" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_InputTriggerSource" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1230" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpsmcr" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1231" Addr="0x3" TI="11735"/>
-   </function >
-   <function Name="TIM_ARRPreloadConfig" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1410">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1410" Addr="0x0" Param="Yes"/>
-    <parameter Name="NewState" TI="11882" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1410" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="TIM_OC1PreloadConfig" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_OCPreload" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510" Addr="0x1" Param="Yes"/>
-    <variable Name="tmpccmr1" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1511" Addr="0x3" TI="11735"/>
-   </function >
-   <function Name="TIM_SelectSlaveMode" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2226">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2226" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_SlaveMode" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2226" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="TIM_SelectMasterSlaveMode" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2247">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2247" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_MasterSlaveMode" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2247" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="TIM_SetIC1Prescaler" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2354">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2354" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_ICPSC" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2354" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="TIM_SetIC2Prescaler" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2376">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2376" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_ICPSC" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2376" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="TIM_GetCapture1" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2458">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2458" Addr="0x0" Param="Yes"/>
-   </function >
-   <function Name="TIM_GetCapture2" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2471">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2471" Addr="0x0" Param="Yes"/>
-   </function >
-   <function Name="TIM_GetFlagStatus" TI="11836" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2557">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2557" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_FLAG" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2557" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="TIM_ClearITPendingBit" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_IT" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677" Addr="0x1" Param="Yes"/>
-   </function >
-   <function Name="TI1_Config" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2703">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2703" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_ICPolarity" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2703" Addr="0x1" Param="Yes"/>
-    <parameter Name="TIM_ICSelection" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2703" Addr="0x2" Param="Yes"/>
-    <parameter Name="TIM_ICFilter" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2703" Addr="0x3" Param="Yes"/>
-    <variable Name="tmpccmr1" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2704" Addr="0x4" TI="11735"/>
-    <variable Name="tmpccer" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2704" Addr="0xC" TI="11735"/>
-   </function >
-   <function Name="TI2_Config" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2750">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2750" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_ICPolarity" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2750" Addr="0x1" Param="Yes"/>
-    <parameter Name="TIM_ICSelection" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2750" Addr="0x2" Param="Yes"/>
-    <parameter Name="TIM_ICFilter" TI="11735" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2750" Addr="0x3" Param="Yes"/>
-    <variable Name="tmpccmr1" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2751" Addr="0x4" TI="11735"/>
-    <variable Name="tmpccer" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2751" Addr="0xC" TI="11735"/>
-   </function >
-   <function Name="TIM_PWMIConfig" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="655">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="655" Addr="0x0" Param="Yes"/>
-    <parameter Name="TIM_ICInitStruct" TI="13620" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="655" Addr="0x1" Param="Yes"/>
-    <variable Name="icoppositepolarity" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="656" Addr="0x7" TI="11735"/>
-    <variable Name="icoppositeselection" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="657" Addr="0x6" TI="11735"/>
-   </function >
-   <function Name="TIM_DeInit" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="123">
-    <parameter Name="TIMx" TI="13012" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="123" Addr="0x0" Param="Yes"/>
+   <function Name="GPIO_EXTILineConfig" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="610">
+    <parameter Name="GPIO_PortSource" TI="7749" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="610" Addr="0x0" Param="Yes"/>
+    <parameter Name="GPIO_PinSource" TI="7749" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" Line="610" Addr="0x1" Param="Yes"/>
    </function >
   </module>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" >
-   <type Family="Base" Name="signed char" ID="19293"/>
-   <type Family="Base" Name="unsigned char" ID="19311"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="19300" toTI="19311"/>
-   <type Family="Base" Name="short int" ID="19318"/>
-   <type Family="Base" Name="short unsigned int" ID="19325"/>
-   <type Family="Base" Name="long int" ID="19332"/>
-   <type Family="Base" Name="long unsigned int" ID="19350"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="19339" toTI="19350"/>
-   <type Family="Base" Name="long long int" ID="19357"/>
-   <type Family="Base" Name="long long unsigned int" ID="19364"/>
-   <type Family="Base" Name="int" ID="19371"/>
-   <type Family="Base" Name="unsigned int" ID="19378"/>
-   <type Family="ComponentList" Line="133" ID="19385">
-   <type Family="array" ID="19587" toTI="19339"/>
-    <Component Name="ISER" TI="19394" Line="134" Offs="0"/>
-   <type Family="array" ID="19611" toTI="19339"/>
-    <Component Name="RESERVED0" TI="19408" Line="135" Offs="32"/>
-    <Component Name="ICER" TI="19422" Line="136" Offs="128"/>
-    <Component Name="RSERVED1" TI="19437" Line="137" Offs="160"/>
-    <Component Name="ISPR" TI="19452" Line="138" Offs="256"/>
-    <Component Name="RESERVED2" TI="19467" Line="139" Offs="288"/>
-    <Component Name="ICPR" TI="19482" Line="140" Offs="384"/>
-    <Component Name="RESERVED3" TI="19497" Line="141" Offs="416"/>
-    <Component Name="IABR" TI="19512" Line="142" Offs="512"/>
-   <type Family="array" ID="19647" toTI="19339"/>
-    <Component Name="RESERVED4" TI="19527" Line="143" Offs="544"/>
-   <type Family="array" ID="19663" toTI="19300"/>
-    <Component Name="IP" TI="19542" Line="144" Offs="768"/>
-   <type Family="array" ID="19684" toTI="19339"/>
-    <Component Name="RESERVED5" TI="19556" Line="145" Offs="1008"/>
-    <Component Name="STIR" TI="19571" Line="146" Offs="3584"/>
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" >
+   <type Family="Base" Name="signed char" ID="9487"/>
+   <type Family="Base" Name="unsigned char" ID="9505"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="9494" toTI="9505"/>
+   <type Family="Base" Name="short int" ID="9512"/>
+   <type Family="Base" Name="short unsigned int" ID="9519"/>
+   <type Family="Base" Name="long int" ID="9526"/>
+   <type Family="Base" Name="long unsigned int" ID="9544"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="9533" toTI="9544"/>
+   <type Family="Base" Name="long long int" ID="9551"/>
+   <type Family="Base" Name="long long unsigned int" ID="9558"/>
+   <type Family="Base" Name="int" ID="9565"/>
+   <type Family="Base" Name="unsigned int" ID="9572"/>
+   <type Family="typedef" Name="FlagStatus" Line="519" ID="9609" toTI="9587"/>
+   <type Family="typedef" Name="ITStatus" Line="519" ID="9621" toTI="9587"/>
+   <type Family="typedef" Name="FunctionalState" Line="521" ID="9655" toTI="9633"/>
+   <type Family="typedef" Name="ErrorStatus" Line="524" ID="9689" toTI="9667"/>
+   <type Family="ComponentList" Line="1077" ID="9701">
+    <Component Name="CR" TI="9710" Line="1078" Offs="0"/>
+    <Component Name="CFGR" TI="9724" Line="1079" Offs="4"/>
+    <Component Name="CIR" TI="9739" Line="1080" Offs="8"/>
+    <Component Name="APB2RSTR" TI="9754" Line="1081" Offs="12"/>
+    <Component Name="APB1RSTR" TI="9769" Line="1082" Offs="16"/>
+    <Component Name="AHBENR" TI="9784" Line="1083" Offs="20"/>
+    <Component Name="APB2ENR" TI="9799" Line="1084" Offs="24"/>
+    <Component Name="APB1ENR" TI="9814" Line="1085" Offs="28"/>
+    <Component Name="BDCR" TI="9829" Line="1086" Offs="32"/>
+    <Component Name="CSR" TI="9844" Line="1087" Offs="36"/>
    </type>
-   <type Family="ComponentList" Line="156" ID="19706">
-    <Component Name="CPUID" TI="19714" Line="157" Offs="0"/>
-    <Component Name="ICSR" TI="19728" Line="158" Offs="4"/>
-    <Component Name="VTOR" TI="19742" Line="159" Offs="8"/>
-    <Component Name="AIRCR" TI="19756" Line="160" Offs="12"/>
-    <Component Name="SCR" TI="19770" Line="161" Offs="16"/>
-    <Component Name="CCR" TI="19784" Line="162" Offs="20"/>
-   <type Family="array" ID="19986" toTI="19300"/>
-    <Component Name="SHP" TI="19798" Line="163" Offs="24"/>
-    <Component Name="SHCSR" TI="19812" Line="164" Offs="36"/>
-    <Component Name="CFSR" TI="19826" Line="165" Offs="40"/>
-    <Component Name="HFSR" TI="19840" Line="166" Offs="44"/>
-    <Component Name="DFSR" TI="19854" Line="167" Offs="48"/>
-    <Component Name="MMFAR" TI="19868" Line="168" Offs="52"/>
-    <Component Name="BFAR" TI="19882" Line="169" Offs="56"/>
-    <Component Name="AFSR" TI="19896" Line="170" Offs="60"/>
-   <type Family="array" ID="20007" toTI="19339"/>
-    <Component Name="PFR" TI="19910" Line="171" Offs="64"/>
-    <Component Name="DFR" TI="19924" Line="172" Offs="72"/>
-    <Component Name="ADR" TI="19938" Line="173" Offs="76"/>
-   <type Family="array" ID="20033" toTI="19339"/>
-    <Component Name="MMFR" TI="19952" Line="174" Offs="80"/>
-   <type Family="array" ID="20059" toTI="19339"/>
-    <Component Name="ISAR" TI="19966" Line="175" Offs="96"/>
+   <type Family="ComponentList" Line="47" ID="9860">
+    <Component Name="SYSCLK_Frequency" TI="9868" Line="48" Offs="0"/>
+    <Component Name="HCLK_Frequency" TI="9882" Line="49" Offs="4"/>
+    <Component Name="PCLK1_Frequency" TI="9896" Line="50" Offs="8"/>
+    <Component Name="PCLK2_Frequency" TI="9910" Line="51" Offs="12"/>
+    <Component Name="ADCCLK_Frequency" TI="9924" Line="52" Offs="16"/>
    </type>
-   <type Family="ComponentList" Line="366" ID="20085">
-    <Component Name="CTRL" TI="20094" Line="367" Offs="0"/>
-    <Component Name="LOAD" TI="20109" Line="368" Offs="4"/>
-    <Component Name="VAL" TI="20124" Line="369" Offs="8"/>
-    <Component Name="CALIB" TI="20139" Line="370" Offs="12"/>
-   </type>
-   <type Family="typedef" Name="FunctionalState" Line="521" ID="20177" toTI="20155"/>
-   <type Family="ComponentList" Line="51" ID="20189">
-    <Component Name="NVIC_IRQChannel" TI="20197" Line="52" Offs="0"/>
-    <Component Name="NVIC_IRQChannelPreemptionPriority" TI="20211" Line="57" Offs="1"/>
-    <Component Name="NVIC_IRQChannelSubPriority" TI="20225" Line="61" Offs="2"/>
-    <Component Name="NVIC_IRQChannelCmd" TI="20239" Line="65" Offs="3"/>
-   </type>
-   <type Family="typedef" Name="NVIC_InitTypeDef" Line="68" ID="20254" toTI="20189"/>
-   <function Name="NVIC_Init" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="113">
-   <type Family="Pointer" TI="20380" toTI="20254"/>
-    <parameter Name="NVIC_InitStruct" TI="20380" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="113" Addr="0x0" Param="Yes"/>
-    <variable Name="tmppriority" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="114" Addr="0x3" TI="19339"/>
+   <type Family="typedef" Name="RCC_ClocksTypeDef" Line="53" ID="9939" toTI="9860"/>
+   <function Name="RCC_DeInit" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="218">
    </function >
-   <function Name="NVIC_SetVectorTable" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="157">
-    <parameter Name="NVIC_VectTab" TI="19339" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="157" Addr="0x0" Param="Yes"/>
-    <parameter Name="Offset" TI="19339" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="157" Addr="0x1" Param="Yes"/>
+   <function Name="RCC_HSEConfig" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="271">
+    <parameter Name="RCC_HSE" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="271" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="RCC_PLLConfig" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="379">
+    <parameter Name="RCC_PLLSource" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="379" Addr="0x0" Param="Yes"/>
+    <parameter Name="RCC_PLLMul" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="379" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpreg" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="380" Addr="0x2" TI="9533"/>
+   </function >
+   <function Name="RCC_PLLCmd" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="402">
+    <parameter Name="NewState" TI="9655" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="402" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="RCC_SYSCLKConfig" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="565">
+    <parameter Name="RCC_SYSCLKSource" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="565" Addr="0x0" Param="Yes"/>
+    <variable Name="tmpreg" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="566" Addr="0x2" TI="9533"/>
+   </function >
+   <function Name="RCC_GetSYSCLKSource" TI="9494" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="588">
+   </function >
+   <function Name="RCC_HCLKConfig" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="609">
+    <parameter Name="RCC_SYSCLK" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="609" Addr="0x0" Param="Yes"/>
+    <variable Name="tmpreg" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="610" Addr="0x2" TI="9533"/>
+   </function >
+   <function Name="RCC_PCLK1Config" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="635">
+    <parameter Name="RCC_HCLK" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="635" Addr="0x0" Param="Yes"/>
+    <variable Name="tmpreg" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="636" Addr="0x2" TI="9533"/>
+   </function >
+   <function Name="RCC_PCLK2Config" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="661">
+    <parameter Name="RCC_HCLK" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="661" Addr="0x0" Param="Yes"/>
+    <variable Name="tmpreg" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="662" Addr="0x3" TI="9533"/>
+   </function >
+   <type Family="Pointer" TI="10866" toTI="9939"/>
+   <function Name="RCC_APB2PeriphClockCmd" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096">
+    <parameter Name="RCC_APB2Periph" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="9655" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1096" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="RCC_APB1PeriphClockCmd" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127">
+    <parameter Name="RCC_APB1Periph" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="9655" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1127" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="RCC_APB2PeriphResetCmd" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1186">
+    <parameter Name="RCC_APB2Periph" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1186" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="9655" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1186" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="RCC_APB1PeriphResetCmd" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1217">
+    <parameter Name="RCC_APB1Periph" TI="9533" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1217" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="9655" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1217" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="RCC_GetFlagStatus" TI="9609" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1327">
+    <parameter Name="RCC_FLAG" TI="9494" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1327" Addr="0x0" Param="Yes"/>
+    <variable Name="tmp" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1328" Addr="0x3" TI="9533"/>
+    <variable Name="statusreg" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="1329" Addr="0x3" TI="9533"/>
+   </function >
+   <function Name="RCC_WaitForHSEStartUp" TI="9689" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="305">
+    <variable Name="StartUpCounter" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="306" Addr="0x34000014" TI="9582"/>
+    <variable Name="HSEStatus" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="308" Addr="0x0" TI="9609"/>
+   </function >
+   <type Family="array" ID="11544" toTI="9494"/>
+   <variable Name="APBAHBPrescTable" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="193" Addr="0x0" TI="11577"/>
+   <type Family="array" ID="11587" toTI="9494"/>
+   <variable Name="ADCPrescTable" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c" Line="194" Addr="0x0" TI="11620"/>
+  </module>
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" >
+   <type Family="Base" Name="signed char" ID="11687"/>
+   <type Family="Base" Name="unsigned char" ID="11705"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="11694" toTI="11705"/>
+   <type Family="Base" Name="short int" ID="11712"/>
+   <type Family="Base" Name="short unsigned int" ID="11730"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="11719" toTI="11730"/>
+   <type Family="Base" Name="long int" ID="11737"/>
+   <type Family="Base" Name="long unsigned int" ID="11755"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="11744" toTI="11755"/>
+   <type Family="Base" Name="long long int" ID="11762"/>
+   <type Family="Base" Name="long long unsigned int" ID="11769"/>
+   <type Family="Base" Name="int" ID="11776"/>
+   <type Family="Base" Name="unsigned int" ID="11783"/>
+   <type Family="typedef" Name="FlagStatus" Line="519" ID="11820" toTI="11798"/>
+   <type Family="typedef" Name="ITStatus" Line="519" ID="11832" toTI="11798"/>
+   <type Family="typedef" Name="FunctionalState" Line="521" ID="11866" toTI="11844"/>
+   <type Family="ComponentList" Line="1187" ID="11878">
+    <Component Name="CR1" TI="11887" Line="1188" Offs="0"/>
+    <Component Name="RESERVED0" TI="11902" Line="1189" Offs="2"/>
+    <Component Name="CR2" TI="11917" Line="1190" Offs="4"/>
+    <Component Name="RESERVED1" TI="11932" Line="1191" Offs="6"/>
+    <Component Name="SMCR" TI="11947" Line="1192" Offs="8"/>
+    <Component Name="RESERVED2" TI="11962" Line="1193" Offs="10"/>
+    <Component Name="DIER" TI="11977" Line="1194" Offs="12"/>
+    <Component Name="RESERVED3" TI="11992" Line="1195" Offs="14"/>
+    <Component Name="SR" TI="12007" Line="1196" Offs="16"/>
+    <Component Name="RESERVED4" TI="12021" Line="1197" Offs="18"/>
+    <Component Name="EGR" TI="12036" Line="1198" Offs="20"/>
+    <Component Name="RESERVED5" TI="12051" Line="1199" Offs="22"/>
+    <Component Name="CCMR1" TI="12066" Line="1200" Offs="24"/>
+    <Component Name="RESERVED6" TI="12081" Line="1201" Offs="26"/>
+    <Component Name="CCMR2" TI="12096" Line="1202" Offs="28"/>
+    <Component Name="RESERVED7" TI="12111" Line="1203" Offs="30"/>
+    <Component Name="CCER" TI="12126" Line="1204" Offs="32"/>
+    <Component Name="RESERVED8" TI="12141" Line="1205" Offs="34"/>
+    <Component Name="CNT" TI="12156" Line="1206" Offs="36"/>
+    <Component Name="RESERVED9" TI="12171" Line="1207" Offs="38"/>
+    <Component Name="PSC" TI="12186" Line="1208" Offs="40"/>
+    <Component Name="RESERVED10" TI="12201" Line="1209" Offs="42"/>
+    <Component Name="ARR" TI="12216" Line="1210" Offs="44"/>
+    <Component Name="RESERVED11" TI="12231" Line="1211" Offs="46"/>
+    <Component Name="RCR" TI="12246" Line="1212" Offs="48"/>
+    <Component Name="RESERVED12" TI="12261" Line="1213" Offs="50"/>
+    <Component Name="CCR1" TI="12276" Line="1214" Offs="52"/>
+    <Component Name="RESERVED13" TI="12291" Line="1215" Offs="54"/>
+    <Component Name="CCR2" TI="12306" Line="1216" Offs="56"/>
+    <Component Name="RESERVED14" TI="12321" Line="1217" Offs="58"/>
+    <Component Name="CCR3" TI="12336" Line="1218" Offs="60"/>
+    <Component Name="RESERVED15" TI="12351" Line="1219" Offs="62"/>
+    <Component Name="CCR4" TI="12366" Line="1220" Offs="64"/>
+    <Component Name="RESERVED16" TI="12381" Line="1221" Offs="66"/>
+    <Component Name="BDTR" TI="12396" Line="1222" Offs="68"/>
+    <Component Name="RESERVED17" TI="12411" Line="1223" Offs="70"/>
+    <Component Name="DCR" TI="12426" Line="1224" Offs="72"/>
+    <Component Name="RESERVED18" TI="12441" Line="1225" Offs="74"/>
+    <Component Name="DMAR" TI="12456" Line="1226" Offs="76"/>
+    <Component Name="RESERVED19" TI="12471" Line="1227" Offs="78"/>
+   </type>
+   <type Family="typedef" Name="TIM_TypeDef" Line="1228" ID="12487" toTI="11878"/>
+   <type Family="ComponentList" Line="52" ID="12499">
+    <Component Name="TIM_Prescaler" TI="12507" Line="53" Offs="0"/>
+    <Component Name="TIM_CounterMode" TI="12521" Line="56" Offs="2"/>
+    <Component Name="TIM_Period" TI="12535" Line="59" Offs="4"/>
+    <Component Name="TIM_ClockDivision" TI="12549" Line="63" Offs="6"/>
+    <Component Name="TIM_RepetitionCounter" TI="12563" Line="66" Offs="8"/>
+   </type>
+   <type Family="typedef" Name="TIM_TimeBaseInitTypeDef" Line="74" ID="12578" toTI="12499"/>
+   <type Family="ComponentList" Line="81" ID="12589">
+    <Component Name="TIM_OCMode" TI="12597" Line="82" Offs="0"/>
+    <Component Name="TIM_OutputState" TI="12611" Line="85" Offs="2"/>
+    <Component Name="TIM_OutputNState" TI="12625" Line="88" Offs="4"/>
+    <Component Name="TIM_Pulse" TI="12639" Line="92" Offs="6"/>
+    <Component Name="TIM_OCPolarity" TI="12653" Line="95" Offs="8"/>
+    <Component Name="TIM_OCNPolarity" TI="12667" Line="98" Offs="10"/>
+    <Component Name="TIM_OCIdleState" TI="12681" Line="102" Offs="12"/>
+    <Component Name="TIM_OCNIdleState" TI="12695" Line="106" Offs="14"/>
+   </type>
+   <type Family="typedef" Name="TIM_OCInitTypeDef" Line="109" ID="12710" toTI="12589"/>
+   <type Family="ComponentList" Line="116" ID="12721">
+    <Component Name="TIM_Channel" TI="12729" Line="118" Offs="0"/>
+    <Component Name="TIM_ICPolarity" TI="12743" Line="121" Offs="2"/>
+    <Component Name="TIM_ICSelection" TI="12757" Line="124" Offs="4"/>
+    <Component Name="TIM_ICPrescaler" TI="12771" Line="127" Offs="6"/>
+    <Component Name="TIM_ICFilter" TI="12785" Line="130" Offs="8"/>
+   </type>
+   <type Family="typedef" Name="TIM_ICInitTypeDef" Line="132" ID="12800" toTI="12721"/>
+   <type Family="ComponentList" Line="140" ID="12811">
+    <Component Name="TIM_OSSRState" TI="12819" Line="142" Offs="0"/>
+    <Component Name="TIM_OSSIState" TI="12833" Line="145" Offs="2"/>
+    <Component Name="TIM_LOCKLevel" TI="12847" Line="148" Offs="4"/>
+    <Component Name="TIM_DeadTime" TI="12861" Line="151" Offs="6"/>
+    <Component Name="TIM_Break" TI="12875" Line="155" Offs="8"/>
+    <Component Name="TIM_BreakPolarity" TI="12889" Line="158" Offs="10"/>
+    <Component Name="TIM_AutomaticOutput" TI="12903" Line="161" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="TIM_BDTRInitTypeDef" Line="163" ID="12918" toTI="12811"/>
+   <function Name="TIM_TimeBaseInit" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227">
+   <type Family="Pointer" TI="12996" toTI="12487"/>
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227" Addr="0x0" Param="Yes"/>
+   <type Family="Pointer" TI="13002" toTI="12578"/>
+    <parameter Name="TIM_TimeBaseInitStruct" TI="13002" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="227" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpcr1" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="228" Addr="0xC" TI="11719"/>
+   </function >
+   <function Name="TIM_OC1Init" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280" Addr="0x0" Param="Yes"/>
+   <type Family="Pointer" TI="13113" toTI="12710"/>
+    <parameter Name="TIM_OCInitStruct" TI="13113" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="280" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpccmrx" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x6" TI="11719"/>
+    <variable Name="tmpccer" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x1" TI="11719"/>
+    <variable Name="tmpcr2" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="281" Addr="0x5" TI="11719"/>
+   </function >
+   <type Family="Pointer" TI="13481" toTI="12918"/>
+   <type Family="Pointer" TI="13604" toTI="12800"/>
+   <function Name="TIM_Cmd" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="11866" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="807" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TIM_ITConfig" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_IT" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873" Addr="0x1" Param="Yes"/>
+    <parameter Name="NewState" TI="11866" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="873" Addr="0x2" Param="Yes"/>
+   </function >
+   <function Name="TIM_SelectInputTrigger" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1230">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1230" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_InputTriggerSource" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1230" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpsmcr" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1231" Addr="0x3" TI="11719"/>
+   </function >
+   <function Name="TIM_ARRPreloadConfig" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1410">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1410" Addr="0x0" Param="Yes"/>
+    <parameter Name="NewState" TI="11866" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1410" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TIM_OC1PreloadConfig" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_OCPreload" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1510" Addr="0x1" Param="Yes"/>
+    <variable Name="tmpccmr1" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="1511" Addr="0x3" TI="11719"/>
+   </function >
+   <function Name="TIM_SelectSlaveMode" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2226">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2226" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_SlaveMode" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2226" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TIM_SelectMasterSlaveMode" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2247">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2247" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_MasterSlaveMode" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2247" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TIM_SetIC1Prescaler" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2354">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2354" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_ICPSC" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2354" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TIM_SetIC2Prescaler" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2376">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2376" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_ICPSC" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2376" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TIM_GetCapture1" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2458">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2458" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="TIM_GetCapture2" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2471">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2471" Addr="0x0" Param="Yes"/>
+   </function >
+   <function Name="TIM_GetFlagStatus" TI="11820" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2557">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2557" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_FLAG" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2557" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TIM_ClearITPendingBit" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_IT" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2677" Addr="0x1" Param="Yes"/>
+   </function >
+   <function Name="TI1_Config" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2703">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2703" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_ICPolarity" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2703" Addr="0x1" Param="Yes"/>
+    <parameter Name="TIM_ICSelection" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2703" Addr="0x2" Param="Yes"/>
+    <parameter Name="TIM_ICFilter" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2703" Addr="0x3" Param="Yes"/>
+    <variable Name="tmpccmr1" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2704" Addr="0x4" TI="11719"/>
+    <variable Name="tmpccer" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2704" Addr="0xC" TI="11719"/>
+   </function >
+   <function Name="TI2_Config" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2750">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2750" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_ICPolarity" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2750" Addr="0x1" Param="Yes"/>
+    <parameter Name="TIM_ICSelection" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2750" Addr="0x2" Param="Yes"/>
+    <parameter Name="TIM_ICFilter" TI="11719" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2750" Addr="0x3" Param="Yes"/>
+    <variable Name="tmpccmr1" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2751" Addr="0x4" TI="11719"/>
+    <variable Name="tmpccer" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="2751" Addr="0xC" TI="11719"/>
+   </function >
+   <function Name="TIM_PWMIConfig" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="655">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="655" Addr="0x0" Param="Yes"/>
+    <parameter Name="TIM_ICInitStruct" TI="13604" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="655" Addr="0x1" Param="Yes"/>
+    <variable Name="icoppositepolarity" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="656" Addr="0x7" TI="11719"/>
+    <variable Name="icoppositeselection" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="657" Addr="0x6" TI="11719"/>
+   </function >
+   <function Name="TIM_DeInit" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="123">
+    <parameter Name="TIMx" TI="12996" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" Line="123" Addr="0x0" Param="Yes"/>
    </function >
   </module>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" >
-   <type Family="Base" Name="signed char" ID="20584"/>
-   <type Family="Base" Name="unsigned char" ID="20591"/>
-   <type Family="Base" Name="short int" ID="20598"/>
-   <type Family="Base" Name="short unsigned int" ID="20605"/>
-   <type Family="Base" Name="long int" ID="20612"/>
-   <type Family="Base" Name="long unsigned int" ID="20630"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="20619" toTI="20630"/>
-   <type Family="Base" Name="long long int" ID="20637"/>
-   <type Family="Base" Name="long long unsigned int" ID="20644"/>
-   <type Family="Base" Name="int" ID="20651"/>
-   <type Family="Base" Name="unsigned int" ID="20658"/>
-   <type Family="typedef" Name="FlagStatus" Line="519" ID="20695" toTI="20673"/>
-   <type Family="typedef" Name="ITStatus" Line="519" ID="20707" toTI="20673"/>
-   <type Family="typedef" Name="FunctionalState" Line="521" ID="20741" toTI="20719"/>
-   <type Family="ComponentList" Line="888" ID="20753">
-    <Component Name="IMR" TI="20762" Line="889" Offs="0"/>
-    <Component Name="EMR" TI="20777" Line="890" Offs="4"/>
-    <Component Name="RTSR" TI="20792" Line="891" Offs="8"/>
-    <Component Name="FTSR" TI="20807" Line="892" Offs="12"/>
-    <Component Name="SWIER" TI="20822" Line="893" Offs="16"/>
-    <Component Name="PR" TI="20837" Line="894" Offs="20"/>
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" >
+   <type Family="Base" Name="signed char" ID="19277"/>
+   <type Family="Base" Name="unsigned char" ID="19295"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="19284" toTI="19295"/>
+   <type Family="Base" Name="short int" ID="19302"/>
+   <type Family="Base" Name="short unsigned int" ID="19309"/>
+   <type Family="Base" Name="long int" ID="19316"/>
+   <type Family="Base" Name="long unsigned int" ID="19334"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="19323" toTI="19334"/>
+   <type Family="Base" Name="long long int" ID="19341"/>
+   <type Family="Base" Name="long long unsigned int" ID="19348"/>
+   <type Family="Base" Name="int" ID="19355"/>
+   <type Family="Base" Name="unsigned int" ID="19362"/>
+   <type Family="ComponentList" Line="133" ID="19369">
+   <type Family="array" ID="19571" toTI="19323"/>
+    <Component Name="ISER" TI="19378" Line="134" Offs="0"/>
+   <type Family="array" ID="19595" toTI="19323"/>
+    <Component Name="RESERVED0" TI="19392" Line="135" Offs="32"/>
+    <Component Name="ICER" TI="19406" Line="136" Offs="128"/>
+    <Component Name="RSERVED1" TI="19421" Line="137" Offs="160"/>
+    <Component Name="ISPR" TI="19436" Line="138" Offs="256"/>
+    <Component Name="RESERVED2" TI="19451" Line="139" Offs="288"/>
+    <Component Name="ICPR" TI="19466" Line="140" Offs="384"/>
+    <Component Name="RESERVED3" TI="19481" Line="141" Offs="416"/>
+    <Component Name="IABR" TI="19496" Line="142" Offs="512"/>
+   <type Family="array" ID="19631" toTI="19323"/>
+    <Component Name="RESERVED4" TI="19511" Line="143" Offs="544"/>
+   <type Family="array" ID="19647" toTI="19284"/>
+    <Component Name="IP" TI="19526" Line="144" Offs="768"/>
+   <type Family="array" ID="19668" toTI="19323"/>
+    <Component Name="RESERVED5" TI="19540" Line="145" Offs="1008"/>
+    <Component Name="STIR" TI="19555" Line="146" Offs="3584"/>
    </type>
-   <type Family="typedef" Name="EXTIMode_TypeDef" Line="54" ID="20873" toTI="20852"/>
-   <type Family="typedef" Name="EXTITrigger_TypeDef" Line="67" ID="20911" toTI="20884"/>
-   <type Family="ComponentList" Line="77" ID="20922">
-    <Component Name="EXTI_Line" TI="20930" Line="78" Offs="0"/>
-    <Component Name="EXTI_Mode" TI="20944" Line="81" Offs="4"/>
-    <Component Name="EXTI_Trigger" TI="20958" Line="84" Offs="5"/>
-    <Component Name="EXTI_LineCmd" TI="20972" Line="87" Offs="6"/>
+   <type Family="ComponentList" Line="156" ID="19690">
+    <Component Name="CPUID" TI="19698" Line="157" Offs="0"/>
+    <Component Name="ICSR" TI="19712" Line="158" Offs="4"/>
+    <Component Name="VTOR" TI="19726" Line="159" Offs="8"/>
+    <Component Name="AIRCR" TI="19740" Line="160" Offs="12"/>
+    <Component Name="SCR" TI="19754" Line="161" Offs="16"/>
+    <Component Name="CCR" TI="19768" Line="162" Offs="20"/>
+   <type Family="array" ID="19970" toTI="19284"/>
+    <Component Name="SHP" TI="19782" Line="163" Offs="24"/>
+    <Component Name="SHCSR" TI="19796" Line="164" Offs="36"/>
+    <Component Name="CFSR" TI="19810" Line="165" Offs="40"/>
+    <Component Name="HFSR" TI="19824" Line="166" Offs="44"/>
+    <Component Name="DFSR" TI="19838" Line="167" Offs="48"/>
+    <Component Name="MMFAR" TI="19852" Line="168" Offs="52"/>
+    <Component Name="BFAR" TI="19866" Line="169" Offs="56"/>
+    <Component Name="AFSR" TI="19880" Line="170" Offs="60"/>
+   <type Family="array" ID="19991" toTI="19323"/>
+    <Component Name="PFR" TI="19894" Line="171" Offs="64"/>
+    <Component Name="DFR" TI="19908" Line="172" Offs="72"/>
+    <Component Name="ADR" TI="19922" Line="173" Offs="76"/>
+   <type Family="array" ID="20017" toTI="19323"/>
+    <Component Name="MMFR" TI="19936" Line="174" Offs="80"/>
+   <type Family="array" ID="20043" toTI="19323"/>
+    <Component Name="ISAR" TI="19950" Line="175" Offs="96"/>
    </type>
-   <type Family="typedef" Name="EXTI_InitTypeDef" Line="89" ID="20987" toTI="20922"/>
-   <function Name="EXTI_Init" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="102">
-   <type Family="Pointer" TI="21069" toTI="20987"/>
-    <parameter Name="EXTI_InitStruct" TI="21069" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="102" Addr="0x0" Param="Yes"/>
+   <type Family="ComponentList" Line="366" ID="20069">
+    <Component Name="CTRL" TI="20078" Line="367" Offs="0"/>
+    <Component Name="LOAD" TI="20093" Line="368" Offs="4"/>
+    <Component Name="VAL" TI="20108" Line="369" Offs="8"/>
+    <Component Name="CALIB" TI="20123" Line="370" Offs="12"/>
+   </type>
+   <type Family="typedef" Name="FunctionalState" Line="521" ID="20161" toTI="20139"/>
+   <type Family="ComponentList" Line="51" ID="20173">
+    <Component Name="NVIC_IRQChannel" TI="20181" Line="52" Offs="0"/>
+    <Component Name="NVIC_IRQChannelPreemptionPriority" TI="20195" Line="57" Offs="1"/>
+    <Component Name="NVIC_IRQChannelSubPriority" TI="20209" Line="61" Offs="2"/>
+    <Component Name="NVIC_IRQChannelCmd" TI="20223" Line="65" Offs="3"/>
+   </type>
+   <type Family="typedef" Name="NVIC_InitTypeDef" Line="68" ID="20238" toTI="20173"/>
+   <function Name="NVIC_Init" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="113">
+   <type Family="Pointer" TI="20364" toTI="20238"/>
+    <parameter Name="NVIC_InitStruct" TI="20364" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="113" Addr="0x0" Param="Yes"/>
+    <variable Name="tmppriority" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="114" Addr="0x3" TI="19323"/>
    </function >
-   <function Name="EXTI_GetITStatus" TI="20707" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="225">
-    <parameter Name="EXTI_Line" TI="20619" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="225" Addr="0x0" Param="Yes"/>
-    <variable Name="bitstatus" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="226" Addr="0x0" TI="20707"/>
-   </function >
-   <function Name="EXTI_ClearITPendingBit" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="250">
-    <parameter Name="EXTI_Line" TI="20619" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="250" Addr="0x0" Param="Yes"/>
+   <function Name="NVIC_SetVectorTable" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="157">
+    <parameter Name="NVIC_VectTab" TI="19323" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="157" Addr="0x0" Param="Yes"/>
+    <parameter Name="Offset" TI="19323" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" Line="157" Addr="0x1" Param="Yes"/>
    </function >
   </module>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c" >
-   <type Family="Base" Name="signed char" ID="21405"/>
-   <type Family="Base" Name="unsigned char" ID="21423"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="21412" toTI="21423"/>
-   <type Family="Base" Name="short int" ID="21441"/>
-   <type Family="typedef" Name="int16_t" Line="57" ID="21430" toTI="21441"/>
-   <type Family="Base" Name="short unsigned int" ID="21459"/>
-   <type Family="typedef" Name="uint16_t" Line="58" ID="21448" toTI="21459"/>
-   <type Family="Base" Name="long int" ID="21477"/>
-   <type Family="typedef" Name="int32_t" Line="83" ID="21466" toTI="21477"/>
-   <type Family="Base" Name="long unsigned int" ID="21495"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="21484" toTI="21495"/>
-   <type Family="Base" Name="long long int" ID="21502"/>
-   <type Family="Base" Name="long long unsigned int" ID="21509"/>
-   <type Family="Base" Name="int" ID="21516"/>
-   <type Family="Base" Name="unsigned int" ID="21523"/>
-   <type Family="Pointer" TI="22335" toTI="21412"/>
-   <type Family="Pointer" TI="22398" toTI="21448"/>
-   <type Family="Pointer" TI="22465" toTI="21484"/>
-  </module>
-  <module Name="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" >
-   <type Family="Base" Name="signed char" ID="22730"/>
-   <type Family="Base" Name="unsigned char" ID="22748"/>
-   <type Family="typedef" Name="uint8_t" Line="46" ID="22737" toTI="22748"/>
-   <type Family="Base" Name="short int" ID="22755"/>
-   <type Family="Base" Name="short unsigned int" ID="22762"/>
-   <type Family="Base" Name="long int" ID="22769"/>
-   <type Family="Base" Name="long unsigned int" ID="22787"/>
-   <type Family="typedef" Name="uint32_t" Line="84" ID="22776" toTI="22787"/>
-   <type Family="Base" Name="long long int" ID="22794"/>
-   <type Family="Base" Name="long long unsigned int" ID="22801"/>
-   <type Family="Base" Name="int" ID="22808"/>
-   <type Family="Base" Name="unsigned int" ID="22815"/>
-   <type Family="ComponentList" Line="156" ID="22830">
-    <Component Name="CPUID" TI="22838" Line="157" Offs="0"/>
-    <Component Name="ICSR" TI="22852" Line="158" Offs="4"/>
-    <Component Name="VTOR" TI="22866" Line="159" Offs="8"/>
-    <Component Name="AIRCR" TI="22880" Line="160" Offs="12"/>
-    <Component Name="SCR" TI="22894" Line="161" Offs="16"/>
-    <Component Name="CCR" TI="22908" Line="162" Offs="20"/>
-   <type Family="array" ID="23110" toTI="22737"/>
-    <Component Name="SHP" TI="22922" Line="163" Offs="24"/>
-    <Component Name="SHCSR" TI="22936" Line="164" Offs="36"/>
-    <Component Name="CFSR" TI="22950" Line="165" Offs="40"/>
-    <Component Name="HFSR" TI="22964" Line="166" Offs="44"/>
-    <Component Name="DFSR" TI="22978" Line="167" Offs="48"/>
-    <Component Name="MMFAR" TI="22992" Line="168" Offs="52"/>
-    <Component Name="BFAR" TI="23006" Line="169" Offs="56"/>
-    <Component Name="AFSR" TI="23020" Line="170" Offs="60"/>
-   <type Family="array" ID="23131" toTI="22776"/>
-    <Component Name="PFR" TI="23034" Line="171" Offs="64"/>
-    <Component Name="DFR" TI="23048" Line="172" Offs="72"/>
-    <Component Name="ADR" TI="23062" Line="173" Offs="76"/>
-   <type Family="array" ID="23157" toTI="22776"/>
-    <Component Name="MMFR" TI="23076" Line="174" Offs="80"/>
-   <type Family="array" ID="23183" toTI="22776"/>
-    <Component Name="ISAR" TI="23090" Line="175" Offs="96"/>
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" >
+   <type Family="Base" Name="signed char" ID="20568"/>
+   <type Family="Base" Name="unsigned char" ID="20575"/>
+   <type Family="Base" Name="short int" ID="20582"/>
+   <type Family="Base" Name="short unsigned int" ID="20589"/>
+   <type Family="Base" Name="long int" ID="20596"/>
+   <type Family="Base" Name="long unsigned int" ID="20614"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="20603" toTI="20614"/>
+   <type Family="Base" Name="long long int" ID="20621"/>
+   <type Family="Base" Name="long long unsigned int" ID="20628"/>
+   <type Family="Base" Name="int" ID="20635"/>
+   <type Family="Base" Name="unsigned int" ID="20642"/>
+   <type Family="typedef" Name="FlagStatus" Line="519" ID="20679" toTI="20657"/>
+   <type Family="typedef" Name="ITStatus" Line="519" ID="20691" toTI="20657"/>
+   <type Family="typedef" Name="FunctionalState" Line="521" ID="20725" toTI="20703"/>
+   <type Family="ComponentList" Line="888" ID="20737">
+    <Component Name="IMR" TI="20746" Line="889" Offs="0"/>
+    <Component Name="EMR" TI="20761" Line="890" Offs="4"/>
+    <Component Name="RTSR" TI="20776" Line="891" Offs="8"/>
+    <Component Name="FTSR" TI="20791" Line="892" Offs="12"/>
+    <Component Name="SWIER" TI="20806" Line="893" Offs="16"/>
+    <Component Name="PR" TI="20821" Line="894" Offs="20"/>
    </type>
-   <type Family="ComponentList" Line="902" ID="23231">
-    <Component Name="ACR" TI="23240" Line="903" Offs="0"/>
-    <Component Name="KEYR" TI="23255" Line="904" Offs="4"/>
-    <Component Name="OPTKEYR" TI="23270" Line="905" Offs="8"/>
-    <Component Name="SR" TI="23285" Line="906" Offs="12"/>
-    <Component Name="CR" TI="23299" Line="907" Offs="16"/>
-    <Component Name="AR" TI="23313" Line="908" Offs="20"/>
-    <Component Name="RESERVED" TI="23327" Line="909" Offs="24"/>
-    <Component Name="OBR" TI="23342" Line="910" Offs="28"/>
-    <Component Name="WRPR" TI="23357" Line="911" Offs="32"/>
+   <type Family="typedef" Name="EXTIMode_TypeDef" Line="54" ID="20857" toTI="20836"/>
+   <type Family="typedef" Name="EXTITrigger_TypeDef" Line="67" ID="20895" toTI="20868"/>
+   <type Family="ComponentList" Line="77" ID="20906">
+    <Component Name="EXTI_Line" TI="20914" Line="78" Offs="0"/>
+    <Component Name="EXTI_Mode" TI="20928" Line="81" Offs="4"/>
+    <Component Name="EXTI_Trigger" TI="20942" Line="84" Offs="5"/>
+    <Component Name="EXTI_LineCmd" TI="20956" Line="87" Offs="6"/>
    </type>
-   <type Family="ComponentList" Line="1077" ID="23373">
-    <Component Name="CR" TI="23382" Line="1078" Offs="0"/>
-    <Component Name="CFGR" TI="23396" Line="1079" Offs="4"/>
-    <Component Name="CIR" TI="23411" Line="1080" Offs="8"/>
-    <Component Name="APB2RSTR" TI="23426" Line="1081" Offs="12"/>
-    <Component Name="APB1RSTR" TI="23441" Line="1082" Offs="16"/>
-    <Component Name="AHBENR" TI="23456" Line="1083" Offs="20"/>
-    <Component Name="APB2ENR" TI="23471" Line="1084" Offs="24"/>
-    <Component Name="APB1ENR" TI="23486" Line="1085" Offs="28"/>
-    <Component Name="BDCR" TI="23501" Line="1086" Offs="32"/>
-    <Component Name="CSR" TI="23516" Line="1087" Offs="36"/>
-   </type>
-   <function Name="SystemInit" TI="0" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="219">
-    <variable Name="StartUpCounter" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="996" Addr="0x3400000C" TI="0"/>
-    <variable Name="HSEStatus" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="996" Addr="0x34000008" TI="0"/>
+   <type Family="typedef" Name="EXTI_InitTypeDef" Line="89" ID="20971" toTI="20906"/>
+   <function Name="EXTI_Init" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="102">
+   <type Family="Pointer" TI="21053" toTI="20971"/>
+    <parameter Name="EXTI_InitStruct" TI="21053" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="102" Addr="0x0" Param="Yes"/>
    </function >
-   <variable Name="SystemCoreClock" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="165" Addr="0x0" TI="22776"/>
-   <type Family="array" ID="23770" toTI="22737"/>
-   <variable Name="AHBPrescTable" FileName="D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="172" Addr="0x0" TI="23804"/>
+   <function Name="EXTI_GetITStatus" TI="20691" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="225">
+    <parameter Name="EXTI_Line" TI="20603" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="225" Addr="0x0" Param="Yes"/>
+    <variable Name="bitstatus" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="226" Addr="0x0" TI="20691"/>
+   </function >
+   <function Name="EXTI_ClearITPendingBit" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="250">
+    <parameter Name="EXTI_Line" TI="20603" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c" Line="250" Addr="0x0" Param="Yes"/>
+   </function >
+  </module>
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c" >
+   <type Family="Base" Name="signed char" ID="21389"/>
+   <type Family="Base" Name="unsigned char" ID="21407"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="21396" toTI="21407"/>
+   <type Family="Base" Name="short int" ID="21425"/>
+   <type Family="typedef" Name="int16_t" Line="57" ID="21414" toTI="21425"/>
+   <type Family="Base" Name="short unsigned int" ID="21443"/>
+   <type Family="typedef" Name="uint16_t" Line="58" ID="21432" toTI="21443"/>
+   <type Family="Base" Name="long int" ID="21461"/>
+   <type Family="typedef" Name="int32_t" Line="83" ID="21450" toTI="21461"/>
+   <type Family="Base" Name="long unsigned int" ID="21479"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="21468" toTI="21479"/>
+   <type Family="Base" Name="long long int" ID="21486"/>
+   <type Family="Base" Name="long long unsigned int" ID="21493"/>
+   <type Family="Base" Name="int" ID="21500"/>
+   <type Family="Base" Name="unsigned int" ID="21507"/>
+   <type Family="Pointer" TI="22319" toTI="21396"/>
+   <type Family="Pointer" TI="22382" toTI="21432"/>
+   <type Family="Pointer" TI="22449" toTI="21468"/>
+  </module>
+  <module Name="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" >
+   <type Family="Base" Name="signed char" ID="22714"/>
+   <type Family="Base" Name="unsigned char" ID="22732"/>
+   <type Family="typedef" Name="uint8_t" Line="46" ID="22721" toTI="22732"/>
+   <type Family="Base" Name="short int" ID="22739"/>
+   <type Family="Base" Name="short unsigned int" ID="22746"/>
+   <type Family="Base" Name="long int" ID="22753"/>
+   <type Family="Base" Name="long unsigned int" ID="22771"/>
+   <type Family="typedef" Name="uint32_t" Line="84" ID="22760" toTI="22771"/>
+   <type Family="Base" Name="long long int" ID="22778"/>
+   <type Family="Base" Name="long long unsigned int" ID="22785"/>
+   <type Family="Base" Name="int" ID="22792"/>
+   <type Family="Base" Name="unsigned int" ID="22799"/>
+   <type Family="ComponentList" Line="156" ID="22814">
+    <Component Name="CPUID" TI="22822" Line="157" Offs="0"/>
+    <Component Name="ICSR" TI="22836" Line="158" Offs="4"/>
+    <Component Name="VTOR" TI="22850" Line="159" Offs="8"/>
+    <Component Name="AIRCR" TI="22864" Line="160" Offs="12"/>
+    <Component Name="SCR" TI="22878" Line="161" Offs="16"/>
+    <Component Name="CCR" TI="22892" Line="162" Offs="20"/>
+   <type Family="array" ID="23094" toTI="22721"/>
+    <Component Name="SHP" TI="22906" Line="163" Offs="24"/>
+    <Component Name="SHCSR" TI="22920" Line="164" Offs="36"/>
+    <Component Name="CFSR" TI="22934" Line="165" Offs="40"/>
+    <Component Name="HFSR" TI="22948" Line="166" Offs="44"/>
+    <Component Name="DFSR" TI="22962" Line="167" Offs="48"/>
+    <Component Name="MMFAR" TI="22976" Line="168" Offs="52"/>
+    <Component Name="BFAR" TI="22990" Line="169" Offs="56"/>
+    <Component Name="AFSR" TI="23004" Line="170" Offs="60"/>
+   <type Family="array" ID="23115" toTI="22760"/>
+    <Component Name="PFR" TI="23018" Line="171" Offs="64"/>
+    <Component Name="DFR" TI="23032" Line="172" Offs="72"/>
+    <Component Name="ADR" TI="23046" Line="173" Offs="76"/>
+   <type Family="array" ID="23141" toTI="22760"/>
+    <Component Name="MMFR" TI="23060" Line="174" Offs="80"/>
+   <type Family="array" ID="23167" toTI="22760"/>
+    <Component Name="ISAR" TI="23074" Line="175" Offs="96"/>
+   </type>
+   <type Family="ComponentList" Line="902" ID="23215">
+    <Component Name="ACR" TI="23224" Line="903" Offs="0"/>
+    <Component Name="KEYR" TI="23239" Line="904" Offs="4"/>
+    <Component Name="OPTKEYR" TI="23254" Line="905" Offs="8"/>
+    <Component Name="SR" TI="23269" Line="906" Offs="12"/>
+    <Component Name="CR" TI="23283" Line="907" Offs="16"/>
+    <Component Name="AR" TI="23297" Line="908" Offs="20"/>
+    <Component Name="RESERVED" TI="23311" Line="909" Offs="24"/>
+    <Component Name="OBR" TI="23326" Line="910" Offs="28"/>
+    <Component Name="WRPR" TI="23341" Line="911" Offs="32"/>
+   </type>
+   <type Family="ComponentList" Line="1077" ID="23357">
+    <Component Name="CR" TI="23366" Line="1078" Offs="0"/>
+    <Component Name="CFGR" TI="23380" Line="1079" Offs="4"/>
+    <Component Name="CIR" TI="23395" Line="1080" Offs="8"/>
+    <Component Name="APB2RSTR" TI="23410" Line="1081" Offs="12"/>
+    <Component Name="APB1RSTR" TI="23425" Line="1082" Offs="16"/>
+    <Component Name="AHBENR" TI="23440" Line="1083" Offs="20"/>
+    <Component Name="APB2ENR" TI="23455" Line="1084" Offs="24"/>
+    <Component Name="APB1ENR" TI="23470" Line="1085" Offs="28"/>
+    <Component Name="BDCR" TI="23485" Line="1086" Offs="32"/>
+    <Component Name="CSR" TI="23500" Line="1087" Offs="36"/>
+   </type>
+   <function Name="SystemInit" TI="0" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="219">
+    <variable Name="StartUpCounter" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="996" Addr="0x3400000C" TI="0"/>
+    <variable Name="HSEStatus" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="996" Addr="0x34000008" TI="0"/>
+   </function >
+   <variable Name="SystemCoreClock" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="165" Addr="0x0" TI="22760"/>
+   <type Family="array" ID="23754" toTI="22721"/>
+   <variable Name="AHBPrescTable" FileName="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" Line="172" Addr="0x0" TI="23788"/>
   </module>
  </modulelist>
 </aoffile>

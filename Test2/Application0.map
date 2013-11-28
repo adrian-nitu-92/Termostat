@@ -1,395 +1,395 @@
 Archive member included because of file (symbol)
 
 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_addsubdf3.o)
-                              D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o (__aeabi_dadd)
+                              C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o (__aeabi_dadd)
 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_muldivdf3.o)
-                              D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o (__aeabi_dmul)
+                              C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o (__aeabi_dmul)
 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_truncdfsf2.o)
-                              D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o (__aeabi_d2f)
+                              C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o (__aeabi_d2f)
 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_addsubsf3.o)
-                              D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o (__aeabi_fsub)
+                              C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o (__aeabi_fsub)
 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_muldivsf3.o)
-                              D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o (__aeabi_fmul)
+                              C:\Users\Adrian\Desktop\Termostat\Test2\main.o (__aeabi_fmul)
 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_fixsfsi.o)
-                              D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o (__aeabi_f2iz)
+                              C:\Users\Adrian\Desktop\Termostat\Test2\main.o (__aeabi_f2iz)
 
 Allocating common symbols
 Common symbol       size              file
 
-HSEStartUpStatus    0x1               D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+HSEStartUpStatus    0x1               C:\Users\Adrian\Desktop\Termostat\Test2\main.o
 TIM_TimeBaseStructure
-                    0xa               D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
-alive_time          0x4               D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
-sys_timeout         0x4               D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
-tcnt                0x4               D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
-state               0x1               D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
-icnt                0x4               D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                    0xa               C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+alive_time          0x4               C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+sys_timeout         0x4               C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+tcnt                0x4               C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+state               0x1               C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+icnt                0x4               C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
 TIM_OCInitStructure
-                    0x10              D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
-timeout             0x4               D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                    0x10              C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+timeout             0x4               C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
 TIM_ICInitStructure
-                    0xa               D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
-sys_timeout2        0x4               D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                    0xa               C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+sys_timeout2        0x4               C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
 
 Discarded input sections
 
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .text.LCDInit  0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- COMMON         0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .text.LCDInit  0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ COMMON         0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
  .text.ReadCount
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .text.DelayUs  0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .text.DelayUs  0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
  .text.TimeoutSet2
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
  .text.TimeoutExp2
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .text.delay    0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .text.delay    0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
  .text.Sys_Alive
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .bss           0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .bss           0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_HalfCycleAccessCmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_Unlock
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_UnlockBank1
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_Lock
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_LockBank1
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_GetUserOptionByte
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_GetWriteProtectionOptionByte
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_GetReadOutProtectionStatus
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_GetPrefetchBufferStatus
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_ITConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_GetFlagStatus
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_ClearFlag
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_GetStatus
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_GetBank1Status
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_WaitForLastOperation
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_UserOptionByteConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_ReadOutProtection
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_EnableWriteProtection
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_ProgramOptionByteData
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_ProgramHalfWord
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_ProgramWord
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_EraseOptionBytes
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_EraseAllPages
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_ErasePage
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_WaitForLastBank1Operation
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .text.FLASH_EraseAllBank1Pages
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .bss           0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .bss           0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_StructInit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_ReadInputData
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_ReadOutputDataBit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_ReadOutputData
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_SetBits
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_ResetBits
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_Write
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_PinLockConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_EventOutputConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_EventOutputCmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_PinRemapConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_ETH_MediaInterfaceConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_AFIODeInit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .text.GPIO_DeInit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .bss           0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .bss           0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_AdjustHSICalibrationValue
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_HSICmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_ITConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_USBCLKConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_ADCCLKConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_LSEConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_LSICmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_RTCCLKConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_RTCCLKCmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_GetClocksFreq
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_AHBPeriphClockCmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_BackupResetCmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_ClockSecuritySystemCmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_MCOConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_ClearFlag
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_GetITStatus
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .text.RCC_ClearITPendingBit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .bss           0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .bss           0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC2Init
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC3Init
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC4Init
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_BDTRConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_TimeBaseStructInit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OCStructInit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ICStructInit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_BDTRStructInit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_CtrlPWMOutputs
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_GenerateEvent
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_DMAConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_DMACmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_InternalClockConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ETRConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ETRClockMode2Config
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ETRClockMode1Config
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_PrescalerConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_CounterModeConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ITRxExternalClockConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_EncoderInterfaceConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ForcedOC1Config
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ForcedOC2Config
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ForcedOC3Config
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ForcedOC4Config
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SelectCOM
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SelectCCDMA
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_CCPreloadControl
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC2PreloadConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC3PreloadConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC4PreloadConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC1FastConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC2FastConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC3FastConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC4FastConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ClearOC1Ref
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ClearOC2Ref
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ClearOC3Ref
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ClearOC4Ref
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC1PolarityConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC1NPolarityConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC2PolarityConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC2NPolarityConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC3PolarityConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC3NPolarityConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_OC4PolarityConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_CCxCmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_CCxNCmd
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SelectOCxM
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_UpdateDisableConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_UpdateRequestConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SelectHallSensor
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SelectOnePulseMode
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SelectOutputTrigger
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SetCounter
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SetAutoreload
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SetCompare1
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SetCompare2
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SetCompare3
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SetCompare4
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SetIC3Prescaler
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SetIC4Prescaler
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_SetClockDivision
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_GetCapture3
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_GetCapture4
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_GetCounter
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_GetPrescaler
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ClearFlag
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_GetITStatus
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_TIxExternalClockConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_ICInit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .bss           0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .bss           0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
  .text.NVIC_PriorityGroupConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
  .text.NVIC_SystemLPConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
  .text.SysTick_CLKSourceConfig
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .bss           0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .bss           0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
  .text.EXTI_DeInit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
  .text.EXTI_StructInit
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
  .text.EXTI_GenerateSWInterrupt
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
  .text.EXTI_GetFlagStatus
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
  .text.EXTI_ClearFlag
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .bss           0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .bss           0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__get_PSP
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__set_PSP
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__get_MSP
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__set_MSP
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__get_BASEPRI
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__set_BASEPRI
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__get_PRIMASK
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__set_PRIMASK
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__get_FAULTMASK
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__set_FAULTMASK
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__get_CONTROL
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__set_CONTROL
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .text.__REV    0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .text.__REV16  0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .text.__REVSH  0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .text.__RBIT   0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .text.__REV    0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .text.__REV16  0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .text.__REVSH  0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .text.__RBIT   0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__LDREXB
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__LDREXH
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__LDREXW
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__STREXB
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__STREXH
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .text.__STREXW
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
- .bss           0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
+ .bss           0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
  .text.SystemCoreClockUpdate
-                0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
- .text          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
- .data          0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
- .bss           0x00000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+                0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
+ .text          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
+ .data          0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
+ .bss           0x00000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
  .data          0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_addsubdf3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
@@ -457,18 +457,18 @@ EXTMEMB3         0x00000000         0x00000000         xr
 
 Linker script and memory map
 
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
-LOAD D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
+LOAD C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
 START GROUP
 LOAD C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\std_sbrk_thumb.lib
 LOAD C:\Program Files (x86)\Raisonance\Ride\Lib\ARM\smallprintf_thumb.a
@@ -629,7 +629,7 @@ END GROUP
 .isr_vector     0x08000000      0x10c
                 0x08000000                . = ALIGN (0x4)
  *(.isr_vector)
- .isr_vector    0x08000000      0x10c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+ .isr_vector    0x08000000      0x10c C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
                 0x08000000                g_pfnVectors
                 0x0800010c                . = ALIGN (0x4)
 
@@ -700,187 +700,187 @@ END GROUP
                 0x08000e00                __aeabi_f2iz
  *(.text.*)
  .text.WriteLCD
-                0x08000e4c      0x2b8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+                0x08000e4c      0x2b8 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
                 0x08000e4c                WriteLCD
  .text.EXTI_Config
-                0x08001104       0x38 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+                0x08001104       0x38 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
                 0x08001104                EXTI_Config
  .text.RCC_TIMConfig
-                0x0800113c       0xc0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+                0x0800113c       0xc0 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
                 0x0800113c                RCC_TIMConfig
  .text.NVIC_Configuration
-                0x080011fc       0x70 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+                0x080011fc       0x70 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
                 0x080011fc                NVIC_Configuration
  .text.GPIO_Configuration
-                0x0800126c       0x90 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+                0x0800126c       0x90 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
                 0x0800126c                GPIO_Configuration
  .text.RCC_Configuration
-                0x080012fc       0x94 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+                0x080012fc       0x94 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
                 0x080012fc                RCC_Configuration
- .text.main     0x08001390       0x2c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+ .text.main     0x08001390       0x2c C:\Users\Adrian\Desktop\Termostat\Test2\main.o
                 0x08001390                main
  .text.TIM3_IRQHandler
-                0x080013bc       0x38 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
+                0x080013bc       0x38 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
                 0x080013bc                TIM3_IRQHandler
  *fill*         0x080013f4        0x4 00
  .text.TIM4_IRQHandler
-                0x080013f8       0xf8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
+                0x080013f8       0xf8 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
                 0x080013f8                TIM4_IRQHandler
  .text.EXTI9_5_IRQHandler
-                0x080014f0       0x64 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
+                0x080014f0       0x64 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
                 0x080014f0                EXTI9_5_IRQHandler
  .text.TimeoutSet
-                0x08001554       0x18 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x08001554       0x18 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
                 0x08001554                TimeoutSet
  .text.TimeoutExp
-                0x0800156c       0x20 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x0800156c       0x20 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
                 0x0800156c                TimeoutExp
  .text.wasteTime
-                0x0800158c       0x10 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x0800158c       0x10 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
                 0x0800158c                wasteTime
  .text.InitSysTick
-                0x0800159c       0x60 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x0800159c       0x60 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
                 0x0800159c                InitSysTick
  .text.FLASH_SetLatency
-                0x080015fc       0x18 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x080015fc       0x18 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
                 0x080015fc                FLASH_SetLatency
  .text.FLASH_PrefetchBufferCmd
-                0x08001614       0x1c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x08001614       0x1c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
                 0x08001614                FLASH_PrefetchBufferCmd
  .text.GPIO_Init
-                0x08001630       0xcc D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x08001630       0xcc C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
                 0x08001630                GPIO_Init
  .text.GPIO_ReadInputDataBit
-                0x080016fc        0xc D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x080016fc        0xc C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
                 0x080016fc                GPIO_ReadInputDataBit
  .text.GPIO_WriteBit
-                0x08001708        0xc D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x08001708        0xc C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
                 0x08001708                GPIO_WriteBit
  .text.GPIO_EXTILineConfig
-                0x08001714       0x48 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x08001714       0x48 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
                 0x08001714                GPIO_EXTILineConfig
  .text.RCC_DeInit
-                0x0800175c       0x48 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x0800175c       0x48 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x0800175c                RCC_DeInit
  .text.RCC_HSEConfig
-                0x080017a4       0x4c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x080017a4       0x4c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x080017a4                RCC_HSEConfig
  .text.RCC_PLLConfig
-                0x080017f0       0x1c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x080017f0       0x1c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x080017f0                RCC_PLLConfig
  .text.RCC_PLLCmd
-                0x0800180c        0xc D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x0800180c        0xc C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x0800180c                RCC_PLLCmd
  .text.RCC_SYSCLKConfig
-                0x08001818       0x18 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x08001818       0x18 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x08001818                RCC_SYSCLKConfig
  .text.RCC_GetSYSCLKSource
-                0x08001830       0x10 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x08001830       0x10 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x08001830                RCC_GetSYSCLKSource
  .text.RCC_HCLKConfig
-                0x08001840       0x18 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x08001840       0x18 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x08001840                RCC_HCLKConfig
  .text.RCC_PCLK1Config
-                0x08001858       0x18 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x08001858       0x18 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x08001858                RCC_PCLK1Config
  .text.RCC_PCLK2Config
-                0x08001870       0x18 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x08001870       0x18 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x08001870                RCC_PCLK2Config
  .text.RCC_APB2PeriphClockCmd
-                0x08001888       0x2c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x08001888       0x2c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x08001888                RCC_APB2PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x080018b4       0x2c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x080018b4       0x2c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x080018b4                RCC_APB1PeriphClockCmd
  .text.RCC_APB2PeriphResetCmd
-                0x080018e0       0x2c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x080018e0       0x2c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x080018e0                RCC_APB2PeriphResetCmd
  .text.RCC_APB1PeriphResetCmd
-                0x0800190c       0x2c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x0800190c       0x2c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x0800190c                RCC_APB1PeriphResetCmd
  .text.RCC_GetFlagStatus
-                0x08001938       0x3c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x08001938       0x3c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x08001938                RCC_GetFlagStatus
  .text.RCC_WaitForHSEStartUp
-                0x08001974       0x3c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x08001974       0x3c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
                 0x08001974                RCC_WaitForHSEStartUp
  .text.TIM_TimeBaseInit
-                0x080019b0       0xfc D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x080019b0       0xfc C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x080019b0                TIM_TimeBaseInit
  .text.TIM_OC1Init
-                0x08001aac       0xe8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001aac       0xe8 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001aac                TIM_OC1Init
- .text.TIM_Cmd  0x08001b94       0x20 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+ .text.TIM_Cmd  0x08001b94       0x20 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001b94                TIM_Cmd
  .text.TIM_ITConfig
-                0x08001bb4       0x20 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001bb4       0x20 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001bb4                TIM_ITConfig
  .text.TIM_SelectInputTrigger
-                0x08001bd4       0x18 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001bd4       0x18 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001bd4                TIM_SelectInputTrigger
  .text.TIM_ARRPreloadConfig
-                0x08001bec       0x20 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001bec       0x20 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001bec                TIM_ARRPreloadConfig
  .text.TIM_OC1PreloadConfig
-                0x08001c0c       0x18 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001c0c       0x18 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001c0c                TIM_OC1PreloadConfig
  .text.TIM_SelectSlaveMode
-                0x08001c24       0x1c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001c24       0x1c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001c24                TIM_SelectSlaveMode
  .text.TIM_SelectMasterSlaveMode
-                0x08001c40       0x1c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001c40       0x1c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001c40                TIM_SelectMasterSlaveMode
  .text.TIM_SetIC1Prescaler
-                0x08001c5c       0x1c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001c5c       0x1c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001c5c                TIM_SetIC1Prescaler
  .text.TIM_SetIC2Prescaler
-                0x08001c78       0x20 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001c78       0x20 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001c78                TIM_SetIC2Prescaler
  .text.TIM_GetCapture1
-                0x08001c98        0x8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001c98        0x8 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001c98                TIM_GetCapture1
  .text.TIM_GetCapture2
-                0x08001ca0        0x8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001ca0        0x8 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001ca0                TIM_GetCapture2
  .text.TIM_GetFlagStatus
-                0x08001ca8        0xc D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001ca8        0xc C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001ca8                TIM_GetFlagStatus
  .text.TIM_ClearITPendingBit
-                0x08001cb4        0xc D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001cb4        0xc C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001cb4                TIM_ClearITPendingBit
  .text.TI1_Config
-                0x08001cc0       0xb8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001cc0       0xb8 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TI2_Config
-                0x08001d78       0xc0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001d78       0xc0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .text.TIM_PWMIConfig
-                0x08001e38       0x6c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001e38       0x6c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001e38                TIM_PWMIConfig
  .text.TIM_DeInit
-                0x08001ea4      0x280 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x08001ea4      0x280 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
                 0x08001ea4                TIM_DeInit
  .text.NVIC_Init
-                0x08002124       0x88 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
+                0x08002124       0x88 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
                 0x08002124                NVIC_Init
  .text.NVIC_SetVectorTable
-                0x080021ac       0x1c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
+                0x080021ac       0x1c C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
                 0x080021ac                NVIC_SetVectorTable
  .text.EXTI_Init
-                0x080021c8       0x9c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x080021c8       0x9c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
                 0x080021c8                EXTI_Init
  .text.EXTI_GetITStatus
-                0x08002264       0x20 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x08002264       0x20 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
                 0x08002264                EXTI_GetITStatus
  .text.EXTI_ClearITPendingBit
-                0x08002284        0xc D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x08002284        0xc C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
                 0x08002284                EXTI_ClearITPendingBit
  .text.SystemInit
-                0x08002290      0x13c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+                0x08002290      0x13c C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
                 0x08002290                SystemInit
  .text.Reset_Handler
-                0x080023cc       0x44 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+                0x080023cc       0x44 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
                 0x080023cc                Reset_Handler
  .text.Default_Handler
-                0x08002410        0x2 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+                0x08002410        0x2 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
                 0x08002410                EXTI2_IRQHandler
                 0x08002410                DebugMon_Handler
                 0x08002410                TIM1_CC_IRQHandler
@@ -935,18 +935,18 @@ END GROUP
  *(.rodata*)
  *(.glue_7)
  *fill*         0x08002412        0x2 00
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
- .glue_7        0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
+ .glue_7        0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
  .glue_7        0x08002414        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_addsubdf3.o)
  .glue_7        0x08002414        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_muldivdf3.o)
  .glue_7        0x08002414        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_truncdfsf2.o)
@@ -954,18 +954,18 @@ END GROUP
  .glue_7        0x08002414        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_muldivsf3.o)
  .glue_7        0x08002414        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_fixsfsi.o)
  *(.glue_7t)
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
- .glue_7t       0x08002414        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
+ .glue_7t       0x08002414        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
  .glue_7t       0x08002414        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_addsubdf3.o)
  .glue_7t       0x08002414        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_muldivdf3.o)
  .glue_7t       0x08002414        0x0 c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a(_arm_truncdfsf2.o)
@@ -977,59 +977,59 @@ END GROUP
                 0x08002414                _sidata = _etext
 
 .vfp11_veneer   0x20000000        0x0
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
- .vfp11_veneer  0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
+ .vfp11_veneer  0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
 
 .janus_2cc_veneer
                 0x20000000        0x0
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
  .janus_2cc_veneer
-                0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+                0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
 
 .v4_bx          0x20000000        0x0
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
- .v4_bx         0x20000000        0x0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
+ .v4_bx         0x20000000        0x0 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o
 
 .flashpatch     0x00000000        0x0
                 0x00000000                . = ALIGN (0x4)
@@ -1054,26 +1054,26 @@ END GROUP
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sbss = .
  *(.bss)
- .bss           0x20000000        0x2 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+ .bss           0x20000000        0x2 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
                 0x20000000                val
  *fill*         0x20000002        0x2 00
- .bss           0x20000004       0x14 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
+ .bss           0x20000004       0x14 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
                 0x20000010                TempInt
                 0x2000000c                Temp
                 0x20000008                DutyCycle
                 0x20000014                Frequency
                 0x20000004                IC2Value
- .bss           0x20000018        0x8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+ .bss           0x20000018        0x8 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
                 0x2000001c                sys_time2
                 0x20000018                sys_time
  *(COMMON)
- COMMON         0x20000020       0x26 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+ COMMON         0x20000020       0x26 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
                 0x20000020                HSEStartUpStatus
                 0x20000022                TIM_TimeBaseStructure
                 0x2000002c                TIM_OCInitStructure
                 0x2000003c                TIM_ICInitStructure
  *fill*         0x20000046        0x2 00
- COMMON         0x20000048       0x18 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+ COMMON         0x20000048       0x18 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
                 0x20000048                alive_time
                 0x2000004c                sys_timeout
                 0x20000050                tcnt
@@ -1145,17 +1145,17 @@ END GROUP
 
 .comment        0x00000000      0x1ce
  *(.comment)
- .comment       0x00000000       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .comment       0x0000002a       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .comment       0x00000054       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .comment       0x0000007e       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .comment       0x000000a8       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .comment       0x000000d2       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .comment       0x000000fc       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .comment       0x00000126       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .comment       0x00000150       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .comment       0x0000017a       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .comment       0x000001a4       0x2a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+ .comment       0x00000000       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .comment       0x0000002a       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .comment       0x00000054       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .comment       0x0000007e       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .comment       0x000000a8       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .comment       0x000000d2       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .comment       0x000000fc       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .comment       0x00000126       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .comment       0x00000150       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .comment       0x0000017a       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .comment       0x000001a4       0x2a C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
 
 .debug
  *(.debug)
@@ -1172,148 +1172,148 @@ END GROUP
 .debug_aranges  0x00000000      0x810
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x58 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+                0x00000000       0x58 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
  .debug_aranges
-                0x00000058       0x30 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
+                0x00000058       0x30 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
  .debug_aranges
-                0x00000088       0x68 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x00000088       0x68 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
  .debug_aranges
-                0x000000f0       0xf8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x000000f0       0xf8 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .debug_aranges
-                0x000001e8       0xa8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x000001e8       0xa8 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .debug_aranges
-                0x00000290      0x118 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000290      0x118 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .debug_aranges
-                0x000003a8      0x2e0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x000003a8      0x2e0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .debug_aranges
-                0x00000688       0x40 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
+                0x00000688       0x40 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
  .debug_aranges
-                0x000006c8       0x58 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x000006c8       0x58 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
  .debug_aranges
-                0x00000720       0xc8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x00000720       0xc8 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .debug_aranges
-                0x000007e8       0x28 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+                0x000007e8       0x28 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
 
 .debug_pubnames
-                0x00000000     0x14fd
+                0x00000000     0x14f7
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000      0x10a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+                0x00000000      0x10a C:\Users\Adrian\Desktop\Termostat\Test2\main.o
  .debug_pubnames
-                0x0000010a       0x99 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
+                0x0000010a       0x99 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
  .debug_pubnames
-                0x000001a3      0x159 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x000001a3      0x153 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
  .debug_pubnames
-                0x000002fc      0x2f2 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x000002f6      0x2f2 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .debug_pubnames
-                0x000005ee      0x19d D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x000005e8      0x19d C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .debug_pubnames
-                0x0000078b      0x2c4 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x00000785      0x2c4 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .debug_pubnames
-                0x00000a4f      0x7b0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000a49      0x7b0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .debug_pubnames
-                0x000011ff       0x89 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
+                0x000011f9       0x89 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
  .debug_pubnames
-                0x00001288       0xbb D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x00001282       0xbb C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
  .debug_pubnames
-                0x00001343      0x159 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x0000133d      0x159 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .debug_pubnames
-                0x0000149c       0x61 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+                0x00001496       0x61 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
 
-.debug_info     0x00000000     0x5d07
+.debug_info     0x00000000     0x5cf7
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0xa8a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .debug_info    0x00000a8a      0x494 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .debug_info    0x00000f1e      0x716 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .debug_info    0x00001634      0x7f5 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .debug_info    0x00001e29      0x6d1 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .debug_info    0x000024fa      0x898 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .debug_info    0x00002d92     0x1da6 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .debug_info    0x00004b38      0x50b D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .debug_info    0x00005043      0x335 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .debug_info    0x00005378      0x52d D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .debug_info    0x000058a5      0x462 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+ .debug_info    0x00000000      0xa8a C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .debug_info    0x00000a8a      0x494 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .debug_info    0x00000f1e      0x706 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .debug_info    0x00001624      0x7f5 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .debug_info    0x00001e19      0x6d1 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .debug_info    0x000024ea      0x898 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .debug_info    0x00002d82     0x1da6 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .debug_info    0x00004b28      0x50b C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .debug_info    0x00005033      0x335 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .debug_info    0x00005368      0x52d C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .debug_info    0x00005895      0x462 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
 
-.debug_abbrev   0x00000000     0x116d
+.debug_abbrev   0x00000000     0x115c
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x1e1 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .debug_abbrev  0x000001e1       0xf7 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .debug_abbrev  0x000002d8      0x178 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .debug_abbrev  0x00000450      0x1af D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .debug_abbrev  0x000005ff      0x1fc D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .debug_abbrev  0x000007fb      0x1f5 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .debug_abbrev  0x000009f0      0x237 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .debug_abbrev  0x00000c27      0x15a D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .debug_abbrev  0x00000d81      0x184 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .debug_abbrev  0x00000f05       0xd0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .debug_abbrev  0x00000fd5      0x198 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+ .debug_abbrev  0x00000000      0x1e1 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .debug_abbrev  0x000001e1       0xf7 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .debug_abbrev  0x000002d8      0x167 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .debug_abbrev  0x0000043f      0x1af C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .debug_abbrev  0x000005ee      0x1fc C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .debug_abbrev  0x000007ea      0x1f5 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .debug_abbrev  0x000009df      0x237 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .debug_abbrev  0x00000c16      0x15a C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .debug_abbrev  0x00000d70      0x184 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .debug_abbrev  0x00000ef4       0xd0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .debug_abbrev  0x00000fc4      0x198 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
 
-.debug_line     0x00000000     0x2ed5
+.debug_line     0x00000000     0x28f1
  *(.debug_line)
- .debug_line    0x00000000      0x3f3 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .debug_line    0x000003f3      0x2b7 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .debug_line    0x000006aa      0x325 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .debug_line    0x000009cf      0x545 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .debug_line    0x00000f14      0x449 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .debug_line    0x0000135d      0x53f D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .debug_line    0x0000189c      0xaa3 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .debug_line    0x0000233f      0x2eb D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .debug_line    0x0000262a      0x363 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .debug_line    0x0000298d      0x2ad D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .debug_line    0x00002c3a      0x29b D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+ .debug_line    0x00000000      0x35b C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .debug_line    0x0000035b      0x21f C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .debug_line    0x0000057a      0x299 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .debug_line    0x00000813      0x4ad C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .debug_line    0x00000cc0      0x3b1 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .debug_line    0x00001071      0x4a7 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .debug_line    0x00001518      0xa0b C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .debug_line    0x00001f23      0x253 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .debug_line    0x00002176      0x2cb C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .debug_line    0x00002441      0x287 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .debug_line    0x000026c8      0x229 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
 
 .debug_frame    0x00000000     0x10f0
  *(.debug_frame)
- .debug_frame   0x00000000       0xe8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .debug_frame   0x000000e8       0x60 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .debug_frame   0x00000148       0xd4 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .debug_frame   0x0000021c      0x244 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .debug_frame   0x00000460      0x168 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .debug_frame   0x000005c8      0x224 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .debug_frame   0x000007ec      0x668 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .debug_frame   0x00000e54       0x60 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .debug_frame   0x00000eb4       0x98 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .debug_frame   0x00000f4c      0x170 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .debug_frame   0x000010bc       0x34 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+ .debug_frame   0x00000000       0xe8 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .debug_frame   0x000000e8       0x60 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .debug_frame   0x00000148       0xd4 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .debug_frame   0x0000021c      0x244 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .debug_frame   0x00000460      0x168 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .debug_frame   0x000005c8      0x224 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .debug_frame   0x000007ec      0x668 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .debug_frame   0x00000e54       0x60 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .debug_frame   0x00000eb4       0x98 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .debug_frame   0x00000f4c      0x170 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .debug_frame   0x000010bc       0x34 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
 
-.debug_str      0x00000000     0x2739
+.debug_str      0x00000000     0x25a2
  *(.debug_str)
- .debug_str     0x00000000      0xa9e D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
-                                0xadd (size before relaxing)
- .debug_str     0x00000a9e       0xc2 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
-                                0x2a9 (size before relaxing)
- .debug_str     0x00000b60       0xf9 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
-                                0x47f (size before relaxing)
- .debug_str     0x00000c59      0x472 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
-                                0x572 (size before relaxing)
- .debug_str     0x000010cb      0x293 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
-                                0x4af (size before relaxing)
- .debug_str     0x0000135e      0x472 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
-                                0x5a8 (size before relaxing)
- .debug_str     0x000017d0      0x9cf D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
-                                0xd80 (size before relaxing)
- .debug_str     0x0000219f      0x1cd D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
-                                0x346 (size before relaxing)
- .debug_str     0x0000236c      0x13e D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
-                                0x2f4 (size before relaxing)
- .debug_str     0x000024aa      0x1b2 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
-                                0x26c (size before relaxing)
- .debug_str     0x0000265c       0xdd D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
-                                0x25d (size before relaxing)
+ .debug_str     0x00000000      0xa78 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+                                0xab7 (size before relaxing)
+ .debug_str     0x00000a78       0x9c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+                                0x283 (size before relaxing)
+ .debug_str     0x00000b14       0xde C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+                                0x464 (size before relaxing)
+ .debug_str     0x00000bf2      0x44c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+                                0x54c (size before relaxing)
+ .debug_str     0x0000103e      0x26d C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+                                0x489 (size before relaxing)
+ .debug_str     0x000012ab      0x44c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+                                0x582 (size before relaxing)
+ .debug_str     0x000016f7      0x9a9 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+                                0xd5a (size before relaxing)
+ .debug_str     0x000020a0      0x1a7 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+                                0x320 (size before relaxing)
+ .debug_str     0x00002247      0x118 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+                                0x2ce (size before relaxing)
+ .debug_str     0x0000235f      0x18c C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+                                0x246 (size before relaxing)
+ .debug_str     0x000024eb       0xb7 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
+                                0x237 (size before relaxing)
 
 .debug_loc      0x00000000     0x260d
  *(.debug_loc)
- .debug_loc     0x00000000      0x466 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .debug_loc     0x00000466       0x5d D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .debug_loc     0x000004c3       0xc8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .debug_loc     0x0000058b      0x680 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .debug_loc     0x00000c0b      0x2f2 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .debug_loc     0x00000efd      0x32c D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .debug_loc     0x00001229     0x1072 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .debug_loc     0x0000229b       0x8b D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .debug_loc     0x00002326       0xaa D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .debug_loc     0x000023d0      0x1c8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .debug_loc     0x00002598       0x75 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+ .debug_loc     0x00000000      0x466 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .debug_loc     0x00000466       0x5d C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .debug_loc     0x000004c3       0xc8 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .debug_loc     0x0000058b      0x680 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .debug_loc     0x00000c0b      0x2f2 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .debug_loc     0x00000efd      0x32c C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .debug_loc     0x00001229     0x1072 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .debug_loc     0x0000229b       0x8b C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .debug_loc     0x00002326       0xaa C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .debug_loc     0x000023d0      0x1c8 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .debug_loc     0x00002598       0x75 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1333,44 +1333,44 @@ START GROUP
 LOAD c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/thumb2\libgcc.a
 LOAD c:/program files (x86)/raisonance/ride/arm-gcc/bin/../lib/gcc/arm-none-eabi/4.3.2/../../../../arm-none-eabi/lib/thumb2\libc.a
 END GROUP
-OUTPUT(D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Application0.elf elf32-littlearm)
+OUTPUT(C:\Users\Adrian\Desktop\Termostat\Test2\Application0.elf elf32-littlearm)
 
 .debug_ranges   0x00000000      0x7b8
- .debug_ranges  0x00000000       0x50 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
- .debug_ranges  0x00000050       0x28 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
- .debug_ranges  0x00000078       0x60 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
- .debug_ranges  0x000000d8       0xf0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
- .debug_ranges  0x000001c8       0xa0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
- .debug_ranges  0x00000268      0x110 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
- .debug_ranges  0x00000378      0x2d8 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
- .debug_ranges  0x00000650       0x38 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
- .debug_ranges  0x00000688       0x50 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
- .debug_ranges  0x000006d8       0xc0 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
- .debug_ranges  0x00000798       0x20 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+ .debug_ranges  0x00000000       0x50 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
+ .debug_ranges  0x00000050       0x28 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
+ .debug_ranges  0x00000078       0x60 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
+ .debug_ranges  0x000000d8       0xf0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
+ .debug_ranges  0x000001c8       0xa0 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
+ .debug_ranges  0x00000268      0x110 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
+ .debug_ranges  0x00000378      0x2d8 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
+ .debug_ranges  0x00000650       0x38 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
+ .debug_ranges  0x00000688       0x50 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
+ .debug_ranges  0x000006d8       0xc0 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
+ .debug_ranges  0x00000798       0x20 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
 
 .ARM.attributes
                 0x00000000       0x31
  .ARM.attributes
-                0x00000000       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\main.o
+                0x00000000       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\main.o
  .ARM.attributes
-                0x00000031       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_it.o
+                0x00000031       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_it.o
  .ARM.attributes
-                0x00000062       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\sys_time.o
+                0x00000062       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\sys_time.o
  .ARM.attributes
-                0x00000093       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_flash.o
+                0x00000093       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_flash.o
  .ARM.attributes
-                0x000000c4       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_gpio.o
+                0x000000c4       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_gpio.o
  .ARM.attributes
-                0x000000f5       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_rcc.o
+                0x000000f5       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_rcc.o
  .ARM.attributes
-                0x00000126       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_tim.o
+                0x00000126       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_tim.o
  .ARM.attributes
-                0x00000157       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\misc.o
+                0x00000157       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\misc.o
  .ARM.attributes
-                0x00000188       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\stm32f10x_exti.o
+                0x00000188       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\stm32f10x_exti.o
  .ARM.attributes
-                0x000001b9       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\core_cm3.o
+                0x000001b9       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\core_cm3.o
  .ARM.attributes
-                0x000001ea       0x31 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\system_stm32f10x.o
+                0x000001ea       0x31 C:\Users\Adrian\Desktop\Termostat\Test2\system_stm32f10x.o
  .ARM.attributes
-                0x0000021b       0x21 D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\startup_stm32f10x_md.o
+                0x0000021b       0x21 C:\Users\Adrian\Desktop\Termostat\Test2\startup_stm32f10x_md.o

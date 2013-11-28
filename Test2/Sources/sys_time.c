@@ -1,7 +1,6 @@
 #include "stm32f10x_conf.h"
 #include "extern.h"
 #include "sys_time.h"
-#include "main.h"
 
 s32 sys_timeout;
 s32 sys_timeout2;

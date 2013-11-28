@@ -1,5 +1,5 @@
 [Application]
-ApplicationPath=D:\Embedded\intership AFT\TeamNet\documents-export-2013-11-26\Termostat\Test2\Application0.elf
+ApplicationPath=C:\Users\Adrian\Desktop\Termostat\Test2\Application0.elf
 CSX=0
 HighBankAddr=400000
 BootMode=0
