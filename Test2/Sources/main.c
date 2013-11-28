@@ -42,6 +42,9 @@ extern vu16 DutyCycle ;
 extern vu32 Frequency ;
 extern int TempInt;
 extern float Temp;
+u16 last_ret;
+u16 acc;
+u16 ep;
 
 extern volatile u8 READ_flag;
 
@@ -99,15 +102,25 @@ int main(void)
   }
 }
 
+#define KP 1
+#define KI 1
+#define KD 1
+
 u16 PID_val()
 {
     u16 ret;
-    ret = 80*(val - Temp)/100;
-    ret = 80 - ret;
+    float d;
+    float e = val - Temp;
+    if ( e < 0.2 )
+        return last_ret;
+    acc +=e;
+    d = e - ep;
+    ep = e;
+    ret = KP*e + KI * acc + KD * d; //fill in PROCENTE
+    ret = 80/100 * ret; //fill adaptat la PWM nostru
+    last_ret = ret;
     return ret;
 }
-
-
 /*******************************************************************************
 * Function Name  : RCC_Configuration
 * Description    : Configures the different system clocks.
