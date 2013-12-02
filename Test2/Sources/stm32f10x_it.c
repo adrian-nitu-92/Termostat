@@ -27,8 +27,8 @@
  volatile float DutyCycle = 0;
  vu32 Frequency = 0;
  volatile float Temp = 0;
- volatile float val = 25.0;
- volatile int TempInt = 0;
+ volatile float val =25;
+ //volatile int TempInt = 0;
  volatile u8 READ_flag = 0;
  volatile int counter;
  volatile float aux_temp;

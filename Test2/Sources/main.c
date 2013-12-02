@@ -40,14 +40,24 @@ TIM_OCInitTypeDef  TIM_OCInitStructure;
 extern vu16 IC2Value ;
 extern vu16 DutyCycle ;
 extern vu32 Frequency ;
-extern int TempInt;
+//extern int TempInt;
 extern float Temp;
-u16 last_ret;
-u16 acc;
-u16 ep;
+
+float last_ret=0;
+float acc=0;
+float ep=0;
+float retu;
+float d;
+float e;
+float prag=0.2;
+
+float KP=100;
+float KI=2;
+float KD=1.5;
+
+float printMe;
 
 extern volatile u8 READ_flag;
-
 extern float val;
 
 /* Private function prototypes -----------------------------------------------*/
@@ -87,40 +97,51 @@ int main(void)
   EXTI_Config();
   InitSysTick();
   //LCDInit();
+  
  
-  float printMe;
+  
   while (1)
   { 
     if(TimeoutExp2() == 0)
        printMe = val;
     else
-        printMe = Temp;
+       printMe = Temp;
+    
     WriteLCD(printMe);
+    
     if(READ_flag)
-        TIM3->CCR1 = PID_val(); 
+        {
+        TIM3->CCR1 = PID_val();
+        READ_flag=0;
+        }
+        
     wasteTime(300);
   }
 }
 
-#define KP 1
-#define KI 1
-#define KD 1
 
 u16 PID_val()
-{
-    u16 ret;
-    float d;
-    float e = val - Temp;
-    if ( e < 0.2 )
-        return last_ret;
+{   
+    e = val - Temp;
     acc +=e;
+    if((e<prag)&&(e>(0-prag)))
+        acc=0;
     d = e - ep;
     ep = e;
-    ret = KP*e + KI * acc + KD * d; //fill in PROCENTE
-    ret = 80/100 * ret; //fill adaptat la PWM nostru
-    last_ret = ret;
-    return ret;
+    retu = KP*e + KI * acc + KD * d; //fill in PROCENTE
+    //retu = 80/100 * retu; //fill adaptat la PWM nostru
+   // last_ret = retu;
+    if(retu<0)
+        {
+        retu=0;
+        }
+    else if(retu>799)
+        {
+        retu=800;
+        }
+    return (u16)retu;
 }
+
 /*******************************************************************************
 * Function Name  : RCC_Configuration
 * Description    : Configures the different system clocks.
@@ -300,13 +321,13 @@ void RCC_TIMConfig(void)
 
 
       /* Time base configuration */
-  TIM_TimeBaseStructure.TIM_Period = 79; //se face +1
+  TIM_TimeBaseStructure.TIM_Period = 799; //se face +1
   TIM_TimeBaseStructure.TIM_Prescaler = 35;//se face +1
   TIM_TimeBaseStructure.TIM_ClockDivision = 0;
   TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
   // t = 0.5 micro ( 72MHz/36 = 2MHz )
   // frecv PWM vrem sa fie 25 khz ( 2MHz / 25 KHz ) =>
-  // T = 80 pasi
+  // T = 800 pasi
   
 
   TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);

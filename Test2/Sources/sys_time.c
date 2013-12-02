@@ -1,6 +1,7 @@
 #include "stm32f10x_conf.h"
 #include "extern.h"
 #include "sys_time.h"
+#include "main.h"
 
 s32 sys_timeout;
 s32 sys_timeout2;
@@ -11,7 +12,6 @@ TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
 TIM_OCInitTypeDef  TIM_OCInitStructure;
 TIM_ICInitTypeDef  TIM_ICInitStructure;
 
-int a=3;
 s32 icnt,tcnt;
 s32 timeout;
 s32 alive_time;
@@ -35,17 +35,17 @@ u16 ReadCount(void){
 }
 
 void InitSysTick(void){
-    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
 
-    TIM_DeInit(TIM2);
+    TIM_DeInit(TIM3);
     TIM_TimeBaseStructure.TIM_Period = 3999; // 1ms tick        
     TIM_TimeBaseStructure.TIM_Prescaler = 17; // -- 2MHz --      
     TIM_TimeBaseStructure.TIM_ClockDivision = 0x0;    
     TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
-    TIM_TimeBaseInit(TIM2, &TIM_TimeBaseStructure);
-    TIM_ITConfig(TIM2,TIM_IT_Update,ENABLE);
+    TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);
+    TIM_ITConfig(TIM3,TIM_IT_Update,ENABLE);
     sys_time = 0;
-    TIM_Cmd(TIM2, ENABLE);
+    TIM_Cmd(TIM3, ENABLE);
 }
 
 
@@ -54,7 +54,7 @@ void TimeoutSet(s32 timeout){
 }
 
 void TimeoutSet2(s32 timeout2){
-    sys_timeout2 = sys_time+timeout2;
+    sys_timeout2 = sys_time2+timeout2;
 }
 
 
@@ -65,7 +65,7 @@ u8 TimeoutExp(void){
 }
 
 u8 TimeoutExp2(void){
-    if (sys_time >= sys_timeout2)
+    if (sys_time2 >= sys_timeout2)
         return 1;
     return 0;
 }
@@ -77,14 +77,11 @@ void Sys_Alive(void){
 }
 
 void wasteTime(int in){
-    
     TimeoutSet(in);
-    while(TimeoutExp()==0){
-    a++;
-    a--;}
+    while(TimeoutExp()==0);
 }
 
-void delay(unsigned long int n){
+void delay(int n){
 int k;
    k=n;
    while( k >0)

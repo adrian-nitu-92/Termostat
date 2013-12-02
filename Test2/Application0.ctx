@@ -9,12 +9,12 @@
 				<3>248</3>
 				<4>86</4>
 				<5>121</5>
-																																										
+																																																																						
 			</CodeReport>
-																														
+																																																		
 		</CodeView>
 		<MemoryView Focus="536870904" TopRow="536870888" NbPerLine="8" />
-																		
+																														
 	</Application0>
 	<Flags>
 		<Report>
@@ -40,8 +40,8 @@
 	<Views>
 		<View File="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\stm32f10x_it.c" Line="0" Index="0" />
 		<View File="C:\Users\Adrian\Desktop\Termostat\Test2\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" Line="0" Index="1" />
-		<View File="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="86" Index="2" />
-		<View File="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="14" Index="3" focus="1" />
+		<View File="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\main.c" Line="87" Index="2" focus="1" />
+		<View File="C:\Users\Adrian\Desktop\Termostat\Test2\Sources\sys_time.c" Line="15" Index="3" />
 	</Views>
 	<Grep>
 		<GrepIncludeSub>yes</GrepIncludeSub>
